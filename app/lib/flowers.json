@@ -1,5 +1,81 @@
 [
   {
+    "sku": "102",
+    "name": "BANANA KUSH Shreds",
+    "slug": "banana-kush-shreds",
+    "tier": "BUDGET",
+    "type": "indica",
+    "isHot": false,
+    "isSale": false,
+    "thc": "24%",
+    "price3g": null,
+    "price5g": null,
+    "price14g": null,
+    "price28g": {
+      "regular": 40,
+      "sale": null
+    },
+    "image": "https://athena-cannabis-images.vercel.app/products/102-Banana-Kush-Shake.jpg",
+    "promoImage": null
+  },
+  {
+    "sku": "112",
+    "name": "PINK BISCUITS SHREDS",
+    "slug": "pink-biscuits-shreds",
+    "tier": "BUDGET",
+    "type": "indica",
+    "isHot": false,
+    "isSale": false,
+    "thc": "24%",
+    "price3g": null,
+    "price5g": null,
+    "price14g": null,
+    "price28g": {
+      "regular": 40,
+      "sale": null
+    },
+    "image": "https://athena-cannabis-images.vercel.app/products/112-Pink-Biscuits-Shake.jpg",
+    "promoImage": "https://kennedyloudcannabis.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-7-2026-03_04_10-AM.png"
+  },
+  {
+    "sku": "113",
+    "name": "PINK GELATO Shreds",
+    "slug": "pink-gelato-shreds",
+    "tier": "BUDGET",
+    "type": "indica",
+    "isHot": false,
+    "isSale": false,
+    "thc": "24%",
+    "price3g": null,
+    "price5g": null,
+    "price14g": null,
+    "price28g": {
+      "regular": 40,
+      "sale": null
+    },
+    "image": "https://athena-cannabis-images.vercel.app/products/113-PinkGelato.jpg",
+    "promoImage": "https://kennedyloudcannabis.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-7-2026-03_04_10-AM.png"
+  },
+  {
+    "sku": "114",
+    "name": "PINK NORTHERN LIGHTS (SHREDS)",
+    "slug": "pink-northern-lights-shreds",
+    "tier": "BUDGET",
+    "type": "indica",
+    "isHot": false,
+    "isSale": false,
+    "thc": "25%",
+    "price3g": null,
+    "price5g": null,
+    "price14g": null,
+    "price28g": {
+      "regular": 40,
+      "sale": null
+    },
+    "image": "https://athena-cannabis-images.vercel.app/products/114-Hell-Fire-Shake.jpg",
+    "promoImage": null
+  },
+  {
     "sku": "168",
     "name": "OG KUSH",
     "slug": "og-kush",
@@ -58,7 +134,10 @@
       "sale": null
     },
     "price14g": null,
-    "price28g": null,
+    "price28g": {
+      "regular": 85,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/210-WHITE-CHAMPAGNE-99224.webp",
     "promoImage": null
   },
@@ -80,7 +159,10 @@
       "regular": 45,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 80,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/213-Master-Kush.webp",
     "promoImage": null
   },
@@ -102,7 +184,10 @@
       "regular": 45,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 80,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/261-DAYDREAM-DIESEL-99140.jpg",
     "promoImage": null
   },
@@ -124,7 +209,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 70,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99149-OREO-COOKIES.webp",
     "promoImage": null
   },
@@ -146,7 +234,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 70,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99146-271-DANTE-INFERNO.webp",
     "promoImage": "https://kennedyloudcannabis.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-7-2026-03_04_10-AM.png"
   },
@@ -168,7 +259,10 @@
       "regular": 45,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 80,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99151-272-SKYWALKER-KUSH.webp",
     "promoImage": null
   },
@@ -190,7 +284,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 75,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99244-275-SUGAR-COOKIES.webp",
     "promoImage": null
   },
@@ -212,7 +309,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 75,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/278-SLURRICANE.webp",
     "promoImage": null
   },
@@ -234,7 +334,10 @@
       "regular": 45,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 75,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99243-288-FROSTED-COOKIES.webp",
     "promoImage": null
   },
@@ -253,7 +356,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 70,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99230-289-JUNGLE-JUICE.webp",
     "promoImage": null
   },
@@ -275,7 +381,10 @@
       "regular": 45,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 75,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/99263-290-SWEET-KUSH.webp",
     "promoImage": null
   },
@@ -297,7 +406,10 @@
       "regular": 40,
       "sale": null
     },
-    "price28g": null,
+    "price28g": {
+      "regular": 70,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/291-DIAMOND-KUSH.webp",
     "promoImage": null
   },

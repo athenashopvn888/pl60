@@ -242,7 +242,14 @@ def build_flowers(product_rows: list[dict], flag_lookup: dict) -> list[dict]:
 
         # Check store-specific flags
         flags = flag_lookup.get(sku)
-        if not flags or not flags["show"]:
+        if not flags:
+            skipped += 1
+            continue
+
+        # Item is shown if either main catalog show is True OR show28g is True (original TVMenu.html rule)
+        show_main = flags.get("show", False)
+        show_28g = flags.get("show28g", False)
+        if not show_main and not show_28g:
             skipped += 1
             continue
 
@@ -253,13 +260,20 @@ def build_flowers(product_rows: list[dict], flag_lookup: dict) -> list[dict]:
         price28g = parse_price_point(row.get("Price_28G", ""))
 
         # Apply weight visibility flags
-        if flags:
+        if not show_main and show_28g:
+            # If hidden from main catalog but shown for 28g (e.g. shreds), nullify smaller weights
+            price3g = None
+            price5g = None
+            price14g = None
+        else:
+            # Otherwise, apply standard weight visibility flags
             if not flags.get("show5g", True):
                 price5g = None
             if not flags.get("show14g", True):
                 price14g = None
-            if not flags.get("show28g", True):
-                price28g = None
+            # Note: We do NOT nullify price28g if the item is generally visible (show_main=True)
+            # and carries a valid 28g price in the spreadsheet. This ensures Sativas with 28g pricing
+            # (like Daydream Diesel) populate their OZ prices and display on the OZ Card/Menu correctly!
 
         # Fallback to standard tier pricing if completely missing/null in sheet
         if price3g is None and price5g is None and price14g is None and price28g is None:
