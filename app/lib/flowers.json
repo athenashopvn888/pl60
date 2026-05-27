@@ -476,9 +476,18 @@
     "isHot": false,
     "isSale": true,
     "thc": "30%",
-    "price3g": null,
-    "price5g": null,
-    "price14g": null,
+    "price3g": {
+      "regular": 20,
+      "sale": null
+    },
+    "price5g": {
+      "regular": 30,
+      "sale": null
+    },
+    "price14g": {
+      "regular": 70,
+      "sale": null
+    },
     "price28g": null,
     "image": "https://athena-cannabis-images.vercel.app/products/393-PINK-KUSH-99212.webp",
     "promoImage": null
@@ -492,10 +501,16 @@
     "isHot": false,
     "isSale": true,
     "thc": "30%",
-    "price3g": null,
+    "price3g": {
+      "regular": 10,
+      "sale": null
+    },
     "price5g": null,
     "price14g": null,
-    "price28g": null,
+    "price28g": {
+      "regular": 55,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/393-PINK-KUSH-99212.webp",
     "promoImage": null
   },
@@ -508,9 +523,18 @@
     "isHot": false,
     "isSale": true,
     "thc": "31%",
-    "price3g": null,
-    "price5g": null,
-    "price14g": null,
+    "price3g": {
+      "regular": 20,
+      "sale": null
+    },
+    "price5g": {
+      "regular": 30,
+      "sale": null
+    },
+    "price14g": {
+      "regular": 70,
+      "sale": null
+    },
     "price28g": null,
     "image": "https://athena-cannabis-images.vercel.app/products/396-DURIAN-99219.webp",
     "promoImage": null
@@ -524,10 +548,16 @@
     "isHot": false,
     "isSale": true,
     "thc": "31%",
-    "price3g": null,
+    "price3g": {
+      "regular": 10,
+      "sale": null
+    },
     "price5g": null,
     "price14g": null,
-    "price28g": null,
+    "price28g": {
+      "regular": 55,
+      "sale": null
+    },
     "image": "https://athena-cannabis-images.vercel.app/products/396-DURIAN-99219.webp",
     "promoImage": null
   },
@@ -936,9 +966,18 @@
     "isHot": false,
     "isSale": true,
     "thc": "38%",
-    "price3g": null,
-    "price5g": null,
-    "price14g": null,
+    "price3g": {
+      "regular": 40,
+      "sale": null
+    },
+    "price5g": {
+      "regular": 60,
+      "sale": null
+    },
+    "price14g": {
+      "regular": 140,
+      "sale": null
+    },
     "price28g": null,
     "image": "https://athena-cannabis-images.vercel.app/products/561-RED-CONGOLESE.webp",
     "promoImage": null
@@ -1037,9 +1076,18 @@
     "isHot": false,
     "isSale": false,
     "thc": "39%",
-    "price3g": null,
-    "price5g": null,
-    "price14g": null,
+    "price3g": {
+      "regular": 40,
+      "sale": null
+    },
+    "price5g": {
+      "regular": 60,
+      "sale": null
+    },
+    "price14g": {
+      "regular": 140,
+      "sale": null
+    },
     "price28g": null,
     "image": "https://athena-cannabis-images.vercel.app/products/596-PINK-GOEY-FROST2.webp",
     "promoImage": "https://kennedyloudcannabis.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-7-2026-03_04_10-AM.png"

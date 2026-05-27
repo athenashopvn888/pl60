@@ -261,6 +261,27 @@ def build_flowers(product_rows: list[dict], flag_lookup: dict) -> list[dict]:
             if not flags.get("show28g", True):
                 price28g = None
 
+        # Fallback to standard tier pricing if completely missing/null in sheet
+        if price3g is None and price5g is None and price14g is None and price28g is None:
+            if tier == "EXOTIC":
+                price3g = {"regular": 40, "sale": None}
+                price5g = {"regular": 60, "sale": None}
+                price14g = {"regular": 140, "sale": None}
+            elif tier == "PREMIUM":
+                price3g = {"regular": 30, "sale": None}
+                price5g = {"regular": 45, "sale": None}
+                price14g = {"regular": 95, "sale": None}
+            elif tier == "AAA+":
+                price3g = {"regular": 20, "sale": None}
+                price5g = {"regular": 30, "sale": None}
+                price14g = {"regular": 70, "sale": None}
+            elif tier == "AA":
+                price5g = {"regular": 20, "sale": None}
+                price14g = {"regular": 40, "sale": None}
+            elif tier == "BUDGET":
+                price3g = {"regular": 10, "sale": None}
+                price28g = {"regular": 55, "sale": None}
+
         # Determine isSale from any price point having a sale price
         is_sale_detected = False
         for pp in (price3g, price5g, price14g, price28g):
