@@ -55,7 +55,7 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "Does The Planet 60 have a live menu?", a: "Yes! Our online menu at theplanet60.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
       { q: "What makes The Planet 60 different from other Brampton dispensaries?", a: "Three things set us apart: (1) We're open 24 hours, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our Buy 2g Get 1g FREE promotion. Plus we carry one of Brampton's largest selections with over 200 strains." },
       { q: "Can I check stock before visiting?", a: "Absolutely. Visit theplanet60.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
-      { q: "Is there parking near The Planet 60?", a: "Yes. Free street parking is available in the evenings on Jane St and surrounding residential streets. We're also easily accessible via local transit." },
+      { q: "Is there parking near The Planet 60?", a: "Yes. Free street parking is available nearby and surrounding residential streets. We're also easily accessible via local transit." },
     ],
   },
 
@@ -113,8 +113,8 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "There are three reasons Brampton smokers keep coming back to The Planet 60 for their cigarettes. First, our prices are among the lowest in the Peter Robertson Blvd & Torbram Rd area — we buy in volume and pass the savings to our customers. Second, our selection is comprehensive — we carry brands and varieties that many other shops simply don't stock. Third, we're open 24 hours a day, 7 days a week. Need cigarettes at midnight? 3 AM? We're here. No other tobacco shop in Brampton offers this level of convenience.",
       },
       {
-        heading: "Convenient Jane Street Location",
-        body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Weston Rd, Lawrence Ave W, Highway 401, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available on Jane St and nearby streets. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
+        heading: "Convenient {{NEIGHBOURHOOD}} Location",
+        body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Weston Rd, Lawrence Ave W, Highway 401, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available nearby. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
       },
       {
         heading: "More Than Just Cigarettes",
@@ -166,8 +166,8 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "Is it worth driving from Mississauga for cannabis?", a: "Absolutely. The Planet 60 offers 200+ strains, prices starting at $3/g, and promotions like Buy 2g Get 1g FREE that make the short drive incredibly worthwhile." },
       { q: "Is The Planet 60 open late?", a: "We're open 24 hours a day, 7 days a week. Whether you're driving up from Mississauga at noon or midnight, we're open and ready to serve you." },
       { q: "What's the cheapest weed near Mississauga?", a: "The Planet 60 has Budget flower from $3/g and value ounces from $40. With our Buy 2g Get 1g FREE promo, these are some of the best prices in the Greater Toronto Area." },
-      { q: "Is there parking at The Planet 60?", a: "Yes. Free evening street parking is available near the store on Jane St and surrounding residential streets." },
-      { q: "Can I take transit from Mississauga to The Planet 60?", a: "Yes! Local transit connects directly subway and bus routes that will drop you off right near our location on Jane St." },
+      { q: "Is there parking at The Planet 60?", a: "Yes. Free evening street parking is available near the store and surrounding residential streets." },
+      { q: "Can I take transit from Mississauga to The Planet 60?", a: "Yes! Local transit connects directly subway and bus routes that will drop you off right near our location." },
       { q: "Do you carry products besides cannabis?", a: "Yes — we also carry native cigarettes, rolling papers, grinders, and other accessories. Many Mississauga customers appreciate the one-stop convenience." },
     ],
   },

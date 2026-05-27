@@ -101,7 +101,7 @@ export default async function SeoLandingPage({
             <h2 className={styles.sectionTitle}>Find Us</h2>
             <div className={styles.mapWrap}>
               <iframe
-                src="https://maps.google.com/maps?q=1664%20Jane%20St,%20Brampton,%20ON%20M9N%202S1&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=1098%20Peter%20Robertson%20Blvd%20%2310,%20Brampton,%20ON%20L6R%201G6&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="350"
                 style={{ border: 0, borderRadius: "var(--radius-lg)" }}
