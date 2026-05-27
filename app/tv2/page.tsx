@@ -213,7 +213,7 @@ export default function TV2Page() {
       <div className={styles.wrap} ref={wrapRef}>
         {/* TV BANNER */}
         <div style={{margin:"-40px -40px 30px -40px", width:"calc(100% + 80px)"}}>
-          <img src="/banners/26_Mohawk_ItemTV.webp" alt="Mohawk Medicine Items TV Menu" style={{width:"100%",display:"block"}} />
+          <img src="/banners/ItemTv.webp" alt="The Planet 60 Items TV Menu" style={{width:"100%",display:"block"}} />
         </div>
         {/* GRID */}
         <div className={styles.stage}>
