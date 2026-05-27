@@ -104,14 +104,36 @@ def slugify(name: str) -> str:
     return s.strip("-")
 
 
-def parse_price_cell(val: str):
+def parse_single_price(val: str):
     if not val or val.strip() in ("", "-", "N/A", "None"):
         return None
-    cleaned = val.strip().replace("$", "").replace(",", "")
     try:
-        return int(float(cleaned))
+        return int(float(val.strip()))
     except ValueError:
         return None
+
+def parse_price_point(val: str):
+    if not val or val.strip() in ("", "-", "N/A", "None"):
+        return None
+    val_str = str(val).strip().replace("$", "").replace(",", "")
+    if "|" in val_str:
+        parts = val_str.split("|")
+        reg_val = parse_single_price(parts[0])
+        sale_val = parse_single_price(parts[1])
+        if reg_val is not None:
+            return {"regular": reg_val, "sale": sale_val}
+        return None
+    else:
+        reg_val = parse_single_price(val_str)
+        if reg_val is not None:
+            return {"regular": reg_val, "sale": None}
+        return None
+
+def parse_price_cell(val: str):
+    pp = parse_price_point(val)
+    if pp:
+        return pp.get("regular")
+    return None
 
 
 def parse_thc(val: str) -> str:
@@ -224,11 +246,11 @@ def build_flowers(product_rows: list[dict], flag_lookup: dict) -> list[dict]:
             skipped += 1
             continue
 
-        # Parse prices
-        price3g = parse_price_cell(row.get("Price_3G", ""))
-        price5g = parse_price_cell(row.get("Price_5G", ""))
-        price14g = parse_price_cell(row.get("Price_14G", ""))
-        price28g = parse_price_cell(row.get("Price_28G", ""))
+        # Parse prices using parse_price_point
+        price3g = parse_price_point(row.get("Price_3G", ""))
+        price5g = parse_price_point(row.get("Price_5G", ""))
+        price14g = parse_price_point(row.get("Price_14G", ""))
+        price28g = parse_price_point(row.get("Price_28G", ""))
 
         # Apply weight visibility flags
         if flags:
@@ -239,19 +261,30 @@ def build_flowers(product_rows: list[dict], flag_lookup: dict) -> list[dict]:
             if not flags.get("show28g", True):
                 price28g = None
 
+        # Determine isSale from any price point having a sale price
+        is_sale_detected = False
+        for pp in (price3g, price5g, price14g, price28g):
+            if pp and pp.get("sale") is not None:
+                is_sale_detected = True
+                break
+
+        # Also check if name or Type contains "SALE"
+        if not is_sale_detected:
+            is_sale_detected = "SALE" in name.upper() or "SALE" in row.get("Type", "").upper()
+
         flower = {
             "sku": sku,
             "name": name,
             "slug": slugify(name),
             "tier": tier,
             "type": detect_type(row.get("Type", "hybrid")),
-            "isHot": False,
-            "isSale": False,
+            "isHot": "HOT" in row.get("Type", "").upper() or "HOT" in name.upper(),
+            "isSale": is_sale_detected,
             "thc": parse_thc(row.get("THC", "")),
-            "price3g": {"regular": price3g, "sale": None} if price3g else None,
-            "price5g": {"regular": price5g, "sale": None} if price5g else None,
-            "price14g": {"regular": price14g, "sale": None} if price14g else None,
-            "price28g": {"regular": price28g, "sale": None} if price28g else None,
+            "price3g": price3g,
+            "price5g": price5g,
+            "price14g": price14g,
+            "price28g": price28g,
             "image": row.get("ImageURL", "").strip(),
             "promoImage": row.get("PPromo", "").strip() or None,
         }

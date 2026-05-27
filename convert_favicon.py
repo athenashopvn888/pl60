@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-source_path = r'C:\Users\YesWe\Desktop\Dispensary Templates\the-planet-60\image\storeFavicon.webp'
+source_path = r'C:\Users\YesWe\Desktop\Dispensary Templates\pl60\Banner\Favicon.png'
 root_dir = r'C:\Users\YesWe\Desktop\Dispensary Templates\the-planet-60'
 
 try:
@@ -33,9 +33,13 @@ try:
     resized_180.save(os.path.join(root_dir, 'app', 'apple-icon.png'), format='PNG')
     print("app/apple-icon.png updated successfully!")
     
-    # 6. Copy source WebP as after_dark_favicon.webp in banners too, just in case any banner code references it!
+    # 6. Copy source WebP as after_dark_favicon.webp in banners too
     img.save(os.path.join(root_dir, 'public', 'banners', 'after_dark_favicon.webp'), format='WEBP')
     print("public/banners/after_dark_favicon.webp updated!")
+
+    # 7. Update public/storeFavicon.webp for Age Gate
+    resized_256.save(os.path.join(root_dir, 'public', 'storeFavicon.webp'), format='WEBP')
+    print("public/storeFavicon.webp updated successfully!")
 
 except Exception as e:
     print(f"Error: {e}")

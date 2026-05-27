@@ -118,12 +118,12 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
 
 /* -- TICKER -- */
 const TICKER_SLIDES = [
-  "🔥 Mohawk Medicine — 2655 Eglinton Ave E, Scarborough",
+  "🪐 The Planet 60 — 1098 Peter Robertson Blvd #10, Brampton",
   "200+ Strains In Stock",
   "Open 24 Hours",
   "Pre-Rolls · Edibles · Vapes · Concentrates",
   "ALL SALES ARE FINAL",
-  "🎮 Play Games at mohawkmedicine.com/games",
+  "🎮 Play Games at theplanet60.com/games",
 ];
 
 function VerticalTicker() {
