@@ -113,7 +113,7 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "There are three reasons Brampton smokers keep coming back to The Planet 60 for their cigarettes. First, our prices are among the lowest in the Peter Robertson Blvd & Torbram Rd area — we buy in volume and pass the savings to our customers. Second, our selection is comprehensive — we carry brands and varieties that many other shops simply don't stock. Third, we're open 24 hours a day, 7 days a week. Need cigarettes at midnight? 3 AM? We're here. No other tobacco shop in Brampton offers this level of convenience.",
       },
       {
-        heading: "Convenient {{NEIGHBOURHOOD}} Location",
+        heading: "Convenient Peter Robertson Blvd & Torbram Rd Location",
         body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Weston Rd, Lawrence Ave W, Highway 401, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available nearby. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
       },
       {

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "FAQ — The Planet 60 | Brampton Dispensary Questions",
   description:
     "Frequently asked questions about The Planet 60 in Brampton. Hours, location, products, pricing, promotions, and everything you need to know before visiting.",
+  alternates: {
+    canonical: "https://theplanet60.com/faq",
+  },
 };
 
 const FAQ_CATEGORIES = [

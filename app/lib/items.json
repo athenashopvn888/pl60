@@ -1,17 +1,5 @@
 [
   {
-    "sku": "920",
-    "name": "DEADLY MOONROCK PREROLL",
-    "slug": "deadly-moonrock-preroll",
-    "category": "PREROLLS",
-    "type": "i/h/s",
-    "thc": "",
-    "mg": "",
-    "price": "$20",
-    "image": "https://athena-cannabis-images.vercel.app/products/920-DEADLY-PREROLL.png",
-    "promoImage": null
-  },
-  {
     "sku": "836",
     "name": "*CLEARANCE* ZLAB ZPODS ASSORTED 2 ML",
     "slug": "clearance-zlab-zpods-assorted-2-ml",
@@ -24,15 +12,63 @@
     "promoImage": null
   },
   {
-    "sku": "868",
-    "name": "*NEW* AFGHAN HASH",
-    "slug": "new-afghan-hash",
-    "category": "CONCENTRATES",
+    "sku": "1085",
+    "name": "Level X Boost G2 device kit",
+    "slug": "level-x-boost-g2-device-kit",
+    "category": "VAPE PENS",
     "type": "",
     "thc": "",
     "mg": "",
+    "price": "$15",
+    "image": "https://athena-cannabis-images.vercel.app/products/1085-Level-X-Boost-G2-device-kit.webp",
+    "promoImage": null
+  },
+  {
+    "sku": "1093",
+    "name": "Flavour Beast e-liquid salt",
+    "slug": "flavour-beast-e-liquid-salt",
+    "category": "VAPE PENS",
+    "type": "",
+    "thc": "",
+    "mg": "",
+    "price": "$35",
+    "image": "https://athena-cannabis-images.vercel.app/products/1093-Flavour-Beast-e-liquid-salt.webp",
+    "promoImage": null
+  },
+  {
+    "sku": "615",
+    "name": "STELLAR GUMMIES 500MG",
+    "slug": "stellar-gummies-500mg",
+    "category": "EDIBLES",
+    "type": "",
+    "thc": "",
+    "mg": "500mg",
     "price": "$25",
-    "image": "https://athena-cannabis-images.vercel.app/products/Afghan-Hash.webp",
+    "image": "https://athena-cannabis-images.vercel.app/products/615-Stellar-Gummies-500mg.jpg",
+    "promoImage": null
+  },
+  {
+    "sku": "633",
+    "name": "MINDF*CK GUMMIES BAR 5000MG",
+    "slug": "mindfck-gummies-bar-5000mg",
+    "category": "MAGIC & OTHERS",
+    "type": "",
+    "thc": "",
+    "mg": "5000mg",
+    "price": "$35",
+    "image": "https://athena-cannabis-images.vercel.app/products/631-Mindfck-Psilocybin-Gummies-Bar-5000mg.jpg",
+    "promoImage": null
+  },
+  {
+    "sku": "920",
+    "name": "DEADLY MOONROCK PREROLL",
+    "slug": "deadly-moonrock-preroll",
+    "category": "PREROLLS",
+    "type": "i/h/s",
+    "thc": "",
+    "mg": "",
+    "price": "$20",
+    "image": "https://athena-cannabis-images.vercel.app/products/920-DEADLY-PREROLL.png",
     "promoImage": null
   },
   {
@@ -45,6 +81,18 @@
     "mg": "",
     "price": "",
     "image": "https://athena-cannabis-images.vercel.app/products/999Cigs.webp",
+    "promoImage": null
+  },
+  {
+    "sku": "868",
+    "name": "*NEW* AFGHAN HASH",
+    "slug": "new-afghan-hash",
+    "category": "CONCENTRATES",
+    "type": "",
+    "thc": "",
+    "mg": "",
+    "price": "$25",
+    "image": "https://athena-cannabis-images.vercel.app/products/Afghan-Hash.webp",
     "promoImage": null
   },
   {
@@ -72,39 +120,15 @@
     "promoImage": null
   },
   {
-    "sku": "1093",
-    "name": "Flavour Beast e-liquid salt",
-    "slug": "flavour-beast-e-liquid-salt",
-    "category": "VAPE PENS",
-    "type": "",
-    "thc": "",
-    "mg": "",
-    "price": "$35",
-    "image": "https://athena-cannabis-images.vercel.app/products/1093-Flavour-Beast-e-liquid-salt.webp",
-    "promoImage": null
-  },
-  {
-    "sku": "389",
-    "name": "LAUGHING BUDDHA 1G SAT PRE-ROLL",
-    "slug": "laughing-buddha-1g-sat-pre-roll",
+    "sku": "388",
+    "name": "PINK KUSH 1G IND PR-ROLL",
+    "slug": "pink-kush-1g-ind-pr-roll",
     "category": "ADD ONS",
-    "type": "SH",
+    "type": "IH",
     "thc": "31%",
     "mg": "",
     "price": "$8",
-    "image": "https://athena-cannabis-images.vercel.app/products/pinkkush.webp",
-    "promoImage": null
-  },
-  {
-    "sku": "1085",
-    "name": "Level X Boost G2 device kit",
-    "slug": "level-x-boost-g2-device-kit",
-    "category": "VAPE PENS",
-    "type": "",
-    "thc": "",
-    "mg": "",
-    "price": "$15",
-    "image": "https://athena-cannabis-images.vercel.app/products/1085-Level-X-Boost-G2-device-kit.webp",
+    "image": "https://athena-cannabis-images.vercel.app/products/laughingbuddha.webp",
     "promoImage": null
   },
   {
@@ -132,30 +156,6 @@
     "promoImage": null
   },
   {
-    "sku": "633",
-    "name": "MINDF*CK GUMMIES BAR 5000MG",
-    "slug": "mindfck-gummies-bar-5000mg",
-    "category": "MAGIC & OTHERS",
-    "type": "",
-    "thc": "",
-    "mg": "5000mg",
-    "price": "$35",
-    "image": "https://athena-cannabis-images.vercel.app/products/631-Mindfck-Psilocybin-Gummies-Bar-5000mg.jpg",
-    "promoImage": null
-  },
-  {
-    "sku": "1098",
-    "name": "NEXA PIX – 5% | 35K PUFFS | MANY FLAVORS",
-    "slug": "nexa-pix-5-35k-puffs-many-flavors",
-    "category": "VAPE PENS",
-    "type": "",
-    "thc": "",
-    "mg": "",
-    "price": "$35",
-    "image": "https://athena-cannabis-images.vercel.app/products/strawberryicenexapix35kdisposable1.webp",
-    "promoImage": null
-  },
-  {
     "sku": "188",
     "name": "PINK ANIMAL 1G IND PRE-ROLL",
     "slug": "pink-animal-1g-ind-pre-roll",
@@ -180,15 +180,15 @@
     "promoImage": null
   },
   {
-    "sku": "388",
-    "name": "PINK KUSH 1G IND PR-ROLL",
-    "slug": "pink-kush-1g-ind-pr-roll",
+    "sku": "389",
+    "name": "LAUGHING BUDDHA 1G SAT PRE-ROLL",
+    "slug": "laughing-buddha-1g-sat-pre-roll",
     "category": "ADD ONS",
-    "type": "IH",
+    "type": "SH",
     "thc": "31%",
     "mg": "",
     "price": "$8",
-    "image": "https://athena-cannabis-images.vercel.app/products/laughingbuddha.webp",
+    "image": "https://athena-cannabis-images.vercel.app/products/pinkkush.webp",
     "promoImage": null
   },
   {
@@ -216,18 +216,6 @@
     "promoImage": null
   },
   {
-    "sku": "615",
-    "name": "STELLAR GUMMIES 500MG",
-    "slug": "stellar-gummies-500mg",
-    "category": "EDIBLES",
-    "type": "",
-    "thc": "",
-    "mg": "500mg",
-    "price": "$25",
-    "image": "https://athena-cannabis-images.vercel.app/products/615-Stellar-Gummies-500mg.jpg",
-    "promoImage": null
-  },
-  {
     "sku": "691",
     "name": "Stoner PATCH",
     "slug": "stoner-patch",
@@ -249,6 +237,18 @@
     "mg": "",
     "price": "$12",
     "image": "https://athena-cannabis-images.vercel.app/products/strawberrycough.webp",
+    "promoImage": null
+  },
+  {
+    "sku": "1098",
+    "name": "NEXA PIX – 5% | 35K PUFFS | MANY FLAVORS",
+    "slug": "nexa-pix-5-35k-puffs-many-flavors",
+    "category": "VAPE PENS",
+    "type": "",
+    "thc": "",
+    "mg": "",
+    "price": "$35",
+    "image": "https://athena-cannabis-images.vercel.app/products/strawberryicenexapix35kdisposable1.webp",
     "promoImage": null
   },
   {
