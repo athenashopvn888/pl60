@@ -128,7 +128,7 @@ export default function PostContent() {
 
         <div className={styles.cta}>
           <p>
-            <strong>The Planet 60</strong> — 1098 Peter Robertson Blvd #10, Brampton · Open 24 Hours · (437) 388-8538
+            <strong>The Planet 60</strong> — 1098 Peter Robertson Blvd #10, Brampton · Open 24 Hours · (437) 230-6974
           </p>
           <Link href="/exotic" className={styles.ctaBtn}>Browse Our Menu</Link>
         </div>

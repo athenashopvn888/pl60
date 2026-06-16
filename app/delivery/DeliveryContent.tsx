@@ -101,7 +101,7 @@ export default function DeliveryContent() {
         <div className={styles.ctaSection}>
           <p className={styles.ctaText}>
             Can&apos;t wait? Visit us in-store at <strong>1098 Peter Robertson Blvd #10, Brampton</strong> —
-            open <strong>24 hours</strong>. Call <strong>(437) 388-8538</strong>.
+            open <strong>24 hours</strong>. Call <strong>(437) 230-6974</strong>.
           </p>
         </div>
       </div>

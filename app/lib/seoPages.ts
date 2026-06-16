@@ -44,7 +44,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Serving Brampton, Toronto & Mississauga",
-        body: "The Planet 60 proudly serves customers from across the Greater Toronto Area. Whether you're coming from Weston, Mount Dennis, North Brampton, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Our 24-hour operation means you can visit on your own schedule. Call us at (437) 388-8538 or visit us at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+        body: "The Planet 60 proudly serves customers from across the Greater Toronto Area. Whether you're coming from Weston, Mount Dennis, North Brampton, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Our 24-hour operation means you can visit on your own schedule. Call us at (437) 230-6974 or visit us at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
       },
     ],
     faqs: [

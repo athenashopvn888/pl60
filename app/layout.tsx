@@ -77,7 +77,7 @@ const jsonLd = {
   name: "The Planet 60",
   description: "Cannabis dispensary at 1098 Peter Robertson Blvd #10 in Brampton, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 24 Hours.",
   url: "https://theplanet60.com",
-  telephone: "+14373888538",
+  telephone: "+14372306974",
   image: "https://theplanet60.com/wp-content/uploads/2026/04/7Clmh.jpg",
   priceRange: "$3 - $12/g",
   address: {

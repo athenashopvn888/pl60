@@ -78,7 +78,7 @@ const LOCAL_FAQS = [
   },
   {
     q: "Where is The Planet 60 located?",
-    a: "We are located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6. Visit us in person or call us at (437) 388-8538. Free evening parking is available nearby.",
+    a: "We are located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6. Visit us in person or call us at (437) 230-6974. Free evening parking is available nearby.",
   },
   {
     q: "What is the cheapest weed at The Planet 60?",

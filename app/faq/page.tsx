@@ -114,7 +114,7 @@ export default function FAQPage() {
           <div className={styles.ctaSection}>
             <h2 className={styles.ctaTitle}>Still have questions?</h2>
             <p className={styles.ctaText}>
-              Call us at <strong>(437) 388-8538</strong> or visit us at 1098 Peter Robertson Blvd #10, Brampton.
+              Call us at <strong>(437) 230-6974</strong> or visit us at 1098 Peter Robertson Blvd #10, Brampton.
             </p>
             <a
               href="https://maps.app.goo.gl/sLhHrKNLpGkDxyd57"
