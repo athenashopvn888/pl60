@@ -44,14 +44,6 @@ export default function ContactPage() {
                 <br />
                 <span className={styles.infoMuted}>Peter Robertson Blvd & Torbram Rd</span>
               </p>
-              <a
-                href="https://maps.app.goo.gl/sLhHrKNLpGkDxyd57"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.infoBtn}
-              >
-                Get Directions â†’
-              </a>
             </div>
 
             {/* Hours */}
@@ -128,16 +120,6 @@ export default function ContactPage() {
 
           {/* Map */}
           <div className={styles.mapSection}>
-            <iframe
-              src="https://maps.google.com/maps?q=1098 Peter Robertson Blvd #10,+Brampton,+ON+L6R 1G6&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="The Planet 60 â€” 1098 Peter Robertson Blvd #10, Brampton"
-            ></iframe>
           </div>
         </div>
       </section>

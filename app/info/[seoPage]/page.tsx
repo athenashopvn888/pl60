@@ -103,26 +103,8 @@ export default async function SeoLandingPage({
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Find Us</h2>
             <div className={styles.mapWrap}>
-              <iframe
-                src="https://maps.google.com/maps?q=1098%20Peter%20Robertson%20Blvd%20%2310,%20Brampton,%20ON%20L6R%201G6&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="350"
-                style={{ border: 0, borderRadius: "var(--radius-lg)" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="The Planet 60 — 1098 Peter Robertson Blvd #10, Brampton"
-              />
             </div>
             <div className={styles.visitBtns}>
-              <a
-                href="https://maps.app.goo.gl/sLhHrKNLpGkDxyd57"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.visitBtn}
-              >
-                📍 Get Directions
-              </a>
             </div>
           </div>
 

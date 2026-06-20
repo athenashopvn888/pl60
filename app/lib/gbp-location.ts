@@ -24,8 +24,8 @@ export const gbpLocation = {
     "Accessories"
   ],
   menuUrl: "/",
-  directionsUrl: "https://maps.app.goo.gl/sLhHrKNLpGkDxyd57",
-  mapEmbedUrl: "https://maps.google.com/maps?q=The%20Planet%2060%201098%20Peter%20Robertson%20Blvd%20%2310%2C%20Brampton%2C%20ON%20L6R%201G6&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  directionsUrl: "",
+  mapEmbedUrl: "",
   latitude: "43.7579871",
   longitude: "-79.7371271",
   hours: ["Open 24 Hours"],

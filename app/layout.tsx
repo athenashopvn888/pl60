@@ -101,20 +101,9 @@ const jsonLd = {
       closes: "23:59",
     },
   ],
-  sameAs: [
-    "https://maps.app.goo.gl/sLhHrKNLpGkDxyd57",
-    "https://maps.app.goo.gl/sLhHrKNLpGkDxyd57",
-  ],
-  hasMap: "https://maps.app.goo.gl/sLhHrKNLpGkDxyd57",
   areaServed: {
     "@type": "City",
     name: "Brampton",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "15",
-    bestRating: "5",
   },
 };
 
