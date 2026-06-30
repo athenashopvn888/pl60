@@ -5,11 +5,11 @@ import AgeGate from "./components/AgeGate";
 export const metadata: Metadata = {
   metadataBase: new URL("https://theplanet60.com"),
   title: {
-    default: "The Planet 60 — Premium Cannabis Dispensary, Brampton",
+    default: "Planet 60 Cannabis | 24-Hour Brampton Dispensary",
     template: "%s | The Planet 60",
   },
   description:
-    "Shop 200+ premium cannabis strains at The Planet 60. Exotic, Premium, AAA+, AA & Budget flower from $3/g. Brampton's uplifting dispensary at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
+    "Planet 60 Cannabis is a Brampton cannabis dispensary on Peter Robertson Blvd with menu categories, local store details, and adult 19+ shopping info. Open 24 Hours.",
   keywords: [
     "cannabis dispensary Brampton",
     "weed store Brampton",
