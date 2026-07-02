@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://theplanet60.com/sitemap.xml",
+    sitemap: "https://www.theplanet60.com/sitemap.xml",
   };
 }

@@ -25,7 +25,7 @@ export const STORE_BLOG_CONFIG = {
   storeCode: "PL601",
   storeName: "Planet 60 Cannabis",
   city: "Brampton",
-  domain: "theplanet60.com",
+  domain: "www.theplanet60.com",
   storePath: "/weed-dispensary-brampton",
 };
 
