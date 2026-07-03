@@ -132,6 +132,10 @@ export function GBPLandingPage() {
         <p className={styles.infoText}>
           The store is near {gbpLocation.neighborhood || gbpLocation.city}, with local reference points including {landmarkList}. Nearby shoppers also use this page from {nearbyAreaList}.
         </p>
+        <p className={styles.infoText}>
+          For a fuller local overview, read the{" "}
+          <Link href="/blog/planet-60-cannabis-brampton-guide">Planet 60 Brampton guide</Link>.
+        </p>
       </section>
 
       {/* Location & NAP Section */}
