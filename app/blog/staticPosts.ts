@@ -191,17 +191,17 @@ This guide is for adults 19+ who want a simple way to understand Planet 60 Canna
     relatedLinks: [
       {
         title: "Planet 60 Cannabis store page",
-        url: "https://theplanet60cannabis.com/weed-dispensary-brampton",
+        url: "https://www.theplanet60.com/weed-dispensary-brampton",
         description: "Store-specific page for directions, contact details, and visit planning."
       },
       {
         title: "Planet 60 Cannabis homepage",
-        url: "https://theplanet60cannabis.com/",
+        url: "https://www.theplanet60.com/",
         description: "Store-scoped homepage navigation for adults 19+."
       },
       {
         title: "More Planet 60 Cannabis guides",
-        url: "https://theplanet60cannabis.com/blog",
+        url: "https://www.theplanet60.com/blog",
         description: "Store-scoped blog index for future approved guides."
       }
     ],
