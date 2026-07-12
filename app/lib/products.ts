@@ -161,7 +161,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     banner: "/banners/edibles_prerolls_more_banner.webp",
     name: "Edibles", slug: "edibles", color: "#f97316", icon: "🍬",
     seoTitle: "Cannabis Edibles Brampton — Gummies, Chocolates & Drinks",
-    seoIntro: "Browse the full cannabis edibles menu at The Planet 60 on Brampton St, Brampton. We carry THC gummies, chocolates, drinks, and more from top Canadian brands.",
+    seoIntro: "Browse the full cannabis edibles menu at The Planet 60 on Peter Robertson Blvd, Brampton. We carry THC gummies, chocolates, drinks, and more from top Canadian brands.",
     seoDescription: "Looking for cannabis edibles in Brampton? The Planet 60 stocks a wide range of THC-infused gummies, chocolates, beverages, and baked goods. Our edibles range from micro-dose options for beginners to high-potency products for experienced consumers. All products are lab-tested and sourced from licensed Canadian producers. Visit us at 1098 Peter Robertson Blvd #10 — open daily 24 hours.",
     faqs: [
       { q: "What cannabis edibles do you carry?", a: "We stock THC gummies, chocolates, beverages, capsules, and baked goods from top Canadian brands. Potencies range from 10mg to 1000mg+ THC." },
@@ -174,7 +174,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "💨",
     seoTitle: "Vape Pens Brampton — THC & Nicotine Cartridges",
     seoIntro: "Shop THC and nicotine vape pens at The Planet 60, Brampton. Cartridges, 510-thread batteries, and premium vape brands — all in stock.",
-    seoDescription: "The Planet 60 carries a curated selection of vape pens and cartridges in Brampton. From 510-thread THC cartridges to nicotine vape pods, we stock the most popular brands and flavours. Our knowledgeable budtenders can help you choose the right cartridge and battery setup. Visit us at 1098 Peter Robertson Blvd #10 for the best vape selection in ByWard Market.",
+    seoDescription: "The Planet 60 carries a curated selection of vape pens and cartridges in Brampton. From 510-thread THC cartridges to nicotine vape pods, we stock the most popular brands and flavours. Our knowledgeable budtenders can help you choose the right cartridge and battery setup. Visit us at 1098 Peter Robertson Blvd #10 for the best vape selection in Springdale.",
     faqs: [
       { q: "What vape pens do you sell?", a: "We carry 510-thread THC cartridges, nicotine vape pods, disposable vapes, and compatible batteries from top Canadian brands." },
       { q: "Do you sell vape batteries?", a: "Yes! We stock 510-thread batteries and pod systems that pair with our cartridge selection." },
@@ -223,6 +223,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "MAGIC & OTHERS": {
+    banner: "/banners/09_Magic_Stuff.webp",
     name: "Magic Stuff", slug: "magic", color: "#64748b", icon: "*",
     seoTitle: "Magic Stuff - Specialty Items",
     seoIntro: "Browse current menu for available specialty products. Availability may vary by store.",
@@ -236,12 +237,12 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     banner: "/banners/06_Cigarettes.webp",
     name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "🏷️",
     seoTitle: "Native Cigarettes Brampton — Discount Tobacco at The Planet 60",
-    seoIntro: "Discount native cigarettes at The Planet 60, Brampton. Premium and value brands at the best prices on Brampton St.",
-    seoDescription: "The Planet 60 is your go-to source for affordable native cigarettes in Brampton. We carry a wide selection of premium and value tobacco brands at competitive prices. Located at 1098 Peter Robertson Blvd #10 in the heart of ByWard Market, we're open daily 24 hours. Stop by for the best cigarette prices in the neighbourhood.",
+    seoIntro: "Discount native cigarettes at The Planet 60, Brampton. Premium and value brands at the best prices on Peter Robertson Blvd.",
+    seoDescription: "The Planet 60 is your go-to source for affordable native cigarettes in Brampton. We carry a wide selection of premium and value tobacco brands at competitive prices. Located at 1098 Peter Robertson Blvd #10 in the heart of Springdale, we're open daily 24 hours. Stop by for the best cigarette prices in the neighbourhood.",
     faqs: [
       { q: "Do you sell cigarettes at The Planet 60?", a: "Yes! We carry a wide selection of native cigarette brands at competitive prices." },
       { q: "What cigarette brands do you carry?", a: "We stock a variety of premium and value native cigarette brands. Visit us to see our full in-store selection." },
-      { q: "Are your cigarette prices competitive?", a: "Absolutely. We offer some of the best cigarette prices in the ByWard Market area of Brampton." },
+      { q: "Are your cigarette prices competitive?", a: "Absolutely. We offer some of the best cigarette prices in the Springdale area of Brampton." },
     ],
   },
 };
@@ -295,3 +296,5 @@ export function formatPrice(p: PricePoint | null): string {
   if (p.sale !== null) return `$${p.sale}`;
   return `$${p.regular}`;
 }
+
+

@@ -364,6 +364,99 @@
   scroll-snap-align: start;
 }
 
+.orbitResources {
+  padding: 84px 0;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(148, 255, 42, 0.12), transparent 28%),
+    radial-gradient(circle at 82% 72%, rgba(175, 69, 255, 0.16), transparent 32%),
+    #070312;
+  color: #fff;
+}
+
+.orbitHeader {
+  max-width: 790px;
+  margin-bottom: 28px;
+}
+
+.orbitEyebrow {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 8px 13px;
+  color: #b6ff3a;
+  background: rgba(148, 255, 42, 0.12);
+  border: 1px solid rgba(148, 255, 42, 0.38);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.orbitHeader h2 {
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 0.96;
+  margin: 14px 0;
+  letter-spacing: 0;
+}
+
+.orbitHeader p,
+.orbitCard p {
+  color: #cbd5e1;
+  line-height: 1.62;
+}
+
+.orbitMainLink {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: #b6ff3a;
+  color: #0b0614;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.orbitGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.orbitCard {
+  min-height: 244px;
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(135deg, rgba(148, 255, 42, 0.08), rgba(175, 69, 255, 0.1)),
+    #0b0614;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+}
+
+.orbitCard b {
+  color: rgba(148, 255, 42, 0.75);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.orbitCard h3 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.02;
+}
+
+@media (max-width: 840px) {
+  .orbitGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .scrollItem {
     flex: 0 0 240px;
@@ -904,3 +997,4 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+

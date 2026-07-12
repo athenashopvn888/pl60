@@ -1,0 +1,190 @@
+.main {
+  min-height: 100vh;
+  background: #05020c;
+  color: #f8fafc;
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+.hero {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 136px 0 54px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.heroImage,
+.articleImage {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 255, 42, 0.38);
+  box-shadow: 0 0 0 1px rgba(175, 69, 255, 0.18), 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 32px;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(148, 255, 42, 0.18), transparent 28%),
+    radial-gradient(circle at 84% 84%, rgba(175, 69, 255, 0.22), transparent 34%),
+    #0d0719;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.heroCopy h1,
+.article h1 {
+  margin: 14px 0;
+  font-size: clamp(38px, 6vw, 76px);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.heroCopy p,
+.summary {
+  color: #cbd5e1;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.55;
+}
+
+.eyebrow,
+.card span {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 8px 13px;
+  color: #b6ff3a;
+  background: rgba(148, 255, 42, 0.12);
+  border: 1px solid rgba(148, 255, 42, 0.38);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.grid {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 0 0 78px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  min-height: 252px;
+  padding: 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background:
+    linear-gradient(135deg, rgba(148, 255, 42, 0.08), rgba(175, 69, 255, 0.1)),
+    #0b0614;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.38);
+}
+
+.card b {
+  color: rgba(148, 255, 42, 0.75);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.02;
+}
+
+.card p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.article {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 132px 0 76px;
+}
+
+.articleImage {
+  margin-bottom: 28px;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 286px;
+  gap: 20px;
+  align-items: start;
+  margin-top: 32px;
+}
+
+.copy,
+.sideBox {
+  border-radius: 18px;
+  background: rgba(13, 7, 25, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.copy {
+  padding: 10px 30px;
+}
+
+.copy section {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.copy section:last-child {
+  border-bottom: 0;
+}
+
+.copy h2,
+.sideBox h2 {
+  margin: 0 0 12px;
+}
+
+.copy p {
+  color: #cbd5e1;
+  line-height: 1.72;
+}
+
+.sideBox {
+  padding: 22px;
+  position: sticky;
+  top: 130px;
+}
+
+.sideBox a {
+  display: block;
+  padding: 12px 0;
+  color: #b6ff3a;
+  font-weight: 850;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 880px) {
+  .hero,
+  .grid,
+  .articleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 112px;
+  }
+
+  .sideBox {
+    position: static;
+  }
+}

@@ -16,7 +16,7 @@ export const SEO_PAGES: SeoPageData[] = [
   {
     slug: "york-weed-dispensary",
     title: "Brampton Weed Dispensary — The Planet 60 | 24 Hours | Peter Robertson Blvd & Torbram Rd",
-    metaDescription: "The Planet 60 is Brampton's #1 24-hour weed dispensary at 1098 Peter Robertson Blvd #10 near Weston. 200+ strains, THC up to 39%, edibles, vapes, concentrates & more. Walk in anytime.",
+    metaDescription: "The Planet 60 is Brampton's #1 24-hour weed dispensary at 1098 Peter Robertson Blvd #10 near Springdale. 200+ strains, THC up to 39%, edibles, vapes, concentrates & more. Walk in anytime.",
     h1: "Brampton Weed Dispensary — The Planet 60",
     icon: "✨",
     heroTagline: "Premium Cannabis on Peter Robertson Blvd & Torbram Rd · Open 24 Hours · Walk-In Welcome",
@@ -44,7 +44,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Serving Brampton, Toronto & Mississauga",
-        body: "The Planet 60 proudly serves customers from across the Greater Toronto Area. Whether you're coming from Weston, Mount Dennis, North Brampton, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Our 24-hour operation means you can visit on your own schedule. Call us at (437) 230-6974 or visit us at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+        body: "The Planet 60 proudly serves customers from across the Greater Toronto Area. Whether you're coming from North Brampton, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Our 24-hour operation means you can visit on your own schedule. Call us at (437) 230-6974 or visit us at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
       },
     ],
     faqs: [
@@ -102,7 +102,7 @@ export const SEO_PAGES: SeoPageData[] = [
     h1: "Native Cigarettes Brampton — Discount Tobacco",
     icon: "🏷️",
     heroTagline: "Premium & Value Brands · Best Prices in Brampton · Open 24 Hours",
-    banner: "/banners/edibles_prerolls_more_banner.webp",
+    banner: "/banners/06_Cigarettes.webp",
     sections: [
       {
         heading: "Brampton's Best Selection of Native Cigarettes",
@@ -114,7 +114,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Convenient Peter Robertson Blvd & Torbram Rd Location",
-        body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Weston Rd, Lawrence Ave W, Highway 401, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available nearby. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
+        body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Peter Robertson Blvd, Torbram Rd, and major Brampton routes, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available nearby. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
       },
       {
         heading: "More Than Just Cigarettes",
@@ -124,7 +124,7 @@ export const SEO_PAGES: SeoPageData[] = [
     faqs: [
       { q: "Does The Planet 60 sell native cigarettes?", a: "Yes! We carry one of the widest selections of native cigarettes in Brampton, including premium brands, value brands, full-flavour, light, and menthol varieties." },
       { q: "What cigarette brands do you carry?", a: "We stock a comprehensive range of native cigarette brands in multiple varieties. Our selection rotates regularly. Visit us at 1098 Peter Robertson Blvd #10 to see our full current inventory and pricing." },
-      { q: "Where can I buy cheap cigarettes in Brampton?", a: "The Planet 60 at 1098 Peter Robertson Blvd #10 offers some of the best cigarette prices in Brampton's Weston area. We're open 24 hours so you can shop on your own schedule." },
+      { q: "Where can I buy cheap cigarettes in Brampton?", a: "The Planet 60 at 1098 Peter Robertson Blvd #10 offers some of the best cigarette prices in Brampton's Springdale area. We're open 24 hours so you can shop on your own schedule." },
       { q: "Are you open late for cigarette purchases?", a: "We're open 24 hours a day, 7 days a week. Whether you need cigarettes at noon or 3 AM, our doors are always open." },
       { q: "Can I buy cigarettes and cannabis at The Planet 60?", a: "Absolutely. The Planet 60 is both a fully-licensed cannabis dispensary and a tobacco retailer. Many customers appreciate the convenience of one stop for both products." },
       { q: "Where is The Planet 60 located?", a: "1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6 — in Peter Robertson Blvd & Torbram Rd area. Near transit routes with free street parking available." },
@@ -207,3 +207,6 @@ export const SEO_PAGES: SeoPageData[] = [
 export function getSeoPageBySlug(slug: string): SeoPageData | undefined {
   return SEO_PAGES.find((p) => p.slug === slug);
 }
+
+
+

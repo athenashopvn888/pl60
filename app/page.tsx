@@ -66,6 +66,27 @@ const EXPLORE_CATEGORIES = [
   { name: "Games Arcade", slug: "games", banner: "/banners/10_Games.webp", icon: "🎮" },
 ];
 
+const ORBIT_RESOURCES = [
+  {
+    href: "/resources/peter-robertson-visit-guide",
+    code: "01",
+    title: "Peter Robertson visit guide",
+    body: "The quick orbit for planning a stop at 1098 Peter Robertson Blvd #10.",
+  },
+  {
+    href: "/resources/springdale-menu-guide",
+    code: "02",
+    title: "Springdale menu guide",
+    body: "Flower tiers, format lanes, and resource shortcuts for Brampton shoppers.",
+  },
+  {
+    href: "/resources/value-and-vape-guide",
+    code: "03",
+    title: "Value and vape guide",
+    body: "Budget, AA, THC vapes, nic vapes, and add-ons grouped into one route.",
+  },
+];
+
 /* ── Local FAQs for Brampton ── */
 const LOCAL_FAQS = [
   {
@@ -322,6 +343,30 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* -- ORBIT RESOURCE CONTROL -- */}
+      <section className={styles.orbitResources}>
+        <div className={styles.container}>
+          <div className={styles.orbitHeader}>
+            <span className={styles.orbitEyebrow}>P60 resource orbit</span>
+            <h2>Useful pages grouped like a control panel.</h2>
+            <p>
+              Peter Robertson visit notes, Springdale menu paths, flower tier logic,
+              late-night shopping, native smokes, and vape/value shortcuts.
+            </p>
+            <Link href="/resources" className={styles.orbitMainLink}>Open Resources</Link>
+          </div>
+          <div className={styles.orbitGrid}>
+            {ORBIT_RESOURCES.map((resource) => (
+              <Link key={resource.href} href={resource.href} className={styles.orbitCard}>
+                <b>{resource.code}</b>
+                <h3>{resource.title}</h3>
+                <p>{resource.body}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CLIENT-SIDE GOOGLE REVIEWS SHOWCASE ── */}
       <section className={styles.reviewsSection}>
         <div className={styles.container}>
@@ -440,3 +485,4 @@ export default function HomePage() {
     </main>
   );
 }
+

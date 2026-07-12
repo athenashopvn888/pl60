@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Navbar from "../components/Navbar";
@@ -37,12 +37,12 @@ export default function DeliveryContent() {
         </h1>
         <p className={styles.pageSubtitle}>
           The Planet 60 is launching delivery across Brampton.
-          Sign up below to be the first to know when we go live — and get an exclusive launch-day deal.
+          Sign up below to be the first to know when we go live â€” and get an exclusive launch-day deal.
         </p>
 
         {/* Email signup */}
         <div className={styles.formSection}>
-          <h2 className={styles.formTitle}>🔔 Get Notified When We Launch</h2>
+          <h2 className={styles.formTitle}>ðŸ”” Get Notified When We Launch</h2>
           <p className={styles.formDesc}>
             Enter your email to join our delivery waitlist. We&apos;ll send you one email when delivery goes live.
           </p>
@@ -68,7 +68,7 @@ export default function DeliveryContent() {
           </form>
           {status === "success" && (
             <p className={styles.successMsg}>
-              ✅ You&apos;re on the list! We&apos;ll notify you when delivery launches.
+              âœ… You&apos;re on the list! We&apos;ll notify you when delivery launches.
             </p>
           )}
           {status === "error" && (
@@ -81,17 +81,17 @@ export default function DeliveryContent() {
         {/* Info cards */}
         <div className={styles.infoGrid}>
           <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>📦</span>
+            <span className={styles.infoIcon}>ðŸ“¦</span>
             <h3 className={styles.infoTitle}>Same-Day Delivery</h3>
             <p className={styles.infoDesc}>Order before 6 PM, delivered same day across Brampton.</p>
           </div>
           <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>🌉</span>
-            <h3 className={styles.infoTitle}>Brampton & Gatineau</h3>
+            <span className={styles.infoIcon}>ðŸŒ‰</span>
+            <h3 className={styles.infoTitle}>Brampton Area</h3>
             <p className={styles.infoDesc}>Serving the entire National Capital Region.</p>
           </div>
           <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>💰</span>
+            <span className={styles.infoIcon}>ðŸ’°</span>
             <h3 className={styles.infoTitle}>Same Great Prices</h3>
             <p className={styles.infoDesc}>All in-store promotions apply to delivery orders too.</p>
           </div>
@@ -100,7 +100,7 @@ export default function DeliveryContent() {
         {/* CTA */}
         <div className={styles.ctaSection}>
           <p className={styles.ctaText}>
-            Can&apos;t wait? Visit us in-store at <strong>1098 Peter Robertson Blvd #10, Brampton</strong> —
+            Can&apos;t wait? Visit us in-store at <strong>1098 Peter Robertson Blvd #10, Brampton</strong> â€”
             open <strong>24 hours</strong>. Call <strong>(437) 230-6974</strong>.
           </p>
         </div>
@@ -109,3 +109,4 @@ export default function DeliveryContent() {
     </main>
   );
 }
+
