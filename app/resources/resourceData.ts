@@ -37,10 +37,10 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     eyebrow: "Springdale menu",
     summary: "A sharper menu map for shoppers around Springdale, Peter Robertson Blvd, and nearby Brampton routes.",
     sections: [
-      { heading: "Build Around Local Search", body: "This guide gives The Planet 60 a stronger answer for Springdale cannabis menu searches. It names the actual Brampton area, the Peter Robertson Blvd location, and the useful product categories without changing any existing slugs." },
+      { heading: "Use The Local Area", body: "This guide is built for Springdale cannabis menu searches. It names the Brampton area, the Peter Robertson Blvd location, and the useful product categories while keeping the shopper path simple." },
       { heading: "Flower Tiers First", body: "Exotic, Premium, AAA+, AA, and Budget work like the main orbit rings. Shoppers who search top-shelf flower, premium weed, or cheap weed in Brampton can land on a category that matches intent instead of a flat product list." },
       { heading: "Formats Stay Separate", body: "Pre-rolls, THC vapes, nic vapes, edibles, concentrates, cigarettes, magic items, and accessories should remain separate lanes. That keeps the menu readable for shoppers who already know the format they want." },
-      { heading: "Resources Are Decision Pages", body: "The resource pages should not pretend to be live inventory. They should explain the store paths, support Brampton keywords, and send shoppers to the category pages for current selection." },
+      { heading: "Use Guides For Direction", body: "These guides are for choosing the right path, not replacing live inventory. Use them to understand the store layout, then open the category pages for current selection." },
     ],
     quickLinks: [
       { label: "THC vapes", href: "/items/vapes" },
@@ -57,7 +57,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     sections: [
       { heading: "Exotic And Premium Orbit", body: "Exotic and Premium are the high-signal flower lanes for shoppers who want top-shelf cannabis flower in Brampton. These pages should speak to quality-first shoppers without making fixed claims about a strain that may rotate." },
       { heading: "AAA+ And AA Orbit", body: "AAA+ and AA sit in the practical middle. They help shoppers compare value and quality before visiting the Peter Robertson Blvd shop, especially when the goal is reliable flower without jumping straight to the highest tier." },
-      { heading: "Budget Orbit", body: "Budget is the value path for shoppers searching cheap weed in Brampton or a lower-spend flower option. It deserves its own clear internal link instead of being buried at the bottom of the menu." },
+      { heading: "Budget Orbit", body: "Budget is the value path for shoppers searching cheap weed in Brampton or a lower-spend flower option. It stays visible so value shoppers can move straight to the right lane." },
       { heading: "Why The Tiers Matter", body: "The tier system gives The Planet 60 search coverage for premium flower, value flower, and Brampton cannabis menu intent while still keeping the shopper experience simple." },
     ],
     quickLinks: [
@@ -74,7 +74,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     summary: "A night-shopping guide for The Planet 60 visitors who want fast category decisions before heading to Peter Robertson Blvd.",
     sections: [
       { heading: "Use The Menu Like A Control Panel", body: "Late-night shoppers do not need a maze. The clean path is one main lane, one backup lane, and the visit page for store basics. That could mean Budget flower plus pre-rolls, THC vapes plus accessories, or cigarettes plus add-ons." },
-      { heading: "Good For Shift Workers", body: "A 24-hour Brampton cannabis shop can serve people outside the normal retail rhythm: night shifts, early starts, and late errands. The page should speak directly to that use case instead of sounding like a generic blog." },
+      { heading: "Good For Shift Workers", body: "A 24-hour Brampton cannabis shop can serve people outside the normal retail rhythm: night shifts, early starts, and late errands. The guide keeps that use case practical and easy to scan." },
       { heading: "Fast Categories", body: "Flower, pre-rolls, THC vapes, edibles, and concentrates are the fastest high-intent categories to compare before a late visit. Cigarettes and accessories round out the trip for shoppers who want more than cannabis." },
       { heading: "Keep It Responsible", body: "Open 24 hours does not change ID checks or adult-use expectations. Bring valid 19+ ID, review the menu before leaving, and let the live category pages handle current product detail." },
     ],
@@ -94,7 +94,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       { heading: "Give Cigarette Shoppers A Direct Lane", body: "The cigarette category should not feel like an afterthought. This page gives native cigarette shoppers a direct path to /items/cigarettes while still keeping the full Planet 60 cannabis menu close by." },
       { heading: "Use Peter Robertson Keywords", body: "The page now connects the cigarette lane to The Planet 60 location at 1098 Peter Robertson Blvd #10, Brampton. That gives the resource a real local target instead of repeating the same generic copy used on other stores." },
       { heading: "Pair With Accessories", body: "Cigarette shoppers often need papers, lighters, or other small add-ons. Accessories belong beside the cigarette link so a shopper can plan the whole stop in one pass." },
-      { heading: "Do Not Freeze Inventory In Copy", body: "Exact tobacco brand mix and carton availability can change. The SEO page should target native cigarettes Brampton and guide the shopper, while the category page and store counter handle current selection." },
+      { heading: "Keep Selection Current", body: "Exact tobacco brand mix and carton availability can change. Use this guide for the native cigarettes Brampton path, then check the category page or store counter for current selection." },
     ],
     quickLinks: [
       { label: "Cigarettes", href: "/items/cigarettes" },
@@ -111,7 +111,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     sections: [
       { heading: "Value Flower Path", body: "Budget and AA are the simplest starting points for shoppers searching affordable cannabis or cheap weed in Brampton. These pages let The Planet 60 speak to value intent without flattening the rest of the flower tiers." },
       { heading: "THC Vape Path", body: "The THC vape page is for cannabis vape shoppers looking for cartridges, pens, and vape-first products when listed. Keeping it separate from nic vapes prevents mixed intent and makes the menu clearer." },
-      { heading: "Nic Vape Path", body: "Nic vapes have their own route because disposable nicotine vape shoppers are not always cannabis shoppers. The resource page makes that distinction obvious and helps the nav feel more deliberate." },
+      { heading: "Nic Vape Path", body: "Nic vapes have their own route because disposable nicotine vape shoppers are not always cannabis shoppers. Keeping the lane separate makes the menu easier to understand." },
       { heading: "Accessory Add-Ons", body: "Accessories connect the value and vape paths with practical add-ons like papers, lighters, batteries, and tools. Use the live category pages for current products and this resource as the shopper map." },
     ],
     quickLinks: [
