@@ -87,14 +87,14 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
   {
     slug: "native-smokes-guide",
     title: "Native Cigarettes Brampton Guide",
-    metaDescription: "Find The Planet 60 native cigarettes in Brampton with cigarette category links, accessories, Peter Robertson Blvd visit notes, and cannabis menu shortcuts.",
+    metaDescription: "Find The Planet 60 native cigarettes in Brampton with brands and prices including Canadian, Canadian Goose, Canadian Classics, Putters, Nexus, Time, Backwoods, Grabba, and 10 x Premium Mix.",
     eyebrow: "Cigarettes",
-    summary: "A dedicated cigarette resource for shoppers searching native cigarettes Brampton near Peter Robertson Blvd and Springdale.",
+    summary: "A dedicated cigarette resource with real Brampton cigarette brands, listed prices, and tobacco add-ons for Peter Robertson Blvd shoppers.",
     sections: [
-      { heading: "Give Cigarette Shoppers A Direct Lane", body: "The cigarette category should not feel like an afterthought. This page gives native cigarette shoppers a direct path to /items/cigarettes while still keeping the full Planet 60 cannabis menu close by." },
-      { heading: "Use Peter Robertson Keywords", body: "The page now connects the cigarette lane to The Planet 60 location at 1098 Peter Robertson Blvd #10, Brampton. That gives the resource a real local target instead of repeating the same generic copy used on other stores." },
-      { heading: "Pair With Accessories", body: "Cigarette shoppers often need papers, lighters, or other small add-ons. Accessories belong beside the cigarette link so a shopper can plan the whole stop in one pass." },
-      { heading: "Keep Selection Current", body: "Exact tobacco brand mix and carton availability can change. Use this guide for the native cigarettes Brampton path, then check the category page or store counter for current selection." },
+      { heading: "Cigarette Brands On The Menu", body: "The Planet 60 cigarette lane lists Canadian Lights, Canadian Full, Canadian Menthol, Canadian Goose Full, Canadian Goose Lights, Canadian Classics Original, Canadian Classics Silver, Putters, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full." },
+      { heading: "Listed Cigarette Prices", body: "Most native cigarette packs in the current menu are listed at $25 each. The 10 x Premium Mix Cigarettes item is listed at $3, giving Springdale and Peter Robertson Blvd shoppers a low-cost quick-pick option." },
+      { heading: "Pouches, Grabba, And Backwoods", body: "The tobacco section also includes nicotine pouches from Velo, Pablo, and Killa listed at $20, Grabba listed at $5, Grabba Shaker in RedRose or Red Herring listed at $19, Backwoods assorted flavours listed from $20-$25, and new Backwoods flavours listed at $25." },
+      { heading: "Check Current Stock", body: "Brand mix, flavour mix, carton availability, and prices can rotate. Use /items/cigarettes for the current Planet 60 cigarette menu before visiting, then pair the stop with accessories, flower, pre-rolls, edibles, or THC vapes if needed." },
     ],
     quickLinks: [
       { label: "Cigarettes", href: "/items/cigarettes" },

@@ -236,13 +236,13 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   CIGARETTES: {
     banner: "/banners/06_Cigarettes.webp",
     name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "🏷️",
-    seoTitle: "Native Cigarettes Brampton — Discount Tobacco at The Planet 60",
-    seoIntro: "Discount native cigarettes at The Planet 60, Brampton. Premium and value brands at the best prices on Peter Robertson Blvd.",
-    seoDescription: "The Planet 60 is your go-to source for affordable native cigarettes in Brampton. We carry a wide selection of premium and value tobacco brands at competitive prices. Located at 1098 Peter Robertson Blvd #10 in the heart of Springdale, we're open daily 24 hours. Stop by for the best cigarette prices in the neighbourhood.",
+    seoTitle: "Native Cigarettes Brampton - Brands And Prices at The Planet 60",
+    seoIntro: "Shop native cigarettes in Brampton at The Planet 60 with listed brands like Canadian, Canadian Goose, Canadian Classics, Putters, Rolled Gold, Nexus, Time, Backwoods, Grabba, and nicotine pouches.",
+    seoDescription: "The Planet 60 lists native cigarette packs at $25 for many brands, plus 10 x Premium Mix Cigarettes at $3, nicotine pouches from Velo, Pablo, and Killa at $20, Grabba at $5, Grabba Shaker at $19, and Backwoods options from $20-$25. Visit 1098 Peter Robertson Blvd #10 in Brampton and check the live cigarette menu for current stock.",
     faqs: [
-      { q: "Do you sell cigarettes at The Planet 60?", a: "Yes! We carry a wide selection of native cigarette brands at competitive prices." },
-      { q: "What cigarette brands do you carry?", a: "We stock a variety of premium and value native cigarette brands. Visit us to see our full in-store selection." },
-      { q: "Are your cigarette prices competitive?", a: "Absolutely. We offer some of the best cigarette prices in the Springdale area of Brampton." },
+      { q: "Do you sell native cigarettes at The Planet 60?", a: "Yes. The cigarette menu includes brands such as Canadian Lights, Canadian Full, Canadian Menthol, Canadian Goose, Canadian Classics, Putters, Rolled Gold, Nexus, and Time." },
+      { q: "How much are cigarettes at The Planet 60?", a: "Many native cigarette packs are listed at $25. The menu also lists 10 x Premium Mix Cigarettes at $3, nicotine pouches at $20, Grabba at $5, Grabba Shaker at $19, and Backwoods options from $20-$25." },
+      { q: "Do cigarette brands and prices change?", a: "Yes. Brand mix, flavours, carton options, and prices can rotate, so check the live cigarette category before visiting Peter Robertson Blvd." },
     ],
   },
 };
