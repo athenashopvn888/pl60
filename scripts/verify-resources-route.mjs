@@ -51,6 +51,8 @@ const sitemap = read("app/sitemap.ts");
 const navbar = read("app/components/Navbar.tsx");
 const footer = read("app/components/Footer.tsx");
 const seoPages = read("app/lib/seoPages.ts");
+const deliveryPage = read("app/delivery/page.tsx");
+const deliveryContent = read("app/delivery/DeliveryContent.tsx");
 
 const routeMatches = [...resourceData.matchAll(/path:\s*"([^"]+)"/g)].map((match) => match[1]);
 const uniqueRoutes = new Set(routeMatches);
@@ -109,10 +111,25 @@ const bannedPhrases = [
   "repository",
   "source material",
 ];
+const bannedDeliveryPhrases = [
+  "same-day",
+  "order before 6 pm",
+  "national capital region",
+  "gatineau",
+  "all in-store promotions apply",
+  "exclusive launch-day deal",
+];
 
 for (const phrase of bannedPhrases) {
   if (publicCopy.includes(phrase)) {
     fail(`Public copy still contains banned phrase: ${phrase}`);
+  }
+}
+
+const deliveryCopy = [deliveryPage, deliveryContent].join("\n").toLowerCase();
+for (const phrase of bannedDeliveryPhrases) {
+  if (deliveryCopy.includes(phrase)) {
+    fail(`Delivery copy contains unapproved launch claim: ${phrase}`);
   }
 }
 
