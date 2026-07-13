@@ -14,6 +14,28 @@ const read = (relativePath) => {
 };
 
 const exists = (relativePath) => fs.existsSync(path.join(root, relativePath));
+const sourceExtensions = new Set([".ts", ".tsx", ".js", ".jsx", ".mjs", ".css"]);
+const mojibakePatterns = [
+  new RegExp("\\u00e2", "u"),
+  new RegExp("\\u00c2", "u"),
+  new RegExp("\\u00f0\\u0178", "u"),
+  new RegExp("\\u00ef\\u00b8", "u"),
+  new RegExp("\\ufffd", "u"),
+];
+
+function collectSourceFiles(dir) {
+  const fullDir = path.join(root, dir);
+  if (!fs.existsSync(fullDir)) return [];
+
+  return fs.readdirSync(fullDir, { withFileTypes: true }).flatMap((entry) => {
+    const fullPath = path.join(fullDir, entry.name);
+    if (entry.isDirectory()) {
+      if (["node_modules", ".next", ".git"].includes(entry.name)) return [];
+      return collectSourceFiles(path.relative(root, fullPath));
+    }
+    return sourceExtensions.has(path.extname(entry.name)) ? [fullPath] : [];
+  });
+}
 
 if (!exists("app/resources/[...slug]/page.tsx")) {
   fail("Resources must use the catch-all app/resources/[...slug]/page.tsx route.");
@@ -91,6 +113,16 @@ const bannedPhrases = [
 for (const phrase of bannedPhrases) {
   if (publicCopy.includes(phrase)) {
     fail(`Public copy still contains banned phrase: ${phrase}`);
+  }
+}
+
+for (const file of [...collectSourceFiles("app"), ...collectSourceFiles("scripts")]) {
+  const text = fs.readFileSync(file, "utf8");
+  const rel = path.relative(root, file).replaceAll("\\", "/");
+  for (const pattern of mojibakePatterns) {
+    if (pattern.test(text)) {
+      fail(`Source contains mojibake (${pattern}) in ${rel}`);
+    }
   }
 }
 
