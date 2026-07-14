@@ -1,5 +1,3 @@
-/* ── Geo-targeted SEO landing pages for Brampton/Weston keywords ── */
-
 export interface SeoPageData {
   slug: string;
   title: string;
@@ -14,192 +12,228 @@ export interface SeoPageData {
 
 export const SEO_PAGES: SeoPageData[] = [
   {
-    slug: "york-weed-dispensary",
-    title: "Brampton Weed Dispensary — The Planet 60 | 24 Hours | Peter Robertson Blvd & Torbram Rd",
-    metaDescription: "The Planet 60 is Brampton's #1 24-hour weed dispensary at 1098 Peter Robertson Blvd #10 near Springdale. 200+ strains, THC up to 39%, edibles, vapes, concentrates & more. Walk in anytime.",
-    h1: "Brampton Weed Dispensary — The Planet 60",
-    icon: "✨",
-    heroTagline: "Premium Cannabis on Peter Robertson Blvd & Torbram Rd · Open 24 Hours · Walk-In Welcome",
+    slug: "brampton-weed-dispensary",
+    title: "Brampton Weed Dispensary | The Planet 60 | 24 Hours",
+    metaDescription:
+      "The Planet 60 is a 24-hour Brampton weed dispensary at 1098 Peter Robertson Blvd #10 with flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff.",
+    h1: "Brampton Weed Dispensary",
+    icon: "P60",
+    heroTagline: "Peter Robertson Blvd cannabis shop with 24-hour access.",
     banner: "/banners/welcome_banner.webp",
     sections: [
       {
-        heading: "Brampton's Premier Cannabis Destination",
-        body: "The Planet 60 is a premium cannabis dispensary located at 1098 Peter Robertson Blvd #10 in the heart of Brampton's vibrant Peter Robertson Blvd & Torbram Rd area. We carry over 200 hand-picked cannabis strains across five quality tiers — from ultra-rare Exotic genetics with THC up to 39% to affordable Budget flower starting at just $3/g. Whether you're a connoisseur seeking the rarest strains or a daily smoker looking for reliable value, The Planet 60 has the perfect flower for you. We're proud to be one of Brampton's most trusted dispensaries, serving our community 24 hours a day, 7 days a week.",
+        heading: "The Planet 60 On Peter Robertson Blvd",
+        body:
+          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton. The site is organized around clear shopper paths: flower tiers, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, Magic Stuff, and the Brampton visit page.",
       },
       {
-        heading: "Five Tiers of Quality Cannabis — Transparent Pricing",
-        body: "Our unique tier system ensures transparent pricing and quality grading so you always know what you're getting. Exotic ($10-$12/g) features top-shelf, ultra-rare genetics with THC levels reaching 35-39% — these are the strains connoisseurs travel across Brampton to find. Premium ($7-$10/g) offers connoisseur-grade strains at THC 32-34%, balancing quality and value. AAA+ ($5-$6/g) delivers heavy hitters at THC 30-32% — our most popular tier for experienced users. AA ($4/g) provides quality daily drivers at THC 27-29%, perfect for regular consumption. Budget ($3/g) offers value ounces from $40 without sacrificing reliability. Every tier is lab-tested, properly cured, and freshly rotated.",
+        heading: "A Menu Built For Fast Choices",
+        body:
+          "Flower shoppers can start with Exotic, Premium, AAA+, AA, or Budget. Format-first shoppers can jump to edibles, pre-rolls, vapes, concentrates, cigarettes, accessories, or specialty categories without sorting through every flower page.",
       },
       {
-        heading: "Beyond Flower — Edibles, Vapes, Concentrates & More",
-        body: "The Planet 60 is more than just a flower shop. We carry a comprehensive selection of cannabis edibles (gummies, chocolates, baked goods), vape pens and disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, native cigarettes, rolling papers, and accessories. Our live digital menu at theplanet60.com updates in real time so you always know exactly what's in stock before you make the trip.",
+        heading: "Open 24 Hours",
+        body:
+          "The Planet 60 lists 24-hour access for Brampton shoppers. Late-night and early-morning visitors can check the menu path, bring valid 19+ ID, and use the FAQ or contact page for store basics.",
       },
       {
-        heading: "Open 24 Hours on Peter Robertson Blvd & Torbram Rd",
-        body: "Unlike most dispensaries that close at midnight, The Planet 60 is open around the clock — 24 hours a day, 7 days a week, 365 days a year. Whether you're finishing a late shift, heading out for the night, or need something at 3 AM, our doors are always open. We're centrally located at 1098 Peter Robertson Blvd #10, near major transit bus routes, close to major highways and central stations. Free street parking is available near the dispensary.",
-      },
-      {
-        heading: "Clear Bundle Pricing on Flower",
-        body: "Every purchase at The Planet 60 comes with our bundle offers. Our 3g bundle offer applies to every single tier — the 3g total is shown clearly before purchase. Our top three tiers (Exotic, Premium, and AAA+) also qualify for 6g bundle pricing for 6g total. Combined with our already competitive pricing, The Planet 60 offers some of the best cannabis value in Brampton, Toronto, and the surrounding area.",
-      },
-      {
-        heading: "Serving Brampton, Toronto & Mississauga",
-        body: "The Planet 60 proudly serves customers from across the Greater Toronto Area. Whether you're coming from North Brampton, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Our 24-hour operation means you can visit on your own schedule. Call us at (437) 230-6974 or visit us at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+        heading: "Springdale And Peter Robertson Visits",
+        body:
+          "The Peter Robertson Blvd shop is organized for Brampton shoppers around Springdale, Torbram Road, Bramalea, and nearby local routes. Category pages carry current products and prices as the menu rotates.",
       },
     ],
     faqs: [
-      { q: "Where is The Planet 60 located?", a: "We are located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6 — in the heart of Peter Robertson Blvd & Torbram Rd area — one of Brampton's most accessible areas. We're near major transit bus routes and close to major highways." },
-      { q: "What are the hours for The Planet 60?", a: "We are open 24 hours a day, 7 days a week, 365 days a year. Walk in anytime — no appointment needed. Whether it's 2 PM or 2 AM, our staff is here to help." },
-      { q: "What cannabis products does The Planet 60 carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, native cigarettes, and accessories. Our menu updates in real time online." },
-      { q: "What is the cheapest weed at The Planet 60?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our 3g bundle pricing, making our prices even more competitive." },
-      { q: "Does The Planet 60 have a live menu?", a: "Yes! Our online menu at theplanet60.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
-      { q: "What makes The Planet 60 different from other Brampton dispensaries?", a: "Three things set us apart: (1) We're open 24 hours, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our 3g bundle pricing. Plus we carry one of Brampton's largest selections with over 200 strains." },
-      { q: "Can I check stock before visiting?", a: "Absolutely. Visit theplanet60.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
-      { q: "Is there parking near The Planet 60?", a: "Yes. Free street parking is available nearby and surrounding residential streets. We're also easily accessible via local transit." },
+      {
+        q: "Where is The Planet 60 located?",
+        a: "The Planet 60 is at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+      },
+      {
+        q: "What are the hours for The Planet 60?",
+        a: "The store lists Open 24 Hours. Bring valid 19+ government ID when visiting.",
+      },
+      {
+        q: "What menu categories does The Planet 60 carry?",
+        a: "The site includes flower tiers, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, and Magic Stuff.",
+      },
     ],
   },
-
   {
-    slug: "cheap-weed-york",
-    title: "Cheap Weed Brampton — Budget Cannabis Deals From $3/g | The Planet 60",
-    metaDescription: "Looking for cheap weed in Brampton? The Planet 60 has budget flower from $3/g, ounces from $40, and 3g bundle pricing. Open 24 hours at 1098 Peter Robertson Blvd #10.",
-    h1: "Cheap Weed Brampton — Budget Cannabis Deals",
-    icon: "💰",
-    heroTagline: "Budget Flower From $3/g · Ounces From $40 · Always Open",
+    slug: "cheap-weed-brampton",
+    title: "Cheap Weed Brampton | The Planet 60 Budget Flower",
+    metaDescription:
+      "Looking for cheap weed in Brampton? The Planet 60 has Budget, AA, AAA+, Premium, and Exotic flower paths at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
+    h1: "Cheap Weed Brampton",
+    icon: "$",
+    heroTagline: "Budget flower paths and clear tier shopping on Peter Robertson Blvd.",
     banner: "/banners/budget_banner.webp",
     sections: [
       {
-        heading: "Brampton's Best Prices on Quality Cannabis",
-        body: "Looking for cheap weed in Brampton without sacrificing quality? The Planet 60 offers some of the most competitive cannabis prices in the city. Our Budget tier starts at just $3/g with value ounces from $40. Our AA tier ($4/g) and AAA+ tier ($5-$6/g) also deliver incredible value with THC levels from 27% to 32%. We believe great cannabis shouldn't break the bank, and our transparent tier-based pricing ensures you always get exactly what you pay for — no hidden markups, no gimmicks.",
+        heading: "Start With Budget And AA",
+        body:
+          "The Planet 60 separates the value flower lanes so shoppers can compare Budget and AA without digging through premium shelves first.",
       },
       {
-        heading: "Flower Bundle Pricing",
-        body: "Every tier at The Planet 60 comes with our signature 3g bundle pricing — so the total grams and price are shown before purchase. Our top three tiers (Exotic, Premium, AAA+) also offer 6g bundle pricing for 6g total. When you combine our already low prices with these bundle offers, The Planet 60 delivers the best cannabis value in Brampton. A $15 AAA+ 3g purchase actually gets you 3g of flower — that's just $5/g for THC 30%+ cannabis.",
+        heading: "Compare Up The Tier Ladder",
+        body:
+          "If the value lane is not the move, shoppers can step up into AAA+, Premium, or Exotic. Choose the shelf first, then compare the current strains inside that shelf.",
       },
       {
-        heading: "Budget Doesn't Mean Low Quality",
-        body: "At The Planet 60, cheap doesn't mean low quality. Every strain in our Budget and AA tiers delivers reliable potency (THC 24-29%) from trusted Canadian growers. We rotate our inventory frequently to ensure freshness and maintain our quality standards across all price points. Our Budget strains are perfect for rolling, sessions, or anyone who prefers value over premium aesthetics. Our AA tier is a step up — solid daily drivers with consistent effects.",
+        heading: "Use Current Menu Pages",
+        body:
+          "Flower batches, strain names, and prices can rotate. The Budget, AA, AAA+, Premium, and Exotic pages should be checked for current product details before heading to Peter Robertson Blvd.",
       },
       {
-        heading: "Compare Our Prices",
-        body: "Budget: $3/g — $40/oz. AA: $4/g — $90/oz. AAA+: $5-$6/g — $100/oz. Premium: $7-$10/g. Exotic: $10-$12/g. Every tier includes 3g bundle pricing. Top tiers include 6g bundle pricing. These are some of the lowest prices you'll find at any dispensary in Brampton, Peter Robertson Blvd & Torbram Rd and surrounding areas.",
+        heading: "A 24-Hour Brampton Stop",
+        body:
+          "Because The Planet 60 lists 24-hour access, the value flower path works for daytime visits, night-shift shoppers, and early-morning errands.",
       },
     ],
     faqs: [
-      { q: "What is the cheapest weed at The Planet 60?", a: "Our Budget tier starts at $3/g with value ounces from $40. These are quality, properly-cured strains at Brampton's most competitive prices." },
-      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and 3g bundle pricing on top." },
-      { q: "Is cheap weed still good quality?", a: "Absolutely. Our Budget flower delivers THC 24-27% from trusted Canadian growers. We never sell old, dry, or improperly stored flower. Every product meets our quality standards regardless of price point." },
-      { q: "Where can I buy cheap weed in Brampton?", a: "The Planet 60 at 1098 Peter Robertson Blvd #10, Brampton. Open 24 hours a day, walk in anytime, no appointment needed. We're in the heart of Peter Robertson Blvd & Torbram Rd area." },
-      { q: "What bundle pricing do you offer?", a: "Every tier includes 3g bundle pricing (3g total). Our Exotic, Premium, and AAA+ tiers also offer 6g bundle pricing (6g total). These bundle offers apply on every visit." },
-      { q: "Do you offer bulk discounts?", a: "Yes — our ounce pricing is deeply discounted compared to per-gram rates. Budget ounces are $40, AA ounces $90, and AAA+ ounces $100. The more you buy, the more you save." },
+      {
+        q: "Where can I find Budget flower at The Planet 60?",
+        a: "Use the Budget Flower page from the menu or footer, then check the current listings before visiting.",
+      },
+      {
+        q: "Does The Planet 60 have more than Budget flower?",
+        a: "Yes. The flower menu is organized into Exotic, Premium, AAA+, AA, and Budget paths.",
+      },
+      {
+        q: "Is The Planet 60 open late for value flower shoppers?",
+        a: "The Planet 60 lists Open 24 Hours at 1098 Peter Robertson Blvd #10 in Brampton.",
+      },
     ],
   },
-
   {
-    slug: "native-cigarettes-york",
-    title: "Native Cigarettes Brampton — Discount Tobacco | The Planet 60",
-    metaDescription: "Buy native cigarettes in Brampton at The Planet 60. Wide selection of premium and value tobacco brands at the best prices. 1098 Peter Robertson Blvd #10, Peter Robertson Blvd & Torbram Rd. Open 24/7.",
-    h1: "Native Cigarettes Brampton — Discount Tobacco",
-    icon: "🏷️",
-    heroTagline: "Premium & Value Brands · Best Prices in Brampton · Open 24 Hours",
+    slug: "native-cigarettes-brampton",
+    title: "Native Cigarettes Brampton | The Planet 60",
+    metaDescription:
+      "The Planet 60 lists native cigarettes and tobacco add-ons in Brampton, including Canadian, Canadian Goose, Canadian Classics, Putters, Nexus, Time, Backwoods, Grabba, and nicotine pouches.",
+    h1: "Native Cigarettes Brampton",
+    icon: "19+",
+    heroTagline: "Cigarette, tobacco, and nicotine menu paths at the Peter Robertson Blvd shop.",
     banner: "/banners/06_Cigarettes.webp",
     sections: [
       {
-        heading: "Brampton's Best Selection of Native Cigarettes",
-        body: "The Planet 60 carries one of the widest selections of native cigarettes in Brampton. Located at 1098 Peter Robertson Blvd #10 near Peter Robertson Blvd & Torbram Rd, we stock a comprehensive range of both premium and value native cigarette brands at competitive prices. Whether you prefer full-flavour, light, menthol, or specialty blends, our tobacco selection has something for every smoker. We're proud to be one of the few stores in Brampton that combines a full cannabis dispensary with a comprehensive tobacco counter — one stop for everything you need.",
+        heading: "Brands Listed On The Menu",
+        body:
+          "The Planet 60 menu includes cigarette listings such as Canadian Lights, Canadian Full, Canadian Menthol, Canadian Goose Full, Canadian Goose Lights, Canadian Classics Original, Canadian Classics Silver, Putters, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
       },
       {
-        heading: "Why Brampton Smokers Choose The Planet 60",
-        body: "There are three reasons Brampton smokers keep coming back to The Planet 60 for their cigarettes. First, our prices are among the lowest in the Peter Robertson Blvd & Torbram Rd area — we buy in volume and pass the savings to our customers. Second, our selection is comprehensive — we carry brands and varieties that many other shops simply don't stock. Third, we're open 24 hours a day, 7 days a week. Need cigarettes at midnight? 3 AM? We're here. No other tobacco shop in Brampton offers this level of convenience.",
+        heading: "Price Lanes From Current Listings",
+        body:
+          "Many native cigarette pack listings show $25. The menu also includes 10 x Premium Mix Cigarettes at $3, nicotine pouches, Grabba, Grabba Shaker, and Backwoods listings with their own menu prices.",
       },
       {
-        heading: "Convenient Peter Robertson Blvd & Torbram Rd Location",
-        body: "Our shop at 1098 Peter Robertson Blvd #10 is centrally located in Brampton — easily accessible from Peter Robertson Blvd, Torbram Rd, and major Brampton routes, and all major Peel/Toronto routes. Whether you're walking, driving, or taking the bus, The Planet 60 is easy to reach. Free evening street parking is available nearby. We serve customers from across Brampton including Peter Robertson Blvd & Torbram Rd and surrounding areas.",
+        heading: "Adult Tobacco Boundary",
+        body:
+          "Smoking and nicotine use carry serious health risks. This page is for adult 19+ menu navigation only. Brand mix, flavours, and prices can rotate, so check the cigarette category before visiting.",
       },
       {
-        heading: "More Than Just Cigarettes",
-        body: "While you're picking up your cigarettes, browse our full cannabis menu — over 200 strains of flower, plus edibles, vapes, concentrates, pre-rolls, and accessories. Many of our customers appreciate the convenience of getting their cigarettes and cannabis in one trip. Our knowledgeable staff can help you with both sides of our inventory.",
+        heading: "One Peter Robertson Stop",
+        body:
+          "Cigarette shoppers can also use the accessories, flower, pre-roll, THC Vape, and Nic Vape paths from the same menu, which keeps the store easier to shop in one visit.",
       },
     ],
     faqs: [
-      { q: "Does The Planet 60 sell native cigarettes?", a: "Yes! We carry one of the widest selections of native cigarettes in Brampton, including premium brands, value brands, full-flavour, light, and menthol varieties." },
-      { q: "What cigarette brands do you carry?", a: "We stock a comprehensive range of native cigarette brands in multiple varieties. Our selection rotates regularly. Visit us at 1098 Peter Robertson Blvd #10 to see our full current inventory and pricing." },
-      { q: "Where can I buy cheap cigarettes in Brampton?", a: "The Planet 60 at 1098 Peter Robertson Blvd #10 offers some of the best cigarette prices in Brampton's Springdale area. We're open 24 hours so you can shop on your own schedule." },
-      { q: "Are you open late for cigarette purchases?", a: "We're open 24 hours a day, 7 days a week. Whether you need cigarettes at noon or 3 AM, our doors are always open." },
-      { q: "Can I buy cigarettes and cannabis at The Planet 60?", a: "Absolutely. The Planet 60 is both a fully-licensed cannabis dispensary and a tobacco retailer. Many customers appreciate the convenience of one stop for both products." },
-      { q: "Where is The Planet 60 located?", a: "1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6 — in Peter Robertson Blvd & Torbram Rd area. Near transit routes with free street parking available." },
+      {
+        q: "Does The Planet 60 sell cigarettes?",
+        a: "The Planet 60 menu includes a cigarettes category with native cigarette and tobacco-related listings.",
+      },
+      {
+        q: "Which cigarette brands are listed?",
+        a: "Current menu listings include Canadian, Canadian Goose, Canadian Classics, Putters, Rolled Gold, Nexus, and Time.",
+      },
+      {
+        q: "Are prices fixed?",
+        a: "Prices and brand mix can rotate. Check the cigarette category for current listings before visiting Peter Robertson Blvd.",
+      },
     ],
   },
-
   {
-    slug: "weed-store-near-mississauga",
-    title: "Weed Store Near Mississauga — The Planet 60",
-    metaDescription: "Looking for a weed store near Mississauga? The Planet 60 at 1098 Peter Robertson Blvd #10, Brampton is just minutes away via major highways. 200+ strains, open 24 hours.",
-    h1: "Weed Store Near Mississauga — The Planet 60",
-    icon: "🚗",
-    heroTagline: "Just Minutes From Mississauga via major highways · Open 24 Hours",
+    slug: "weed-store-near-brampton",
+    title: "Weed Store Near Brampton | The Planet 60",
+    metaDescription:
+      "The Planet 60 is a 24-hour Brampton weed store on Peter Robertson Blvd with flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff.",
+    h1: "Weed Store Near Brampton",
+    icon: "P60",
+    heroTagline: "A Peter Robertson Blvd cannabis stop for nearby Brampton shoppers.",
     banner: "/banners/welcome_banner.webp",
     sections: [
       {
-        heading: "The Closest Quality Dispensary to Mississauga",
-        body: "The Planet 60 is one of the closest premium cannabis dispensaries to Mississauga. Located at 1098 Peter Robertson Blvd #10 in Brampton — just minutes up Highway 410 and East on 401 — we're the easiest dispensary to reach when you're coming from the surrounding area. Whether you're driving from Mississauga and surrounding areas, The Planet 60 is the fastest, most convenient option for top-tier cannabis.",
+        heading: "Peter Robertson Blvd Weed Store",
+        body:
+          "The Planet 60 sits at 1098 Peter Robertson Blvd #10 in Brampton. The site keeps flower, edibles, vapes, concentrates, cigarettes, accessories, and specialty paths easy to scan before visiting.",
       },
       {
-        heading: "Why Make the Drive to The Planet 60?",
-        body: "The Planet 60 offers a wider selection and more competitive pricing than most local Peel options. You'll find over 200 strains across five quality tiers — from ultra-rare Exotic genetics (THC 35-39%) to affordable Budget flower at just $3/g. Our 3g bundle pricing applies to every tier, and our top three tiers offer 6g bundle pricing. With prices starting at $3/g and ounces from $40, The Planet 60 delivers value that's worth the short drive from Mississauga.",
+        heading: "Use The Menu Before Visiting",
+        body:
+          "A quick menu check helps shoppers decide whether the visit is about Budget flower, a Premium or Exotic shelf, pre-rolls, edibles, THC Vape, Nic Vape, concentrates, cigarettes, or accessories.",
       },
       {
-        heading: "Open 24 Hours — Perfect for Late Night Visits",
-        body: "Unlike most dispensaries in Peel Region with limited hours, The Planet 60 is open 24 hours a day, 7 days a week. Whether you're heading home from a late shift in Mississauga, going out for the night, or just need a quick pickup after hours, you can stop by The Planet 60 anytime. Early morning, late night, weekends, holidays — we're always here.",
-      },
-      {
-        heading: "Directions From Mississauga",
-        body: "We are located centrally at 1098 Peter Robertson Blvd #10, Brampton, making it easy to drive or take transit from Mississauga. Total drive time is just a few minutes. Free street parking is available.",
-      },
-      {
-        heading: "Full Menu — Cannabis, Edibles, Vapes & More",
-        body: "When you make the trip up to Brampton, make it count. The Planet 60 carries a full selection including 200+ flower strains, edibles, vape pens, disposable vapes, concentrates (shatter, wax, hash, live resin), pre-rolled joints, native cigarettes, and accessories. Check our live online menu at theplanet60.com before you visit to see exactly what's in stock.",
+        heading: "24-Hour Access",
+        body:
+          "The Planet 60 lists Open 24 Hours, which helps shoppers timing a visit around work, errands, or a late drive. Bring valid 19+ ID and check the category page before heading out.",
       },
     ],
     faqs: [
-      { q: "How far is The Planet 60 from Mississauga?", a: "We're located at 1098 Peter Robertson Blvd #10 in Brampton — just a 15-20 minute drive from central Mississauga via Highway 401 East." },
-      { q: "Is it worth driving from Mississauga for cannabis?", a: "Absolutely. The Planet 60 offers 200+ strains, prices starting at $3/g, and bundle pricing options like 3g total that make the short drive incredibly worthwhile." },
-      { q: "Is The Planet 60 open late?", a: "We're open 24 hours a day, 7 days a week. Whether you're driving up from Mississauga at noon or midnight, we're open and ready to serve you." },
-      { q: "What's the cheapest weed near Mississauga?", a: "The Planet 60 has Budget flower from $3/g and value ounces from $40. With our 3g bundle pricing, these are some of the best prices in the Greater Toronto Area." },
-      { q: "Is there parking at The Planet 60?", a: "Yes. Free evening street parking is available near the store and surrounding residential streets." },
-      { q: "Can I take transit from Mississauga to The Planet 60?", a: "Yes! Local transit connects directly subway and bus routes that will drop you off right near our location." },
-      { q: "Do you carry products besides cannabis?", a: "Yes — we also carry native cigarettes, rolling papers, grinders, and other accessories. Many Mississauga customers appreciate the one-stop convenience." },
+      {
+        q: "Where is The Planet 60?",
+        a: "The Planet 60 is at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+      },
+      {
+        q: "What area is The Planet 60 built around?",
+        a: "The site is focused on The Planet 60 in Brampton, especially the Peter Robertson Blvd and Springdale area.",
+      },
+      {
+        q: "What should I check before visiting?",
+        a: "Check the category page that matches your trip: flower tier, edibles, pre-rolls, vapes, concentrates, cigarettes, accessories, or Magic Stuff.",
+      },
     ],
   },
-
   {
-    slug: "dispensary-near-me-york",
-    title: "Cannabis Dispensary Near Me Brampton — The Planet 60 | Open 24 Hours",
-    metaDescription: "Find a cannabis dispensary near you in Brampton. The Planet 60 at 1098 Peter Robertson Blvd #10 has 200+ strains from $3/g. Open 24 hours. Walk in anytime, no appointment needed.",
-    h1: "Cannabis Dispensary Near Me — Brampton",
-    icon: "🗺️",
-    heroTagline: "Walk-In Welcome · Open 24 Hours · 200+ Strains In Stock",
+    slug: "dispensary-near-me-brampton",
+    title: "Cannabis Dispensary Near Me Brampton | The Planet 60",
+    metaDescription:
+      "Find The Planet 60 at 1098 Peter Robertson Blvd #10 in Brampton. Open 24 Hours with flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff paths.",
+    h1: "Cannabis Dispensary Near Me In Brampton",
+    icon: "P",
+    heroTagline: "A 24-hour Peter Robertson Blvd dispensary path for nearby Brampton shoppers.",
     banner: "/banners/welcome_banner.webp",
     sections: [
       {
-        heading: "Find Premium Cannabis Near You in Brampton",
-        body: "If you're searching for a cannabis dispensary near you in Brampton, The Planet 60 is conveniently located at 1098 Peter Robertson Blvd #10 — in the heart of Peter Robertson Blvd & Torbram Rd area. We serve customers from across Brampton, North Brampton, Etobicoke, Mississauga, and Toronto.",
+        heading: "Find The Peter Robertson Blvd Shop",
+        body:
+          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton. Nearby shoppers can use the menu to pick a flower tier or format category before visiting.",
       },
       {
-        heading: "Why Choose The Planet 60 Over Other Dispensaries?",
-        body: "What sets The Planet 60 apart from other Brampton dispensaries is our combination of selection, pricing, and convenience. We carry 200+ strains across five clear quality tiers — no confusing markups, no inconsistent pricing. Our 3g bundle pricing applies to every tier, every purchase. And unlike most dispensaries that close at midnight, we're open 24 hours a day, 7 days a week. Whether you need flower, edibles, vapes, or concentrates at any hour, The Planet 60 is here.",
+        heading: "Choose The Right Lane",
+        body:
+          "The site is organized for fast decisions: Exotic, Premium, AAA+, AA, Budget, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, and Magic Stuff.",
       },
       {
-        heading: "Areas We Serve in Greater Toronto Area",
-        body: "The Planet 60 is centrally located and easily accessible from anywhere in Brampton and West Toronto. We regularly serve customers from: Peter Robertson Blvd & Torbram Rd and surrounding areas including Brampton, Mississauga, and nearby neighbourhoods."
+        heading: "Open 24 Hours",
+        body:
+          "The Planet 60 lists 24-hour access, so shoppers can plan around regular hours, late shifts, early errands, and weekend visits. Adult 19+ ID is required.",
+      },
+      {
+        heading: "Planet 60 Resource Hub",
+        body:
+          "The Resource hub adds guides for Peter Robertson visits, Springdale menu planning, flower tiers, late-night shopping, vapes, native smokes, and Magic Stuff.",
       },
     ],
     faqs: [
-      { q: "Where is the closest dispensary in Peter Robertson Blvd & Torbram Rd?", a: "The Planet 60 at 1098 Peter Robertson Blvd #10 is conveniently located in the heart of Brampton — easily accessible from Peter Robertson Blvd & Torbram Rd." },
-      { q: "Is The Planet 60 walk-in friendly?", a: "Absolutely! No appointment needed. Walk in anytime — we're open 24 hours a day, 7 days a week. Our friendly staff is always ready to help." },
-      { q: "What neighbourhoods does The Planet 60 serve?", a: "We serve all of Brampton and surrounding areas, including Peter Robertson Blvd & Torbram Rd and surrounding areas." },
-      { q: "How do I check what's in stock?", a: "Visit theplanet60.com for our live menu with real-time stock, pricing, and THC levels for all products." },
-      { q: "Do you sell edibles and vapes?", a: "Yes! In addition to 200+ flower strains, we carry edibles (gummies, chocolates), vape pens, disposable vapes, concentrates, pre-rolls, and accessories." },
+      {
+        q: "What is the address?",
+        a: "1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+      },
+      {
+        q: "Is The Planet 60 walk-in friendly?",
+        a: "The site presents The Planet 60 as a 24-hour Brampton dispensary. Bring valid 19+ ID and check the menu before visiting.",
+      },
+      {
+        q: "Where are the Resource pages?",
+        a: "Use /resources for The Planet 60 guides covering visits, flower tiers, 24-hour shopping, vapes, cigarettes, and specialty categories.",
+      },
     ],
   },
 ];
@@ -208,5 +242,14 @@ export function getSeoPageBySlug(slug: string): SeoPageData | undefined {
   return SEO_PAGES.find((p) => p.slug === slug);
 }
 
+const LEGACY_SEO_REDIRECTS: Record<string, string> = {
+  "york-weed-dispensary": "brampton-weed-dispensary",
+  "cheap-weed-york": "cheap-weed-brampton",
+  "native-cigarettes-york": "native-cigarettes-brampton",
+  "dispensary-near-me-york": "dispensary-near-me-brampton",
+  "weed-store-near-mississauga": "weed-store-near-brampton",
+};
 
-
+export function getLegacySeoRedirect(slug: string): string | undefined {
+  return LEGACY_SEO_REDIRECTS[slug];
+}

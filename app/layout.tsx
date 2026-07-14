@@ -24,29 +24,29 @@ export const metadata: Metadata = {
     "vapes",
     "pre-rolls",
     "native cigarettes Brampton",
-    "weed store Mississauga",
+    "weed store near Brampton",
   ],
   openGraph: {
     type: "website",
     locale: "en_CA",
     url: "https://theplanet60.com",
     siteName: "The Planet 60",
-    title: "The Planet 60 — Premium Brampton Cannabis Dispensary",
+    title: "The Planet 60 - Brampton Cannabis Dispensary",
     description:
-      "200+ strains from $3/g. Exotic to Budget. Brampton's uplifting dispensary at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
+      "Flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
     images: [
       {
         url: "https://theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg",
         width: 1200,
         height: 630,
-        alt: "The Planet 60 — Premium Cannabis Dispensary Brampton",
+        alt: "The Planet 60 Brampton cannabis dispensary",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Planet 60 — Brampton's Uplifting Dispensary",
-    description: "200+ strains from $3/g. Open 24 Hours at 1098 Peter Robertson Blvd #10, Brampton.",
+    title: "The Planet 60 - Brampton Cannabis Dispensary",
+    description: "Open 24 Hours at 1098 Peter Robertson Blvd #10, Brampton.",
     images: ["https://theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg"],
   },
   robots: {

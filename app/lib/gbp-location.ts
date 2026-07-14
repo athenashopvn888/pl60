@@ -12,7 +12,7 @@ export const gbpLocation = {
   phone: "(437) 230-6974",
   phoneIntl: "+14372306974",
   neighborhood: "Brampton",
-  nearbyAreas: ["Brampton", "Queen Street", "Main Street", "Downtown Brampton", "Kennedy Road", "Bramalea", "Peel Region", "Brampton Transit"],
+  nearbyAreas: ["Brampton", "Peter Robertson Blvd", "Springdale", "Torbram Road", "Bramalea", "Brampton Transit"],
   products: [
     "Flower",
     "Pre-rolls",
@@ -36,5 +36,5 @@ export const gbpLocation = {
   neighborhoodDescription: "Located in the vibrant Brampton district, our cannabis store fits right into this active and historic community, surrounded by local retail shops and convenient transit links.",
   parkingNote: "Ample free parking is available in the retail plaza lot",
   transitNote: "Served by Brampton Transit routes along Torbram Road and Peter Robertson Boulevard.",
-  sectionTitle: "Serving Customers Near Brampton and Peel Region"
+  sectionTitle: "Serving Customers Near Peter Robertson Blvd"
 };

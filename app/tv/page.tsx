@@ -671,11 +671,11 @@ function AddOnsCard({ items, hiIdx }: { items: Item[]; hiIdx: number }) {
    VERTICAL TICKER
    ============================================================ */
 const TICKER_SLIDES = [
-  "🔥 The Planet 60 — 1098 Peter Robertson Blvd #10, Brampton",
-  "200+ Strains In Stock",
+  "The Planet 60 - 1098 Peter Robertson Blvd #10, Brampton",
+  "Flower Tiers, Edibles, Vapes, Concentrates",
   "Open 24 Hours",
   "ALL SALES ARE FINAL",
-  "🎮 Play Games at theplanet60.com/games",
+  "Play Games at theplanet60.com/games",
 ];
 
 function VerticalTicker() {

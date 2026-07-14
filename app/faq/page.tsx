@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import styles from "./faq.module.css";
 
 export const metadata: Metadata = {
-  title: "FAQ — The Planet 60 | Brampton Dispensary Questions",
+  title: "FAQ - The Planet 60 | Brampton Dispensary Questions",
   description:
-    "Frequently asked questions about The Planet 60 in Brampton. Hours, location, products, pricing, bundle offers, and everything you need to know before visiting.",
+    "Frequently asked questions about The Planet 60 in Brampton. Hours, location, products, pricing, bundle offers, and what to check before visiting.",
   alternates: {
     canonical: "https://theplanet60.com/faq",
   },
@@ -14,51 +14,116 @@ export const metadata: Metadata = {
 
 const FAQ_CATEGORIES = [
   {
-    title: "📍 Location & Hours",
+    title: "Location & Hours",
     faqs: [
-      { q: "Where is The Planet 60 located?", a: "We are located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6. We're easily accessible by TTC bus routes and close to major highways like the 401." },
-      { q: "What are your hours?", a: "We are open Open 24 Hours a day, 7 days a week, 365 days a year. Walk in anytime — no appointment needed." },
-      { q: "Is there parking nearby?", a: "Yes. Free street parking is available nearby on surrounding streets in the evenings. We're also easily accessible by local transit." },
-      { q: "How far are you from Mississauga?", a: "We're just 5 minutes from the highways and central transit routes. We are centrally located and easy to reach." },
-      { q: "What's the best way to get to The Planet 60?", a: "We're easily accessible by car, bus, or foot. We are easily accessible by car, local transit, or bus routes. Free parking is available on surrounding streets." },
+      {
+        q: "Where is The Planet 60 located?",
+        a: "The Planet 60 is located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
+      },
+      {
+        q: "What are your hours?",
+        a: "The store lists Open 24 Hours. Bring valid 19+ government ID when visiting.",
+      },
+      {
+        q: "Is there parking nearby?",
+        a: "For parking or transit details, use the current map listing or contact the store before visiting.",
+      },
+      {
+        q: "What area is this site focused on?",
+        a: "The site is focused on Brampton shoppers around Peter Robertson Blvd, Springdale, Torbram Road, Bramalea, and nearby local routes.",
+      },
+      {
+        q: "What should I check before visiting?",
+        a: "Use the address in your map app, then check the current menu category that matches your visit.",
+      },
     ],
   },
   {
-    title: "🌿 Products & Menu",
+    title: "Products & Menu",
     faqs: [
-      { q: "What products do you carry?", a: "We carry over 200 strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles (gummies, chocolates, baked goods), vape pens, disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, native cigarettes, and accessories." },
-      { q: "Do you have a live menu?", a: "Yes! Our online menu at theplanet60.com updates in real time with current stock, prices, THC levels, and availability. You can check what's in stock before you visit." },
-      { q: "What are your flower tiers?", a: "Exotic ($10-$12/g, THC 35-39%) — ultra-rare top-shelf genetics. Premium ($7-$10/g, THC 32-34%) — connoisseur-grade. AAA+ ($5-$6/g, THC 30-32%) — heavy hitters, our most popular tier. AA ($4/g, THC 27-29%) — quality daily drivers. Budget ($3/g, THC 24-27%) — reliable value flower." },
-      { q: "Do you sell edibles?", a: "Yes! We carry a variety of edibles including gummies, chocolates, baked goods, and more. THC content varies. Check our live menu for current availability." },
-      { q: "Do you sell vapes?", a: "Yes — both disposable vapes and refillable vape pens. We carry both nicotine vapes and THC vapes from top brands." },
-      { q: "Do you sell native cigarettes?", a: "Yes! We carry one of the widest selections of native cigarettes in downtown Brampton, including premium and value brands in multiple varieties." },
+      {
+        q: "What products are shown on the site?",
+        a: "The site organizes products into flower tiers, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, and Magic Stuff.",
+      },
+      {
+        q: "Do you have a current menu?",
+        a: "Use the online menu and category pages for current public listings. Product mix, pricing, and availability can change.",
+      },
+      {
+        q: "What are your flower tiers?",
+        a: "Flower pages are organized as Exotic, Premium, AAA+, AA, and Budget. Current per-gram and bundle prices are shown on the matching tier page.",
+      },
+      {
+        q: "Do you sell edibles?",
+        a: "The site includes an edibles category. Check the current edibles page before visiting because product mix can change.",
+      },
+      {
+        q: "Do you sell vapes?",
+        a: "The site includes THC Vape and Nic Vape categories. Check the current category page for listed items.",
+      },
+      {
+        q: "Do you sell cigarettes?",
+        a: "The site includes a cigarettes category. Check the category page for the current brand mix before visiting Peter Robertson Blvd.",
+      },
     ],
   },
   {
-    title: "💰 Pricing & Bundle Offers",
+    title: "Pricing & Bundle Offers",
     faqs: [
-      { q: "What is the cheapest weed you sell?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. These are the most competitive prices you'll find in Brampton." },
-      { q: "What bundle pricing do you offer?", a: "Flower bundle pricing includes a 3g total option — the 3g total is shown clearly before purchase. Our Exotic, Premium, and AAA+ tiers also offer 6g bundle pricing, with 6g total pricing." },
-      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with freshness and quality guaranteed." },
-      { q: "How does bundle pricing work?", a: "The 3g bundle pricing applies to every tier automatically. The 6g bundle pricing applies to Exotic, Premium, and AAA+ tiers. These are our standard everyday bundle offers." },
-      { q: "How does the tier pricing work?", a: "Each flower strain is graded into one of five quality tiers. The tier determines the per-gram price. This transparent system means you always know exactly what you're paying — no confusing markups or inconsistent pricing." },
+      {
+        q: "What is the cheapest flower tier listed?",
+        a: "The Budget tier is the lowest-priced flower path shown on the site. Check the Budget page for current pricing and listed products.",
+      },
+      {
+        q: "What bundle pricing do you show?",
+        a: "Flower bundle pricing is shown on the matching tier pages. Some tiers include 3g or 6g bundle options, and the page shows the current total price.",
+      },
+      {
+        q: "Do you have ounce deals?",
+        a: "Some tier pages show ounce or value options. Check the current tier page before visiting because listings can rotate.",
+      },
+      {
+        q: "How does bundle pricing work?",
+        a: "Some flower tiers include bundle pricing. The matching tier page shows the current bundle label, total amount, and price.",
+      },
+      {
+        q: "How does the tier pricing work?",
+        a: "Each flower page is grouped into one of five tiers. The tier page shows the current per-gram price and any available bundle pricing.",
+      },
     ],
   },
   {
-    title: "🛒 Shopping & Experience",
+    title: "Shopping & Experience",
     faqs: [
-      { q: "Do I need an appointment?", a: "No! The Planet 60 is walk-in only. Just show up anytime — we're open Open 24 Hours." },
-      { q: "Can I order online?", a: "Currently, The Planet 60 is an in-store shopping experience only. You can browse our live menu online to see what's in stock before visiting." },
-      { q: "Do you offer delivery?", a: "Delivery is coming soon! Visit our delivery page to sign up for email notifications when we launch our delivery service." },
-      { q: "What payment methods do you accept?", a: "We accept cash and debit. No credit cards at this time." },
-      { q: "Can your staff help me choose a strain?", a: "Absolutely! Our knowledgeable budtenders are here to help. Whether you're a first-time buyer or a seasoned connoisseur, we can recommend strains based on your preferences, desired effects, and budget." },
-      { q: "Is there a minimum purchase?", a: "No minimum purchase required. You can buy as little as 1 gram." },
+      {
+        q: "Do I need an appointment?",
+        a: "The site presents The Planet 60 as a walk-in Brampton shop. Check the contact page or current store listing if you need confirmation before visiting.",
+      },
+      {
+        q: "Can I order online?",
+        a: "Use the online menu for browsing and planning. Confirm ordering details with the store before relying on any purchase flow.",
+      },
+      {
+        q: "Do you offer delivery?",
+        a: "The delivery page is being kept as a local update page while delivery details are prepared. Do not rely on delivery until the store confirms availability.",
+      },
+      {
+        q: "What payment methods do you accept?",
+        a: "Check with the store for current payment options before visiting.",
+      },
+      {
+        q: "Can staff help me choose a product?",
+        a: "Ask the store team for current product guidance, price details, and availability when you visit.",
+      },
+      {
+        q: "Is there a minimum purchase?",
+        a: "Check with the store for current purchase rules and product availability.",
+      },
     ],
   },
 ];
 
 export default function FAQPage() {
-  // JSON-LD for FAQ page
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -83,11 +148,10 @@ export default function FAQPage() {
       <main className={styles.main}>
         <Navbar />
 
-        {/* FAQ Banner */}
         <section style={{ width: "100%", overflow: "hidden", marginTop: "92px" }}>
           <img
             src="/banners/07_FAQ.webp"
-            alt="The Planet 60 FAQ — Your Questions Answered"
+            alt="The Planet 60 FAQ - Your Questions Answered"
             style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
           />
         </section>
@@ -95,7 +159,7 @@ export default function FAQPage() {
         <div className={styles.content}>
           <h1 className={styles.pageTitle}>Frequently Asked Questions</h1>
           <p className={styles.pageSubtitle}>
-            Everything you need to know about The Planet 60 — Brampton&apos;s premium dispensary at 1098 Peter Robertson Blvd #10 in Brampton.
+            Answers for shoppers checking The Planet 60 on Peter Robertson Blvd in Brampton.
           </p>
 
           {FAQ_CATEGORIES.map((cat) => (
@@ -113,7 +177,8 @@ export default function FAQPage() {
           <div className={styles.ctaSection}>
             <h2 className={styles.ctaTitle}>Still have questions?</h2>
             <p className={styles.ctaText}>
-              Call us at <strong>(437) 230-6974</strong> or visit us at 1098 Peter Robertson Blvd #10, Brampton.
+              Call us at <strong>(437) 230-6974</strong> or visit us at 1098 Peter Robertson Blvd
+              #10, Brampton.
             </p>
           </div>
         </div>
@@ -122,4 +187,3 @@ export default function FAQPage() {
     </>
   );
 }
-
