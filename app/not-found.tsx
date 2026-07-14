@@ -17,7 +17,7 @@ export default function NotFound() {
           textAlign: "center",
         }}
       >
-        <span style={{ fontSize: 64, marginBottom: 16 }}>🔥</span>
+        <span style={{ fontSize: 48, marginBottom: 16 }}>P60</span>
         <h1
           style={{
             fontFamily: "var(--font-display)",
@@ -38,8 +38,7 @@ export default function NotFound() {
             lineHeight: 1.6,
           }}
         >
-          This page doesn&apos;t exist — but our shelves are fully stocked.
-          Browse 200+ strains at Brampton&apos;s most fire dispensary.
+          This page doesn&apos;t exist. Use the menu to get back to The Planet 60&apos;s Brampton categories.
         </p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center" }}>
           <Link

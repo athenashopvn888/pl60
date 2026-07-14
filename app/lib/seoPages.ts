@@ -37,9 +37,9 @@ export const SEO_PAGES: SeoPageData[] = [
           "The Planet 60 lists 24-hour access for Brampton shoppers. Late-night and early-morning visitors can check the menu path, bring valid 19+ ID, and use the FAQ or contact page for store basics.",
       },
       {
-        heading: "Springdale And Peel Visits",
+        heading: "Springdale And Peter Robertson Visits",
         body:
-          "The Peter Robertson Blvd shop is positioned for shoppers around Springdale, Torbram Road, Bramalea, Brampton Transit, and nearby Peel trips. Category pages carry current products and prices as the menu rotates.",
+          "The Peter Robertson Blvd shop is organized for Brampton shoppers around Springdale, Torbram Road, Bramalea, and nearby local routes. Category pages carry current products and prices as the menu rotates.",
       },
     ],
     faqs: [
@@ -150,24 +150,24 @@ export const SEO_PAGES: SeoPageData[] = [
     ],
   },
   {
-    slug: "weed-store-near-mississauga",
-    title: "Weed Store Near Mississauga | The Planet 60 Brampton",
+    slug: "weed-store-near-brampton",
+    title: "Weed Store Near Brampton | The Planet 60",
     metaDescription:
-      "The Planet 60 is a 24-hour Brampton weed store on Peter Robertson Blvd for shoppers coming from Mississauga, Peel, Springdale, and nearby routes.",
-    h1: "Weed Store Near Mississauga",
-    icon: "410",
-    heroTagline: "A Brampton cannabis stop for Mississauga and Peel shoppers.",
+      "The Planet 60 is a 24-hour Brampton weed store on Peter Robertson Blvd with flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff.",
+    h1: "Weed Store Near Brampton",
+    icon: "P60",
+    heroTagline: "A Peter Robertson Blvd cannabis stop for nearby Brampton shoppers.",
     banner: "/banners/welcome_banner.webp",
     sections: [
       {
-        heading: "Brampton Stop From Mississauga",
+        heading: "Peter Robertson Blvd Weed Store",
         body:
-          "The Planet 60 sits at 1098 Peter Robertson Blvd #10 in Brampton. For shoppers coming from Mississauga or other Peel routes, the site keeps flower, edibles, vapes, concentrates, cigarettes, accessories, and specialty paths easy to scan before leaving.",
+          "The Planet 60 sits at 1098 Peter Robertson Blvd #10 in Brampton. The site keeps flower, edibles, vapes, concentrates, cigarettes, accessories, and specialty paths easy to scan before visiting.",
       },
       {
-        heading: "Use The Menu Before The Drive",
+        heading: "Use The Menu Before Visiting",
         body:
-          "A quick menu check helps shoppers decide whether the trip is about Budget flower, a Premium or Exotic shelf, pre-rolls, edibles, THC Vape, Nic Vape, concentrates, cigarettes, or accessories.",
+          "A quick menu check helps shoppers decide whether the visit is about Budget flower, a Premium or Exotic shelf, pre-rolls, edibles, THC Vape, Nic Vape, concentrates, cigarettes, or accessories.",
       },
       {
         heading: "24-Hour Access",
@@ -181,11 +181,11 @@ export const SEO_PAGES: SeoPageData[] = [
         a: "The Planet 60 is at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6.",
       },
       {
-        q: "Can Mississauga shoppers visit The Planet 60?",
-        a: "Yes. The Brampton shop is positioned for Peel-area shoppers, including visitors coming from Mississauga routes.",
+        q: "What area is The Planet 60 built around?",
+        a: "The site is focused on The Planet 60 in Brampton, especially the Peter Robertson Blvd and Springdale area.",
       },
       {
-        q: "What should I check before driving from Mississauga?",
+        q: "What should I check before visiting?",
         a: "Check the category page that matches your trip: flower tier, edibles, pre-rolls, vapes, concentrates, cigarettes, accessories, or Magic Stuff.",
       },
     ],
@@ -247,6 +247,7 @@ const LEGACY_SEO_REDIRECTS: Record<string, string> = {
   "cheap-weed-york": "cheap-weed-brampton",
   "native-cigarettes-york": "native-cigarettes-brampton",
   "dispensary-near-me-york": "dispensary-near-me-brampton",
+  "weed-store-near-mississauga": "weed-store-near-brampton",
 };
 
 export function getLegacySeoRedirect(slug: string): string | undefined {

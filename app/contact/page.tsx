@@ -82,13 +82,13 @@ export default function ContactPage() {
               </div>
               <div className={styles.openBadge}>
                 <span className={styles.openDot}></span>
-                Open 24/7 — Never Closed
+                Open 24/7 - Never Closed
               </div>
             </div>
 
             {/* Walk-in */}
             <div className={styles.infoCard}>
-              <div className={styles.infoIcon}>🔥</div>
+              <div className={styles.infoIcon}>P60</div>
               <h2 className={styles.infoTitle}>Walk In</h2>
               <p className={styles.infoText}>
                 No appointment needed.
@@ -100,19 +100,19 @@ export default function ContactPage() {
               <div className={styles.featureList}>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>✓</span>
-                  200+ strains in stock
+                  Flower tiers and format categories
                 </div>
                 <div className={styles.featureItem}>
-                  <span className={styles.featureCheck}>✓</span>
-                  Lab-tested &amp; safe
+                  <span className={styles.featureCheck}>OK</span>
+                  Check current product details
                 </div>
                 <div className={styles.featureItem}>
-                  <span className={styles.featureCheck}>✓</span>
-                  Knowledgeable budtenders
+                  <span className={styles.featureCheck}>OK</span>
+                  Staff can confirm availability
                 </div>
                 <div className={styles.featureItem}>
-                  <span className={styles.featureCheck}>✓</span>
-                  Debit &amp; cash accepted
+                  <span className={styles.featureCheck}>OK</span>
+                  Ask about current payment options
                 </div>
               </div>
             </div>

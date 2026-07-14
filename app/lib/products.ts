@@ -149,7 +149,7 @@ export const TIER_CONFIG: Record<
   },
 };
 
-/* ── Item category config ── */
+/* Item category config */
 export interface CategoryInfo {
   name: string; slug: string; color: string; icon: string; banner?: string;
   seoTitle: string; seoIntro: string; seoDescription: string;
@@ -159,33 +159,33 @@ export interface CategoryInfo {
 export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   EDIBLES: {
     banner: "/banners/edibles_prerolls_more_banner.webp",
-    name: "Edibles", slug: "edibles", color: "#f97316", icon: "🍬",
-    seoTitle: "Cannabis Edibles Brampton — Gummies, Chocolates & Drinks",
-    seoIntro: "Browse the full cannabis edibles menu at The Planet 60 on Peter Robertson Blvd, Brampton. We carry THC gummies, chocolates, drinks, and more from top Canadian brands.",
-    seoDescription: "Looking for cannabis edibles in Brampton? The Planet 60 stocks a wide range of THC-infused gummies, chocolates, beverages, and baked goods. Our edibles range from micro-dose options for beginners to high-potency products for experienced consumers. All products are lab-tested and sourced from licensed Canadian producers. Visit us at 1098 Peter Robertson Blvd #10 — open daily 24 hours.",
+    name: "Edibles", slug: "edibles", color: "#f97316", icon: "ED",
+    seoTitle: "Cannabis Edibles Brampton - Gummies, Chocolates & Drinks",
+    seoIntro: "Browse the cannabis edibles category at The Planet 60 on Peter Robertson Blvd, Brampton. Check the current page for listed gummies, chocolates, drinks, and other edible formats.",
+    seoDescription: "Looking for cannabis edibles in Brampton? The Planet 60 keeps an edibles category for shoppers checking listed gummies, chocolates, beverages, and baked goods before visiting 1098 Peter Robertson Blvd #10. Product mix, potency, and pricing can change.",
     faqs: [
-      { q: "What cannabis edibles do you carry?", a: "We stock THC gummies, chocolates, beverages, capsules, and baked goods from top Canadian brands. Potencies range from 10mg to 1000mg+ THC." },
+      { q: "What cannabis edibles do you carry?", a: "The edibles category may include gummies, chocolates, beverages, capsules, and baked goods. Check the current page for listed products." },
       { q: "How long do edibles take to kick in?", a: "Cannabis edibles typically take 30-90 minutes to take effect. Start with a low dose (5-10mg) and wait at least 2 hours before consuming more." },
-      { q: "Can I buy edibles at The Planet 60?", a: "Yes! Visit us at 1098 Peter Robertson Blvd #10, Brampton. We're open daily 24 hours with a full edibles selection in store." },
+      { q: "Can I buy edibles at The Planet 60?", a: "Visit 1098 Peter Robertson Blvd #10, Brampton, and check the current edibles page before visiting. The store lists Open 24 Hours." },
     ],
   },
   "VAPE PENS": {
     banner: "/banners/01_Vape_Pens.webp",
-    name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "💨",
-    seoTitle: "Vape Pens Brampton — THC & Nicotine Cartridges",
-    seoIntro: "Shop THC and nicotine vape pens at The Planet 60, Brampton. Cartridges, 510-thread batteries, and premium vape brands — all in stock.",
-    seoDescription: "The Planet 60 carries a curated selection of vape pens and cartridges in Brampton. From 510-thread THC cartridges to nicotine vape pods, we stock the most popular brands and flavours. Our knowledgeable budtenders can help you choose the right cartridge and battery setup. Visit us at 1098 Peter Robertson Blvd #10 for the best vape selection in Springdale.",
+    name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "V",
+    seoTitle: "Vape Pens Brampton - THC & Nicotine Cartridges",
+    seoIntro: "Shop THC and nicotine vape categories at The Planet 60, Brampton. Check the current pages for listed cartridges, disposables, batteries, and vape formats.",
+    seoDescription: "The Planet 60 carries vape categories for Brampton shoppers checking 510-thread THC cartridges, nicotine vape pods, disposables, and compatible accessories. Product mix can change, so check the current category page or ask staff at 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "What vape pens do you sell?", a: "We carry 510-thread THC cartridges, nicotine vape pods, disposable vapes, and compatible batteries from top Canadian brands." },
-      { q: "Do you sell vape batteries?", a: "Yes! We stock 510-thread batteries and pod systems that pair with our cartridge selection." },
+      { q: "What vape pens do you sell?", a: "The vape pages may list 510-thread THC cartridges, nicotine vape pods, disposable vapes, and compatible batteries." },
+      { q: "Do you sell vape batteries?", a: "Check the current vape or accessories category for listed batteries and compatible hardware." },
     ],
   },
   "VAPE DISPOSABLE": {
     banner: "/banners/02_Vape_Disposable.webp",
-    name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "💨",
-    seoTitle: "Disposable Vapes Brampton — THC Disposable Pens",
-    seoIntro: "THC disposable vapes available at The Planet 60, Brampton. No charging, no refilling — just open and enjoy.",
-    seoDescription: "Disposable THC vapes are the easiest way to enjoy cannabis on the go. The Planet 60 stocks a wide selection of pre-charged, pre-filled disposable vape pens with various strain profiles and potencies. Perfect for beginners and experienced users alike. Visit us at 1098 Peter Robertson Blvd #10, Brampton.",
+    name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "NV",
+    seoTitle: "Disposable Vapes Brampton - Vape Disposables",
+    seoIntro: "Disposable vape listings at The Planet 60, Brampton. Check the current category page before visiting Peter Robertson Blvd.",
+    seoDescription: "The Planet 60 keeps a vape disposables category for Brampton shoppers checking listed disposable vape formats. Product mix, profiles, and potency details can change, so use the current category page before visiting 1098 Peter Robertson Blvd #10.",
     faqs: [
       { q: "How long does a disposable vape last?", a: "Most disposable THC vapes contain 0.5g-1g of distillate and last between 100-300 puffs depending on usage." },
       { q: "Are disposable vapes rechargeable?", a: "Most are designed for single use, but some models include a USB-C charging port to ensure you can use the full cartridge." },
@@ -193,33 +193,33 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   },
   CONCENTRATES: {
     banner: "/banners/03_Concentrates.webp",
-    name: "Concentrates", slug: "concentrates", color: "#f59e0b", icon: "💎",
-    seoTitle: "Cannabis Concentrates Brampton — Shatter, Wax, Hash & Live Resin",
-    seoIntro: "Premium cannabis concentrates at The Planet 60, Brampton. Shatter, wax, hash, live resin, and diamonds — all in stock.",
-    seoDescription: "The Planet 60 offers a premium selection of cannabis concentrates in Brampton. From traditional hash and kief to modern extracts like shatter, wax, live resin, and THC diamonds, we carry products for every preference and potency level. Our concentrates are sourced from trusted extractors and tested for purity. Visit us at 1098 Peter Robertson Blvd #10.",
+    name: "Concentrates", slug: "concentrates", color: "#f59e0b", icon: "C",
+    seoTitle: "Cannabis Concentrates Brampton - Shatter, Wax, Hash & Live Resin",
+    seoIntro: "Cannabis concentrate listings at The Planet 60, Brampton. Check the current page for shatter, wax, hash, live resin, diamonds, and related formats.",
+    seoDescription: "The Planet 60 keeps a concentrates category for Brampton shoppers checking hash, kief, shatter, wax, live resin, THC diamonds, and related formats. Product mix and potency details can rotate, so check the current page before visiting 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "What types of concentrates do you carry?", a: "We stock shatter, wax, budder, live resin, rosin, hash, kief, and THC diamonds from top Canadian extractors." },
+      { q: "What types of concentrates do you carry?", a: "The concentrates page may list shatter, wax, budder, live resin, rosin, hash, kief, THC diamonds, and related formats." },
       { q: "How do I consume concentrates?", a: "Concentrates can be dabbed with a rig, vaped with a concentrate pen, or added to flower in a joint or bowl for extra potency." },
     ],
   },
   PREROLLS: {
-    banner: "/banners/04_Pre_Rolls.webp", name: "Pre-Rolls", slug: "prerolls", color: "#22c55e", icon: "🚬",
-    seoTitle: "Pre-Rolls Brampton — Ready-to-Smoke Cannabis Joints",
-    seoIntro: "Pre-rolled cannabis joints at The Planet 60, Brampton. Singles, multi-packs, and infused pre-rolls — ready to light up.",
-    seoDescription: "Skip the rolling and grab a pre-roll from The Planet 60 in Brampton. We carry singles, multi-packs, and infused pre-rolls from premium flower. Whether you want a quick smoke or a party pack, our pre-roll selection has something for everyone. Visit us at 1098 Peter Robertson Blvd #10 — open daily 24 hours.",
+    banner: "/banners/04_Pre_Rolls.webp", name: "Pre-Rolls", slug: "prerolls", color: "#22c55e", icon: "PR",
+    seoTitle: "Pre-Rolls Brampton - Cannabis Joints",
+    seoIntro: "Pre-roll listings at The Planet 60, Brampton. Check the current page for singles, multi-packs, infused pre-rolls, and related formats.",
+    seoDescription: "The Planet 60 keeps a pre-roll category for Brampton shoppers checking singles, multi-packs, infused pre-rolls, and related formats before visiting 1098 Peter Robertson Blvd #10. Product mix and pricing can change.",
     faqs: [
-      { q: "What pre-rolls do you carry?", a: "We stock singles, 3-packs, and multi-packs in various strains and potencies, including infused pre-rolls with concentrates." },
-      { q: "Are your pre-rolls made with quality flower?", a: "Yes! Our pre-rolls are filled with ground flower from our regular menu tiers — not shake or trim." },
+      { q: "What pre-rolls do you carry?", a: "The pre-roll page may list singles, 3-packs, multi-packs, and infused pre-rolls. Check the current page for listed products." },
+      { q: "Do pre-roll listings change?", a: "Yes. Strain names, pack sizes, potency details, and prices can rotate." },
     ],
   },
   "ADD ONS": {
     banner: "/banners/05_Accessories.webp",
-    name: "Accessories", slug: "add-ons", color: "#34d399", icon: "➕",
-    seoTitle: "Cannabis Accessories Brampton — Grinders, Papers, Lighters & More",
+    name: "Accessories", slug: "add-ons", color: "#34d399", icon: "+",
+    seoTitle: "Cannabis Accessories Brampton - Grinders, Papers, Lighters & More",
     seoIntro: "Essential cannabis accessories at The Planet 60, Brampton. Grinders, rolling papers, lighters, trays, and more.",
-    seoDescription: "The Planet 60 carries all the accessories you need for the perfect smoke session. From premium grinders and rolling papers to lighters, trays, and storage containers, we have everything in stock. Visit us at 1098 Peter Robertson Blvd #10, Brampton.",
+    seoDescription: "The Planet 60 keeps an accessories category for Brampton shoppers checking grinders, rolling papers, lighters, trays, storage containers, and related items. Product mix can change, so check the current page before visiting 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "What accessories do you sell?", a: "We carry grinders, rolling papers, filter tips, lighters, rolling trays, storage jars, and more." },
+      { q: "What accessories do you sell?", a: "The accessories page may list grinders, rolling papers, filter tips, lighters, rolling trays, storage jars, and related items." },
     ],
   },
   "MAGIC & OTHERS": {
@@ -235,19 +235,19 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   },
   CIGARETTES: {
     banner: "/banners/06_Cigarettes.webp",
-    name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "🏷️",
+    name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "CG",
     seoTitle: "Native Cigarettes Brampton - Brands And Prices at The Planet 60",
     seoIntro: "Shop native cigarettes in Brampton at The Planet 60 with listed brands like Canadian, Canadian Goose, Canadian Classics, Putters, Rolled Gold, Nexus, Time, Backwoods, Grabba, and nicotine pouches.",
-    seoDescription: "The Planet 60 lists native cigarette packs at $25 for many brands, plus 10 x Premium Mix Cigarettes at $3, nicotine pouches from Velo, Pablo, and Killa at $20, Grabba at $5, Grabba Shaker at $19, and Backwoods options from $20-$25. Visit 1098 Peter Robertson Blvd #10 in Brampton and check the live cigarette menu for current stock.",
+    seoDescription: "The Planet 60 lists native cigarette packs at $25 for many brands, plus 10 x Premium Mix Cigarettes at $3, nicotine pouches from Velo, Pablo, and Killa at $20, Grabba at $5, Grabba Shaker at $19, and Backwoods options from $20-$25. Visit 1098 Peter Robertson Blvd #10 in Brampton and check the current cigarette menu for listed items.",
     faqs: [
       { q: "Do you sell native cigarettes at The Planet 60?", a: "Yes. The cigarette menu includes brands such as Canadian Lights, Canadian Full, Canadian Menthol, Canadian Goose, Canadian Classics, Putters, Rolled Gold, Nexus, and Time." },
       { q: "How much are cigarettes at The Planet 60?", a: "Many native cigarette packs are listed at $25. The menu also lists 10 x Premium Mix Cigarettes at $3, nicotine pouches at $20, Grabba at $5, Grabba Shaker at $19, and Backwoods options from $20-$25." },
-      { q: "Do cigarette brands and prices change?", a: "Yes. Brand mix, flavours, carton options, and prices can rotate, so check the live cigarette category before visiting Peter Robertson Blvd." },
+      { q: "Do cigarette brands and prices change?", a: "Yes. Brand mix, flavours, carton options, and prices can rotate, so check the current cigarette category before visiting Peter Robertson Blvd." },
     ],
   },
 };
 
-/* ── Helper functions ── */
+/* Helper functions */
 export function getFlowersByTier(tier: string): FlowerProduct[] {
   return allFlowers.filter(
     (f) => f.tier.toUpperCase() === tier.toUpperCase()

@@ -36,7 +36,7 @@ export const RESOURCE_HUB: ResourceArticle = {
     {
       heading: "Start With The Orbit Map",
       body:
-        "The Planet 60 menu is easiest when shoppers pick the lane first: flower tiers, pre-rolls, edibles, THC Vape, Nic Vape, concentrates, cigarettes, accessories, or Magic Stuff.",
+        "The Planet 60 menu is organized by flower tiers, pre-rolls, edibles, THC Vape, Nic Vape, concentrates, cigarettes, accessories, and Magic Stuff so shoppers can start with the category that matches the visit.",
     },
     {
       heading: "Use Local Visit Guides",
@@ -70,7 +70,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Set The Route Before Lift-Off",
         body:
-          "The Planet 60 is at 1098 Peter Robertson Blvd #10 in Brampton. Before heading over, pick the category that matches the trip and keep one backup lane in mind in case the menu has rotated.",
+          "The Planet 60 is at 1098 Peter Robertson Blvd #10 in Brampton. Before heading over, check the category that matches the trip and keep one backup category in mind in case the menu has rotated.",
       },
       {
         heading: "Use The 24-Hour Advantage",
@@ -181,7 +181,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Use The Menu Like A Control Panel",
         body:
-          "Late-night shoppers do not need a maze. The clean path is one main lane, one backup lane, and the visit page for store basics.",
+          "Late-night shoppers can keep the visit simple by checking one main category, one backup category, and the visit page for store basics.",
       },
       {
         heading: "Good For Shift Workers",
