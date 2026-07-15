@@ -31,7 +31,7 @@ export const RESOURCE_HUB: ResourceArticle = {
     "The Planet 60 resources for Peter Robertson Blvd visits, Springdale menu planning, flower tiers, 24-hour Brampton shopping, vapes, cigarettes, and Magic Stuff.",
   eyebrow: "P60 orbit hub",
   summary:
-    "A Peter Robertson Blvd resource hub for Brampton shoppers who want the right Planet 60 menu path before lift-off.",
+    "A Peter Robertson Blvd resource hub for Brampton shoppers who want the right Planet 60 menu section before lift-off.",
   sections: [
     {
       heading: "Start With The Orbit Map",
@@ -62,7 +62,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     slug: ["peter-robertson-visit-guide"],
     title: "Peter Robertson Blvd Visit Guide",
     metaDescription:
-      "Plan a visit to The Planet 60 at 1098 Peter Robertson Blvd #10 in Brampton with 24-hour menu paths for flower, vapes, edibles, concentrates, cigarettes, and accessories.",
+      "Plan a visit to The Planet 60 at 1098 Peter Robertson Blvd #10 in Brampton with 24-hour menu sections for flower, vapes, edibles, concentrates, cigarettes, and accessories.",
     eyebrow: "Peter Robertson",
     summary:
       "A Brampton visit guide for The Planet 60 shoppers heading toward Peter Robertson Blvd, Torbram Road, Bramalea, and Springdale.",
@@ -75,7 +75,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Use The 24-Hour Advantage",
         body:
-          "The store lists Open 24 Hours, which matters for late-night, early-morning, and after-shift Brampton visits. Check the menu path, bring valid 19+ ID, and use the visit page for store basics.",
+          "The store lists Open 24 Hours, which matters for late-night, early-morning, and after-shift Brampton visits. Check the menu section, bring valid 19+ ID, and use the visit page for store basics.",
       },
       {
         heading: "Pick One Main Lane",
@@ -136,7 +136,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     slug: ["planet60-flower-tier-guide"],
     title: "The Planet 60 Flower Tier Guide",
     metaDescription:
-      "Compare The Planet 60 flower tiers in Brampton, including Exotic, Premium, AAA+, AA, and Budget cannabis flower menu paths.",
+      "Compare The Planet 60 flower tiers in Brampton, including Exotic, Premium, AAA+, AA, and Budget cannabis flower menu sections.",
     eyebrow: "Flower orbit",
     summary:
       "A clearer flower-tier explanation for shoppers comparing quality lane, price lane, and cannabis flower categories at The Planet 60.",
@@ -210,7 +210,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     slug: ["native-smokes-guide"],
     title: "Native Cigarettes Brampton Guide",
     metaDescription:
-      "Find The Planet 60 cigarette and native smoke menu paths in Brampton with Canadian, Canadian Goose, Canadian Classics, Putters, Nexus, Time, Backwoods, Grabba, and nicotine pouch notes.",
+      "Find The Planet 60 cigarette and native smoke menu sections in Brampton with Canadian, Canadian Goose, Canadian Classics, Putters, Nexus, Time, Backwoods, Grabba, and nicotine pouch notes.",
     eyebrow: "Cigarettes",
     summary:
       "A cigarette counter guide using brands and price lanes present on The Planet 60 menu.",
@@ -287,7 +287,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       "Use The Planet 60 Magic Stuff guide to find the specialty product category, read labels, and check current menu listings before visiting in Brampton.",
     eyebrow: "Magic Stuff",
     summary:
-      "A careful category guide for The Planet 60 specialty listings, focused on labels, menu paths, and current product checks.",
+      "A careful category guide for The Planet 60 specialty listings, focused on labels, menu sections, and current product checks.",
     sections: [
       {
         heading: "Use The Specialty Category",

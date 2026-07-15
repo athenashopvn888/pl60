@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
+import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
 import FlowerCard from "./components/FlowerCard";
 import { allFlowers } from "./lib/products";
@@ -220,6 +221,7 @@ export default function HomePage() {
     <main className={styles.main}>
       {/* ── NAVBAR ── */}
       <Navbar />
+      <HiringCallout />
 
       {/* ── WELCOME BANNER ── */}
       <section className={styles.welcomeBannerSection}>
@@ -350,7 +352,7 @@ export default function HomePage() {
             <span className={styles.orbitEyebrow}>P60 resource orbit</span>
             <h2>Useful pages grouped like a control panel.</h2>
             <p>
-              Peter Robertson visit notes, Springdale menu paths, flower tier logic,
+              Peter Robertson visit notes, Springdale menu sections, flower tier logic,
               late-night shopping, native smokes, and vape/value shortcuts.
             </p>
             <Link href="/resources" className={styles.orbitMainLink}>Open Resources</Link>

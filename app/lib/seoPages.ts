@@ -24,7 +24,7 @@ export const SEO_PAGES: SeoPageData[] = [
       {
         heading: "The Planet 60 On Peter Robertson Blvd",
         body:
-          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton. The site is organized around clear shopper paths: flower tiers, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, Magic Stuff, and the Brampton visit page.",
+          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton. The site is organized around clear shopping trips: flower tiers, edibles, pre-rolls, THC Vape, Nic Vape, concentrates, cigarettes, accessories, Magic Stuff, and the Brampton visit page.",
       },
       {
         heading: "A Menu Built For Fast Choices",
@@ -34,7 +34,7 @@ export const SEO_PAGES: SeoPageData[] = [
       {
         heading: "Open 24 Hours",
         body:
-          "The Planet 60 lists 24-hour access for Brampton shoppers. Late-night and early-morning visitors can check the menu path, bring valid 19+ ID, and use the FAQ or contact page for store basics.",
+          "The Planet 60 lists 24-hour access for Brampton shoppers. Late-night and early-morning visitors can check the menu section, bring valid 19+ ID, and use the FAQ or contact page for store basics.",
       },
       {
         heading: "Springdale And Peter Robertson Visits",
@@ -110,7 +110,7 @@ export const SEO_PAGES: SeoPageData[] = [
       "The Planet 60 lists native cigarettes and tobacco add-ons in Brampton, including Canadian, Canadian Goose, Canadian Classics, Putters, Nexus, Time, Backwoods, Grabba, and nicotine pouches.",
     h1: "Native Cigarettes Brampton",
     icon: "19+",
-    heroTagline: "Cigarette, tobacco, and nicotine menu paths at the Peter Robertson Blvd shop.",
+    heroTagline: "Cigarette, tobacco, and nicotine menu sections at the Peter Robertson Blvd shop.",
     banner: "/banners/06_Cigarettes.webp",
     sections: [
       {
