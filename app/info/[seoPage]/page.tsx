@@ -72,7 +72,7 @@ export default async function SeoLandingPage({
           ))}
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Our Cannabis Menu - Five Tiers of Quality</h2>
+            <h2 className={styles.sectionTitle}>Our Cannabis Menu - Five Flower Tiers</h2>
             <div className={styles.tierGrid}>
               {tiers.map((tier) => (
                 <Link

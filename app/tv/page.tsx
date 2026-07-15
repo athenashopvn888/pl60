@@ -33,14 +33,6 @@ const TIER_DEAL: Record<string,string> = {
   "AAA+":"Buy 3g Get 3 FREE", BUDGET:"$10 / 3g Special"
 };
 
-/* -- Helpers -- */
-function fmtTHC(v: string): string {
-  const s = String(v||"").trim(); if (!s) return "";
-  const n = parseFloat(s);
-  if (!isNaN(n)) return (n <= 1 ? Math.round(n*100) : Math.round(n)) + "%";
-  return s;
-}
-
 /* -- Price cell with strikethrough for sale -- */
 function PriceCell({ pp, color }: { pp: PricePoint|null; color?: string }) {
   if (!pp) return <span>-</span>;
@@ -64,25 +56,15 @@ function TypeTag({ type }: { type: string }) {
   return <span className={`${styles.tag} ${cls}`}>{label}</span>;
 }
 
-/* -- Vibe card -- */
-const VIBE_MAP: Record<string, [string,string][]> = {
-  indica: [["🛋️","Couch Lock"],["😌","Relax"],["🌙","Sleepy"]],
-  sativa: [["⚡","Energy"],["🧠","Cerebral"],["🚀","Uplift"]],
-  hybrid: [["🧘","Balance"],["🌿","Calm"],["✨","Creative"]],
-};
 function VibeCard({ type }: { type: string }) {
-  const t = type?.toLowerCase();
-  const vibes = VIBE_MAP[t] || VIBE_MAP.hybrid;
+  const typeLabel = type ? type.charAt(0).toUpperCase() + type.slice(1).toLowerCase() : "Flower";
   return (
     <div className={styles.vibeSection}>
-      <div className={styles.vibeHead}>EFFECTS</div>
+      <div className={styles.vibeHead}>PRODUCT TYPE</div>
       <div className={styles.vibePills}>
-        {vibes.map(([emoji, label]) => (
-          <span key={label} className={styles.vibePill}>
-            <span className={styles.vibeEmoji}>{emoji}</span>
-            <span className={styles.vibeLabel}>{label}</span>
-          </span>
-        ))}
+        <span className={styles.vibePill}>
+          <span className={styles.vibeLabel}>{typeLabel}</span>
+        </span>
       </div>
     </div>
   );
@@ -111,7 +93,7 @@ function cleanName(name: string): string {
    SLOT RESERVATION SYSTEM (matches original TVMenu.html)
    ============================================================
    Each tier shows max 10 rows at a time with reserved slots:
-   SALE (max 2) → TOP PICK (max 1) → MUST TRY (max 1) → SATIVA (max 3) → INDICA (fills rest)
+   SALE (max 2) → FEATURED (max 1) → MENU FEATURE (max 1) → SATIVA (max 3) → INDICA (fills rest)
    Products rotate through their bucket windows over time.
    ============================================================ */
 const MAX_VIS = 10;
@@ -262,8 +244,7 @@ function FlowerCard({
           <div className={styles.mediaFrame}>
             <div className={styles.mediaViewport}>
               {hi?.isSale && <div className={styles.saleBadge}>SALE</div>}
-              {hi?.isHot && <div className={styles.topPickBadge}>TOP PICK</div>}
-              {hi?.thc && <div className={styles.imgThcBadge}>{fmtTHC(hi.thc)}</div>}
+              {hi?.isHot && <div className={styles.topPickBadge}>FEATURED</div>}
               {prevImg && (
                 <img src={prevImg} alt="" className={`${styles.budImg} ${styles.budImgFadeOut}`}
                   referrerPolicy="no-referrer" 
@@ -305,7 +286,6 @@ function FlowerCard({
             <div className={styles.detailAccent} style={{ background: accent }} />
             <div className={styles.detailName}>{hi?.name || ""}</div>
             <div className={styles.detailMeta}>
-              {hi?.thc && <span className={styles.detailThc}>{fmtTHC(hi.thc)}</span>}
               {hi?.price3g && <><span className={styles.detailSep}>·</span><span>3g <b>${hi.price3g.sale ?? hi.price3g.regular}</b></span></>}
               {hi?.price5g && <><span className={styles.detailSep}>·</span><span>5g <b>${hi.price5g.sale ?? hi.price5g.regular}</b></span></>}
               {hi?.price14g && <><span className={styles.detailSep}>·</span><span>14g <b>${hi.price14g.sale ?? hi.price14g.regular}</b></span></>}
@@ -347,19 +327,19 @@ function FlowerCard({
           {isTop3 ? (
             <div className={`${styles.listHead} ${styles.tTop3}`}>
               <div className={styles.mh}>Strain</div>
-              <div className={styles.mh}>THC</div>
+              <div className={styles.mh}>Type</div>
               <div className={styles.mh}>Price</div>
             </div>
           ) : isAA ? (
             <div className={`${styles.listHead} ${styles.tAA}`}>
               <div className={styles.mh}>Strain</div>
-              <div className={styles.mh}>THC</div>
+              <div className={styles.mh}>Type</div>
               <div className={styles.mh}>Price</div>
             </div>
           ) : (
             <div className={`${styles.listHead} ${styles.tBudget}`}>
               <div className={styles.mh}>Strain</div>
-              <div className={styles.mh}>THC</div>
+              <div className={styles.mh}>Type</div>
               <div className={styles.mh}>Price</div>
             </div>
           )}
@@ -378,11 +358,11 @@ function FlowerCard({
                   <div className={`${styles.mc} ${styles.mcStrain}`}>
                     {f.name}
                     {f.isSale && <span className={`${styles.tag} ${styles.tagSale}`}>SALE</span>}
-                    {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>TOP PICK</span>}
-                    {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MUST TRY</span>}
+                    {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>FEATURED</span>}
+                    {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MENU FEATURE</span>}
                     <TypeTag type={f.type} />
                   </div>
-                  <div className={`${styles.mc} ${styles.mcThc}`}>{fmtTHC(f.thc)}</div>
+                  <div className={`${styles.mc} ${styles.mcThc}`}>{f.type || "Flower"}</div>
                   <div className={`${styles.mc} ${styles.mcPrice} ${styles.mcPriceDeal}`}>
                     {p3 && (
                       <div className={styles.pLine}>
@@ -413,11 +393,11 @@ function FlowerCard({
                   <div className={`${styles.mc} ${styles.mcStrain}`}>
                     {f.name}
                     {f.isSale && <span className={`${styles.tag} ${styles.tagSale}`}>SALE</span>}
-                    {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>TOP PICK</span>}
-                    {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MUST TRY</span>}
+                    {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>FEATURED</span>}
+                    {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MENU FEATURE</span>}
                     <TypeTag type={f.type} />
                   </div>
-                  <div className={`${styles.mc} ${styles.mcThc}`}>{fmtTHC(f.thc)}</div>
+                  <div className={`${styles.mc} ${styles.mcThc}`}>{f.type || "Flower"}</div>
                   <div className={`${styles.mc} ${styles.mcPrice} ${styles.mcPriceDeal}`}>
                     {f.price5g && (
                       <div className={styles.pLine}>
@@ -442,11 +422,11 @@ function FlowerCard({
                 <div className={`${styles.mc} ${styles.mcStrain}`}>
                   {f.name}
                   {f.isSale && <span className={`${styles.tag} ${styles.tagSale}`}>SALE</span>}
-                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>TOP PICK</span>}
-                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MUST TRY</span>}
+                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>FEATURED</span>}
+                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MENU FEATURE</span>}
                   <TypeTag type={f.type} />
                 </div>
-                <div className={`${styles.mc} ${styles.mcThc}`}>{fmtTHC(f.thc)}</div>
+                <div className={`${styles.mc} ${styles.mcThc}`}>{f.type || "Flower"}</div>
                 <div className={`${styles.mc} ${styles.mcPrice} ${styles.mcPriceDeal}`}>
                   {f.price3g && (
                     <div className={styles.pLine}>
@@ -503,7 +483,7 @@ function OZCard({ flowers, hiIdx }: { flowers: Flower[]; hiIdx: number }) {
         <div className={styles.ozTop}>
           <div className={styles.ozImgWrap}>
             <div className={styles.mediaViewport}>
-              {hi?.isHot && <div className={styles.topPickBadge}>TOP PICK</div>}
+              {hi?.isHot && <div className={styles.topPickBadge}>FEATURED</div>}
               {prevImg && <img src={prevImg} alt="" className={`${styles.budImg} ${styles.budImgFadeOut}`} referrerPolicy="no-referrer" 
             onError={(e) => {
               const t = e.currentTarget;
@@ -532,7 +512,6 @@ function OZCard({ flowers, hiIdx }: { flowers: Flower[]; hiIdx: number }) {
           <div className={styles.ozDetail}>
             <div className={styles.ozDetailName}>{hi?.name||""}</div>
             <div className={styles.ozDetailMeta}>
-              {hi?.thc && <span className={styles.ozDetailThc}>{fmtTHC(hi.thc)}</span>}
               {hi?.price28g && <><span className={styles.ozDetailSep}>·</span><span className={styles.ozDetailPrice}>oz <b>${hi.price28g.sale ?? hi.price28g.regular}</b></span></>}
             </div>
             {hi?.type && <VibeCard type={hi.type} />}
@@ -551,10 +530,9 @@ function OZCard({ flowers, hiIdx }: { flowers: Flower[]; hiIdx: number }) {
                 <span className={styles.ozName}>
                   {f.name}
                   {f.isSale && <span className={`${styles.tag} ${styles.tagSale}`}>SALE</span>}
-                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>TOP PICK</span>}
-                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MUST TRY</span>}
+                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>FEATURED</span>}
+                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MENU FEATURE</span>}
                   <TypeTag type={f.type} />
-                  <span style={{fontSize:14,opacity:0.6,marginLeft:4}}>{fmtTHC(f.thc)}</span>
                 </span>
                 <span className={styles.ozPrice}>${f.price28g?.sale ?? f.price28g?.regular ?? "-"}</span>
               </div>
@@ -570,10 +548,9 @@ function OZCard({ flowers, hiIdx }: { flowers: Flower[]; hiIdx: number }) {
                 <span className={styles.ozName}>
                   {f.name}
                   {f.isSale && <span className={`${styles.tag} ${styles.tagSale}`}>SALE</span>}
-                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>TOP PICK</span>}
-                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MUST TRY</span>}
+                  {f.isHot && <span className={`${styles.tag} ${styles.tagHot}`}>FEATURED</span>}
+                  {f.isMustTry && <span className={`${styles.tag} ${styles.tagMust}`}>MENU FEATURE</span>}
                   <TypeTag type={f.type} />
-                  <span style={{fontSize:14,opacity:0.6,marginLeft:4}}>{fmtTHC(f.thc)}</span>
                 </span>
                 <span className={styles.ozPrice}>${f.price28g?.sale ?? f.price28g?.regular ?? "-"}</span>
               </div>
@@ -635,7 +612,7 @@ function AddOnsCard({ items, hiIdx }: { items: Item[]; hiIdx: number }) {
           <div className={styles.addonsDetailCard}>
             <div className={styles.addonsDetailName}>{hi?.name||""}</div>
             <div className={styles.addonsDetailPrice}>PRICE {(hi?.price||'').replace(/\[object.*\]/,'')}</div>
-            <div className={styles.effectIcons}>🌿 ✨ 💚</div>
+            <div className={styles.effectIcons}>CURRENT MENU ITEM</div>
           </div>
         </div>
 

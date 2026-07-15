@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Visit The Planet 60 at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6. Open 24 Hours a day, 7 days a week. Walk-ins welcome.",
   alternates: {
-    canonical: "https://theplanet60.com/contact",
+    canonical: "https://www.theplanet60.com/contact",
   },
   openGraph: {
     title: "Contact The Planet 60 - Brampton Dispensary",
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 <br />
                 Just walk in and our staff will
                 <br />
-                help you find the perfect strain.
+                help you compare current flower listings.
               </p>
               <div className={styles.featureList}>
                 <div className={styles.featureItem}>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 </div>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>OK</span>
-                  Staff can confirm availability
+                  Ask staff about current menu details
                 </div>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>OK</span>
@@ -129,5 +129,3 @@ export default function ContactPage() {
     </main>
   );
 }
-
-

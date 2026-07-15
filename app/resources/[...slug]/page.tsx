@@ -17,7 +17,7 @@ export async function generateMetadata({
   if (!page) return {};
 
   return {
-    title: `${page.title} | The Planet 60`,
+    title: { absolute: `${page.title} | The Planet 60` },
     description: page.metaDescription,
     alternates: { canonical: `${RESOURCE_SITE}${page.path}` },
   };

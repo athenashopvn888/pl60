@@ -91,7 +91,7 @@ export default function RelatedScroll({
               </div>
               <div className={styles.relatedBody}>
                 <h3>{r.name}</h3>
-                <span className={styles.relatedThc}>THC {r.thc}</span>
+                <span className={styles.relatedThc}>{tierName}</span>
               </div>
             </Link>
           ))}

@@ -33,7 +33,7 @@ export async function generateMetadata({
     description: seo?.seoIntro || `Shop ${flowers.length} ${tierInfo.config.name.toLowerCase()} cannabis strains at The Planet 60.`,
     openGraph: {
       title: `${tierInfo.config.name} Flower | The Planet 60`,
-      description: `${flowers.length} curated ${tierInfo.config.name.toLowerCase()} strains in stock now. From $${tierInfo.config.unitPrice}/g.`,
+      description: `Browse the current ${tierInfo.config.name.toLowerCase()} flower menu at The Planet 60. Review listing details and posted prices before visiting.`,
     },
   };
 }

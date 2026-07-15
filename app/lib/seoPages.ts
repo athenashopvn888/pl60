@@ -126,7 +126,7 @@ export const SEO_PAGES: SeoPageData[] = [
       {
         heading: "Adult Tobacco Boundary",
         body:
-          "Smoking and nicotine use carry serious health risks. This page is for adult 19+ menu navigation only. Brand mix, flavours, and prices can rotate, so check the cigarette category before visiting.",
+          "This adult 19+ page stays focused on cigarette-category navigation. Brand mix, varieties, and prices can rotate, so check the current category before visiting.",
       },
       {
         heading: "One Peter Robertson Stop",

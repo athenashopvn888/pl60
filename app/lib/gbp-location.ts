@@ -32,7 +32,7 @@ export const gbpLocation = {
   seoTitle: "The Planet 60 | Weed Dispensary in Brampton",
   metaDescription: "The Planet 60 is a local weed dispensary in Brampton offering flower, pre-rolls, edibles, vapes, concentrates, CBD, and service for adults 19+.",
   localLandmarks: ["Brampton", "Queen Street", "Main Street"],
-  introVariant: "The Planet 60 is a local weed dispensary in Brampton, located at 1098 Peter Robertson Blvd #10. We serve adults 19+ looking for quality weed, cannabis flower, pre-rolls, edibles, THC vapes, concentrates, shatter, CBD oils, and accessories. Whether you are searching for a weed dispensary near Brampton, a cannabis store in Brampton, or a local weed shop close to Queen Street, our friendly team is here to help you find the right product.",
+  introVariant: "The Planet 60 is a local weed dispensary in Brampton, located at 1098 Peter Robertson Blvd #10. Adults 19+ can browse cannabis flower, pre-rolls, edibles, THC vapes, concentrates, shatter, CBD oils, and accessories. Use the current category pages to compare listed products before visiting.",
   neighborhoodDescription: "Located in the vibrant Brampton district, our cannabis store fits right into this active and historic community, surrounded by local retail shops and convenient transit links.",
   parkingNote: "Ample free parking is available in the retail plaza lot",
   transitNote: "Served by Brampton Transit routes along Torbram Road and Peter Robertson Boulevard.",

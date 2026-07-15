@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Frequently asked questions about The Planet 60 in Brampton. Hours, location, products, pricing, bundle offers, and what to check before visiting.",
   alternates: {
-    canonical: "https://theplanet60.com/faq",
+    canonical: "https://www.theplanet60.com/faq",
   },
 };
 
@@ -47,7 +47,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Do you have a current menu?",
-        a: "Use the online menu and category pages for current public listings. Product mix, pricing, and availability can change.",
+        a: "Use the online menu and category pages for current public listings. Product mix and pricing can change.",
       },
       {
         q: "What are your flower tiers?",
@@ -105,7 +105,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Do you offer delivery?",
-        a: "The delivery page is being kept as a local update page while delivery details are prepared. Do not rely on delivery until the store confirms availability.",
+        a: "The delivery page is being kept as a local update page while delivery details are prepared. Do not rely on delivery until the store confirms the service details.",
       },
       {
         q: "What payment methods do you accept?",
@@ -113,11 +113,11 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Can staff help me choose a product?",
-        a: "Ask the store team for current product guidance, price details, and availability when you visit.",
+        a: "Ask the store team for current product and price details when you visit.",
       },
       {
         q: "Is there a minimum purchase?",
-        a: "Check with the store for current purchase rules and product availability.",
+        a: "Check with the store for current purchase rules and menu details.",
       },
     ],
   },

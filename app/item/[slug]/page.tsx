@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: `${item.name} | ${item.category} | The Planet 60 Brampton`,
     description: itemData.metaDescription,
     alternates: {
-      canonical: `https://theplanet60.com/item/${slug}`,
+      canonical: `https://www.theplanet60.com/item/${slug}`,
     },
     openGraph: {
       title: `${item.name} | The Planet 60`,
@@ -54,9 +54,8 @@ function getJsonLd(item: ItemProduct) {
 
   const offers: any = {
     "@type": "Offer",
-    url: `https://theplanet60.com/item/${item.slug}`,
+    url: `https://www.theplanet60.com/item/${item.slug}`,
     priceCurrency: "CAD",
-    availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
     seller: { "@type": "Organization", name: "The Planet 60" },
     hasMerchantReturnPolicy: {
@@ -74,7 +73,7 @@ function getJsonLd(item: ItemProduct) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: item.name,
-    image: item.image ? [item.image.startsWith('http') ? item.image : `https://theplanet60.com${item.image.startsWith('/') ? '' : '/'}${item.image}`] : undefined,
+    image: item.image ? [item.image.startsWith('http') ? item.image : `https://www.theplanet60.com${item.image.startsWith('/') ? '' : '/'}${item.image}`] : undefined,
     description: itemData.description,
     brand: { "@type": "Brand", name: "The Planet 60" },
     sku: cleanSku(item.sku || item.slug),
@@ -93,19 +92,19 @@ function getBreadcrumbJsonLd(item: ItemProduct) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://theplanet60.com"
+        "item": "https://www.theplanet60.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": item.category,
-        "item": `https://theplanet60.com/items/${catSlug}`
+        "item": `https://www.theplanet60.com/items/${catSlug}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": item.name,
-        "item": `https://theplanet60.com/item/${item.slug}`
+        "item": `https://www.theplanet60.com/item/${item.slug}`
       }
     ]
   };
@@ -188,16 +187,6 @@ export default async function ItemPage({
                   </>
                 )}
                 
-                {item.thc && (
-                  <>
-                    <div className={styles.strainMetaItem}>
-                      <span className={styles.strainMetaLabel}>THC</span>
-                      <span className={styles.strainMetaValueGreen}>{item.thc}</span>
-                    </div>
-                    <div className={styles.strainMetaDivider} />
-                  </>
-                )}
-                
                 {item.mg && (
                   <>
                     <div className={styles.strainMetaItem}>
@@ -214,9 +203,9 @@ export default async function ItemPage({
                 </div>
               </div>
 
-              {/* Effects */}
+              {/* Product attributes */}
               <div className={styles.effectsRow}>
-                {itemData.effects.map((e) => (
+                {itemData.attributes.map((e) => (
                   <span key={e.label} className={styles.effectPill}>
                     {e.emoji} {e.label}
                   </span>
@@ -247,14 +236,14 @@ export default async function ItemPage({
                 <p className={styles.descText}>{itemData.description}</p>
               </div>
 
-              {/* -- How to consume -- */}
+              {/* -- Product details -- */}
               <div className={styles.descSection} style={{ marginTop: '24px' }}>
-                <h2 className={styles.descTitle}>How to Consume</h2>
-                <p className={styles.descText}>{itemData.consume}</p>
+                <h2 className={styles.descTitle}>Product Details</h2>
+                <p className={styles.descText}>{itemData.details}</p>
               </div>
 
               <div className={styles.visitCta}>
-                <p>Available in-store &middot; Walk-in welcome &middot; No appointment needed</p>
+                <p>Browse the current menu &middot; Walk-in welcome &middot; No appointment needed</p>
               </div>
             </div>
           </div>

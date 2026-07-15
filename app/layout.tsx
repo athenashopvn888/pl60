@@ -3,7 +3,7 @@ import "./globals.css";
 import AgeGate from "./components/AgeGate";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://theplanet60.com"),
+  metadataBase: new URL("https://www.theplanet60.com"),
   title: {
     default: "Planet 60 Cannabis | 24-Hour Brampton Dispensary",
     template: "%s | The Planet 60",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://theplanet60.com",
+    url: "https://www.theplanet60.com",
     siteName: "The Planet 60",
     title: "The Planet 60 - Brampton Cannabis Dispensary",
     description:
       "Flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
     images: [
       {
-        url: "https://theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg",
+        url: "https://www.theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg",
         width: 1200,
         height: 630,
         alt: "The Planet 60 Brampton cannabis dispensary",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Planet 60 - Brampton Cannabis Dispensary",
     description: "Open 24 Hours at 1098 Peter Robertson Blvd #10, Brampton.",
-    images: ["https://theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg"],
+    images: ["https://www.theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg"],
   },
   robots: {
     index: true,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://theplanet60.com",
+    canonical: "https://www.theplanet60.com",
   },
   verification: {
     // google: "your-google-verification-code",
@@ -73,12 +73,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Store",
   additionalType: "https://schema.org/Store",
-  "@id": "https://theplanet60.com",
+  "@id": "https://www.theplanet60.com",
   name: "The Planet 60",
   description: "Cannabis dispensary at 1098 Peter Robertson Blvd #10 in Brampton, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 24 Hours.",
-  url: "https://theplanet60.com",
+  url: "https://www.theplanet60.com",
   telephone: "+14372306974",
-  image: "https://theplanet60.com/wp-content/uploads/2026/04/7Clmh.jpg",
+  image: "https://www.theplanet60.com/wp-content/uploads/2026/04/7Clmh.jpg",
   priceRange: "$3 - $12/g",
   address: {
     "@type": "PostalAddress",

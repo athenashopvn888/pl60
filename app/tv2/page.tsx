@@ -10,19 +10,18 @@ interface Item {
 
 /* -- CATEGORY CONFIG -- */
 const CARD_CONFIG = [
-  { id:"PREROLLS_ADDONS", title:"🔥 PREROLLS & ADD ONS", accent:"#dc2626", filter:(it:Item)=>it.category==="PREROLLS"||it.category==="ADD ONS", preset:"🔥 START SLOW · 2–3 PUFFS · WAIT 5 MIN" },
-  { id:"VAPES",           title:"💨 VAPES",              accent:"#0284c7", filter:(it:Item)=>["VAPE PENS","VAPE DISPOSABLE"].includes(it.category), preset:"💨 1–2 PUFFS · WAIT 2–3 MIN · REPEAT" },
-  { id:"EDIBLES",         title:"🍬 EDIBLES",            accent:"#7c3aed", filter:(it:Item)=>it.category==="EDIBLES", preset:"🍬 START SMALL · WAIT 45 MIN · THEN MORE" },
-  { id:"CONCENTRATES",    title:"⚗️ CONCENTRATES",       accent:"#b45309", filter:(it:Item)=>it.category==="CONCENTRATES", preset:"⚠️ VERY STRONG · TINY AMOUNT · WAIT 10–15 MIN" },
+  { id:"PREROLLS_ADDONS", title:"🔥 PREROLLS & ADD ONS", accent:"#dc2626", filter:(it:Item)=>it.category==="PREROLLS"||it.category==="ADD ONS", preset:"CHECK CURRENT MENU" },
+  { id:"VAPES",           title:"💨 VAPES",              accent:"#0284c7", filter:(it:Item)=>["VAPE PENS","VAPE DISPOSABLE"].includes(it.category), preset:"CHECK CURRENT MENU" },
+  { id:"EDIBLES",         title:"🍬 EDIBLES",            accent:"#7c3aed", filter:(it:Item)=>it.category==="EDIBLES", preset:"CHECK CURRENT MENU" },
+  { id:"CONCENTRATES",    title:"⚗️ CONCENTRATES",       accent:"#b45309", filter:(it:Item)=>it.category==="CONCENTRATES", preset:"CHECK CURRENT MENU" },
   { id:"CIGARETTES",      title:"🚬 CIGARETTES",         accent:"#78350f", filter:(it:Item)=>it.category==="CIGARETTES", preset:"" },
-  { id:"MAGIC",           title:"🍄 MAGIC & OTHERS",     accent:"#9333ea", filter:(it:Item)=>it.category==="MAGIC & OTHERS", preset:"🍫 START SMALL · WAIT 45 MIN · THEN MORE" },
+  { id:"MAGIC",           title:"🍄 MAGIC & OTHERS",     accent:"#9333ea", filter:(it:Item)=>it.category==="MAGIC & OTHERS", preset:"CHECK CURRENT MENU" },
 ];
 
 function isDaytime() { const h = new Date().getHours(); return h >= 10 && h < 17; }
 
 /* -- HELPERS -- */
 const fmtPrice = (v?:string) => { const s=String(v||"").trim(); if(!s)return""; return /^\$/.test(s)?s:"$"+s; };
-const fmtTHC = (v?:string) => { const s=String(v||"").trim(); if(!s)return""; if(/^\d+(\.\d+)?%?$/.test(s)){const n=parseFloat(s);return(n<=1?Math.round(n*100):Math.round(n))+"%";}return s; };
 const fmtMG = (v?:string) => { const s=String(v||"").trim(); if(!s)return""; if(/^\d+(\.\d+)?$/.test(s))return s+"mg"; return s; };
 
 /* -- ITEM CARD -- */
@@ -51,7 +50,6 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
 
   const metaParts: string[] = [];
   if (hi?.type) metaParts.push(hi.type);
-  if (hi?.thc) metaParts.push(fmtTHC(hi.thc));
   if (hi?.mg) metaParts.push(fmtMG(hi.mg));
   if (hi?.price) metaParts.push(fmtPrice(hi.price));
 
@@ -90,7 +88,7 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
                 {metaParts.map((p,i) => (
                   <span key={i}>
                     {i > 0 && <span className={styles.detailSep}> · </span>}
-                    <span className={p===fmtTHC(hi?.thc)?styles.detailThc:undefined} style={p===fmtPrice(hi?.price)?{fontWeight:900}:undefined}>{p}</span>
+                    <span style={p===fmtPrice(hi?.price)?{fontWeight:900}:undefined}>{p}</span>
                   </span>
                 ))}
               </div>
@@ -118,7 +116,6 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
                   <div className={styles.mcItem}>
                     {it.name}
                     {it.type && <span className={styles.submeta}> · {it.type}</span>}
-                    {it.thc && <span className={styles.submeta}> · {fmtTHC(it.thc)}</span>}
                     {it.mg && <span className={styles.submeta}> · {fmtMG(it.mg)}</span>}
                   </div>
                   <div className={styles.mcPrice}>{fmtPrice(it.price)}</div>

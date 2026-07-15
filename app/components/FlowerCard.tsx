@@ -93,9 +93,6 @@ export default function FlowerCard({
               }
             }}
           />
-          {/* THC badge */}
-          <span className={styles.thcBadge}>THC {flower.thc}</span>
-
           {/* Sale tag */}
           {flower.isSale && (
             <span className={styles.saleTag}>SALE</span>

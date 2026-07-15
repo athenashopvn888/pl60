@@ -12,11 +12,11 @@ export const TIER_SEO: Record<string, TierSeoData> = {
     sections: [
       {
         heading: "Start With The Exotic Tier",
-        body: "Exotic is the higher-tier flower path on The Planet 60 menu. Use the current product name, strain notes, size, posted price, and availability details before choosing.",
+        body: "Exotic is one flower path on The Planet 60 menu. Use the current product name, item notes, size, and posted price before choosing.",
       },
       {
         heading: "Check Current Bundle Notes",
-        body: "The site may show gram and bundle notes for this tier. Confirm current pricing and availability on the menu or with staff before purchase.",
+        body: "The site may show size and bundle notes for this tier. Confirm current pricing on the menu or with staff before purchase.",
       },
       {
         heading: "Visit The Planet 60 In Brampton",
@@ -31,15 +31,15 @@ export const TIER_SEO: Record<string, TierSeoData> = {
   },
   PREMIUM: {
     seoTitle: "Premium Cannabis Flower Brampton | The Planet 60",
-    seoIntro: "Use the Premium flower page at The Planet 60 to compare current higher-shelf flower listings in Brampton.",
+    seoIntro: "Use the Premium flower page at The Planet 60 to compare current flower listings in Brampton.",
     sections: [
       {
         heading: "Compare Premium Flower Clearly",
-        body: "Premium sits below Exotic in the flower navigation. It is a useful category for Brampton shoppers who want to compare higher-shelf listings without starting at the top tier.",
+        body: "Premium and Exotic are separate paths in the flower navigation. Use each page to compare current names, sizes, and posted prices.",
       },
       {
         heading: "Read The Current Item Notes",
-        body: "Use the current menu for strain names, sizes, posted prices, and availability. Menu details can change, so old examples should not make the decision.",
+        body: "Use the current menu for product names, sizes, and posted prices. Menu details can change, so old examples should not make the decision.",
       },
       {
         heading: "Premium Flower On Peter Robertson Blvd",
@@ -47,28 +47,28 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
     ],
     faqs: [
-      { q: "What is Premium flower at The Planet 60?", a: "Premium is one of the flower tiers on The Planet 60 menu. Use current listings to compare available options." },
+      { q: "What is Premium flower at The Planet 60?", a: "Premium is one of the flower tiers on The Planet 60 menu. Use current listings to compare options." },
       { q: "How is Premium different from Exotic?", a: "They are separate menu tiers. Compare the current products and posted details in each tier before choosing." },
       { q: "Where can shoppers confirm current prices?", a: "Use the current menu or ask staff for current product and price details." },
     ],
   },
   "AAA+": {
     seoTitle: "AAA+ Cannabis Flower Brampton | The Planet 60",
-    seoIntro: "Use the AAA+ flower page at The Planet 60 to compare current mid-to-high flower listings in Brampton.",
+    seoIntro: "Use the AAA+ flower page at The Planet 60 to compare current flower listings in Brampton.",
     sections: [
       {
         heading: "Use AAA+ For A Focused Comparison",
-        body: "AAA+ is a flower tier for shoppers who want to compare stronger menu listings without mixing every flower category together.",
+        body: "AAA+ is a flower tier that lets shoppers compare one section without mixing every flower category together.",
       },
       {
         heading: "Compare Size, Price, And Notes",
-        body: "Start with the current product name, then compare size, posted price, and item notes. If availability or format matters, confirm before visiting.",
+        body: "Start with the current product name, then compare size, posted price, and item notes. If one format matters, confirm before visiting.",
       },
     ],
     faqs: [
       { q: "What is AAA+ flower?", a: "AAA+ is one of The Planet 60 flower tiers. Check the current menu for today's listings." },
       { q: "How should shoppers compare AAA+?", a: "Compare current item names, sizes, posted prices, and menu notes." },
-      { q: "Does this page guarantee current availability?", a: "No. Use the current menu or ask staff for live details." },
+      { q: "Can AAA+ listings change?", a: "Yes. Use the current menu or ask staff for current details." },
     ],
   },
   AA: {
@@ -81,7 +81,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         heading: "Confirm The Current Details",
-        body: "Use the menu or staff for current product names, sizes, posted prices, and availability before choosing.",
+        body: "Use the menu or staff for current product names, sizes, and posted prices before choosing.",
       },
     ],
     faqs: [
@@ -104,7 +104,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
     ],
     faqs: [
       { q: "What is the Budget flower tier?", a: "Budget is the lower-spend flower category on The Planet 60 menu." },
-      { q: "Does this page guarantee current Budget listings?", a: "No. Use the current menu or ask staff for current details." },
+      { q: "Can Budget listings change?", a: "Yes. Use the current menu or ask staff for current details." },
       { q: "Where is The Planet 60?", a: "The Planet 60 is located at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6." },
     ],
   },

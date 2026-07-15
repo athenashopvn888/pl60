@@ -6,7 +6,7 @@ import BudtenderApplicationForm from "./BudtenderApplicationForm";
 import styles from "./budtender.module.css";
 
 export const metadata: Metadata = {
-  title: "Budtender Or Manager Application | The Planet 60",
+  title: { absolute: "Budtender Or Manager Application | The Planet 60" },
   description:
     "Apply online for budtender or manager opportunities at The Planet 60 in Brampton. Submit availability, experience, motivation, determination, and customer-service answers.",
   alternates: {

@@ -32,7 +32,7 @@ export async function generateMetadata({
     title: catInfo.config.seoTitle || `${catInfo.config.name} — ${items.length} Products`,
     description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at The Planet 60.`,
     alternates: {
-      canonical: `https://theplanet60.com/items/${catSlug}`,
+      canonical: `https://www.theplanet60.com/items/${catSlug}`,
     },
   };
 }
@@ -92,7 +92,7 @@ export default async function ItemsCategoryPage({
             <div className={styles.emptyState}>
               <span className={styles.emptyIcon}>🌱</span>
               <h3>Coming Soon</h3>
-              <p>We&apos;re stocking this category. Check back soon!</p>
+              <p>No current listings are shown in this category. Check back soon.</p>
             </div>
           )}
         </div>
@@ -149,7 +149,6 @@ function ItemCard({ item, catColor }: { item: ItemProduct; catColor: string }) {
           </div>
         )}
         <div className={styles.cardBadges}>
-          {item.thc && <span className={styles.badgeThc}>{item.thc}</span>}
           {item.mg && <span className={styles.badgeMg}>{item.mg}</span>}
         </div>
       </div>

@@ -3,7 +3,7 @@ import ResourceView from "./ResourceView";
 import { RESOURCE_CANONICAL, RESOURCE_HUB } from "./resourceData";
 
 export const metadata: Metadata = {
-  title: "The Planet 60 Resources | Peter Robertson Brampton Guides",
+  title: { absolute: "The Planet 60 Resources | Peter Robertson Brampton Guides" },
   description: RESOURCE_HUB.metaDescription,
   alternates: { canonical: RESOURCE_CANONICAL },
 };

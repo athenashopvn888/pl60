@@ -28,7 +28,7 @@ export async function generateMetadata({
   const strainData = getStrainData(flower.name, flower.type, flower.tier, flower.thc);
 
   return {
-    title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | THC ${flower.thc} | The Planet 60 Brampton`,
+    title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | The Planet 60 Brampton`,
     description: strainData.metaDescription,
     openGraph: {
       title: `${flower.name} | The Planet 60`,
@@ -57,9 +57,8 @@ function getJsonLd(flower: FlowerProduct) {
 
   const offers: any = {
     "@type": "Offer",
-    url: `https://theplanet60.com/flower/${flower.slug}`,
+    url: `https://www.theplanet60.com/flower/${flower.slug}`,
     priceCurrency: "CAD",
-    availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
     seller: { "@type": "Organization", name: "The Planet 60" },
     hasMerchantReturnPolicy: {
@@ -77,7 +76,7 @@ function getJsonLd(flower: FlowerProduct) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: flower.name,
-    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://theplanet60.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
+    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://www.theplanet60.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
     description: strainData.description,
     brand: { "@type": "Brand", name: "The Planet 60" },
     sku: cleanSku(flower.sku || flower.slug),
@@ -98,19 +97,19 @@ function getBreadcrumbJsonLd(flower: FlowerProduct) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://theplanet60.com"
+        "item": "https://www.theplanet60.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": tierName,
-        "item": `https://theplanet60.com/${tierSlug}`
+        "item": `https://www.theplanet60.com/${tierSlug}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": flower.name,
-        "item": `https://theplanet60.com/flower/${flower.slug}`
+        "item": `https://www.theplanet60.com/flower/${flower.slug}`
       }
     ]
   };
@@ -203,8 +202,6 @@ export default async function FlowerPage({
                 )}
               </div>
 
-              {/* THC badge on image - always green */}
-              <span className={styles.thcOverlay}>THC {flower.thc}</span>
             </div>
 
             {/* -- Details -- */}
@@ -223,19 +220,14 @@ export default async function FlowerPage({
                 </div>
                 <div className={styles.strainMetaDivider} />
                 <div className={styles.strainMetaItem}>
-                  <span className={styles.strainMetaLabel}>THC</span>
-                  <span className={styles.strainMetaValueGreen}>{flower.thc}</span>
-                </div>
-                <div className={styles.strainMetaDivider} />
-                <div className={styles.strainMetaItem}>
                   <span className={styles.strainMetaLabel}>SKU</span>
                   <span className={styles.strainMetaValue}>{flower.sku}</span>
                 </div>
               </div>
 
-              {/* Effects */}
+              {/* Product attributes */}
               <div className={styles.effectsRow}>
-                {strainData.effects.map((e) => (
+                {strainData.attributes.map((e) => (
                   <span key={e.label} className={styles.effectPill}>
                     {e.emoji} {e.label}
                   </span>

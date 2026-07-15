@@ -139,17 +139,17 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       "Compare The Planet 60 flower tiers in Brampton, including Exotic, Premium, AAA+, AA, and Budget cannabis flower menu sections.",
     eyebrow: "Flower orbit",
     summary:
-      "A clearer flower-tier explanation for shoppers comparing quality lane, price lane, and cannabis flower categories at The Planet 60.",
+      "A clearer flower-tier explanation for shoppers comparing menu sections, posted prices, and cannabis flower categories at The Planet 60.",
     sections: [
       {
         heading: "Exotic And Premium Orbit",
         body:
-          "Exotic and Premium are the high-signal flower lanes for shoppers who want the loudest shelf at The Planet 60. These pages help quality-first shoppers start in the right place.",
+          "Exotic and Premium are separate flower lanes at The Planet 60. These pages help shoppers compare the current names, sizes, and posted prices in each section.",
       },
       {
         heading: "AAA+ And AA Orbit",
         body:
-          "AAA+ and AA sit in the practical middle. They help shoppers compare value and quality before visiting the Peter Robertson Blvd shop.",
+          "AAA+ and AA are separate flower sections. They help shoppers compare current names, sizes, and posted prices before visiting the Peter Robertson Blvd shop.",
       },
       {
         heading: "Budget Orbit",
@@ -191,7 +191,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Fast Categories",
         body:
-          "Flower, pre-rolls, THC Vape, edibles, and concentrates are the fastest high-intent categories to compare before a late visit. Cigarettes and accessories round out the stop for shoppers who need more than cannabis.",
+          "Flower, pre-rolls, THC Vape, edibles, and concentrates are direct categories to compare before a late visit. Cigarettes and accessories are listed in their own menu sections.",
       },
       {
         heading: "Keep It Responsible",
@@ -228,7 +228,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Adult Tobacco Boundary",
         body:
-          "Smoking and nicotine use carry serious health risks. This page is for adult 19+ menu clarity and store navigation only, and shoppers should check the cigarette category for the current brand mix before visiting.",
+          "This adult 19+ page stays focused on cigarette-category navigation. Shoppers should check the current category for the listed brand mix before visiting.",
       },
       {
         heading: "Pair With The Right Store Path",
@@ -265,7 +265,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Nic Vape Path",
         body:
-          "The Planet 60 menu includes Nic Vape and nicotine pouch lanes. Nicotine products are for adult shoppers only and carry serious health risks, so this guide stays focused on menu location and current product checks.",
+          "The Planet 60 menu includes Nic Vape and nicotine pouch sections for adults 19+. This guide stays focused on menu location and current product checks.",
       },
       {
         heading: "Accessory Add-Ons",
@@ -302,7 +302,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       {
         heading: "Keep It Menu-Focused",
         body:
-          "This page is a navigation guide only. It does not provide dosing instructions, consumption instructions, medical claims, therapeutic claims, effect promises, or safety claims.",
+          "This page is a navigation guide for adults 19+. Use current category listings and product package details when comparing items.",
       },
       {
         heading: "Check Current Selection",

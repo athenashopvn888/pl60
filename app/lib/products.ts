@@ -97,7 +97,7 @@ export const TIER_CONFIG: Record<
     slug: "exotic",
     color: "#f59e0b",
     icon: "\uD83D\uDD25",
-    tagline: "Ultra-rare, top-shelf genetics \u00B7 THC 35-39%",
+    tagline: "Explore the current Exotic flower menu",
     banner: "/banners/exotics_banner.webp",
     unitPrice: 20,
     deal3g: { label: "3g bundle", total: "3G", price: 40 },
@@ -108,7 +108,7 @@ export const TIER_CONFIG: Record<
     slug: "premium",
     color: "#a78bfa",
     icon: "\uD83D\uDC8E",
-    tagline: "Hand-picked connoisseur grade \u00B7 THC 32-34%",
+    tagline: "Explore the current Premium flower menu",
     banner: "/banners/premium_banner.webp",
     unitPrice: 15,
     deal3g: { label: "3g bundle", total: "3G", price: 30 },
@@ -119,7 +119,7 @@ export const TIER_CONFIG: Record<
     slug: "aaa",
     color: "#22d3ee",
     icon: "\u26A1",
-    tagline: "Heavy hitters, proven strains \u00B7 THC 30-32%",
+    tagline: "Explore the current AAA+ flower menu",
     banner: "/banners/aaa_plus_banner.webp",
     unitPrice: 10,
     deal3g: { label: "3g bundle", total: "3G", price: 20 },
@@ -130,7 +130,7 @@ export const TIER_CONFIG: Record<
     slug: "aa",
     color: "#34d399",
     icon: "\u2726",
-    tagline: "Quality daily drivers \u00B7 THC 27-29%",
+    tagline: "Explore the current AA flower menu",
     banner: "/banners/aa_banner.webp",
     unitPrice: 4,
     deal3g: null,
@@ -141,7 +141,7 @@ export const TIER_CONFIG: Record<
     slug: "budget",
     color: "#94a3b8",
     icon: "\uD83D\uDCB0",
-    tagline: "Shreds & value OZs \u00B7 From $40/oz",
+    tagline: "Explore the current Budget flower menu",
     banner: "/banners/budget_banner.webp",
     unitPrice: 3,
     deal3g: { label: "$10 / 3g Special", total: "3G", price: 10 },
@@ -162,10 +162,10 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     name: "Edibles", slug: "edibles", color: "#f97316", icon: "ED",
     seoTitle: "Cannabis Edibles Brampton - Gummies, Chocolates & Drinks",
     seoIntro: "Browse the cannabis edibles category at The Planet 60 on Peter Robertson Blvd, Brampton. Check the current page for listed gummies, chocolates, drinks, and other edible formats.",
-    seoDescription: "Looking for cannabis edibles in Brampton? The Planet 60 keeps an edibles category for shoppers checking listed gummies, chocolates, beverages, and baked goods before visiting 1098 Peter Robertson Blvd #10. Product mix, potency, and pricing can change.",
+    seoDescription: "Looking for cannabis edibles in Brampton? The Planet 60 keeps an edibles category for shoppers checking listed gummies, chocolates, beverages, and baked goods before visiting 1098 Peter Robertson Blvd #10. Product mix and pricing can change.",
     faqs: [
       { q: "What cannabis edibles do you carry?", a: "The edibles category may include gummies, chocolates, beverages, capsules, and baked goods. Check the current page for listed products." },
-      { q: "How long do edibles take to kick in?", a: "Cannabis edibles typically take 30-90 minutes to take effect. Start with a low dose (5-10mg) and wait at least 2 hours before consuming more." },
+      { q: "What details should I check on an edible listing?", a: "Check the product format, package size, listed amount, and posted price, then review the product package before purchase." },
       { q: "Can I buy edibles at The Planet 60?", a: "Visit 1098 Peter Robertson Blvd #10, Brampton, and check the current edibles page before visiting. The store lists Open 24 Hours." },
     ],
   },
@@ -185,10 +185,10 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "NV",
     seoTitle: "Disposable Vapes Brampton - Vape Disposables",
     seoIntro: "Disposable vape listings at The Planet 60, Brampton. Check the current category page before visiting Peter Robertson Blvd.",
-    seoDescription: "The Planet 60 keeps a vape disposables category for Brampton shoppers checking listed disposable vape formats. Product mix, profiles, and potency details can change, so use the current category page before visiting 1098 Peter Robertson Blvd #10.",
+    seoDescription: "The Planet 60 keeps a vape disposables category for Brampton shoppers checking listed disposable vape formats. Product mix and package details can change, so use the current category page before visiting 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "How long does a disposable vape last?", a: "Most disposable THC vapes contain 0.5g-1g of distillate and last between 100-300 puffs depending on usage." },
-      { q: "Are disposable vapes rechargeable?", a: "Most are designed for single use, but some models include a USB-C charging port to ensure you can use the full cartridge." },
+      { q: "What should I check on a disposable vape listing?", a: "Check the listed format, package details, compatibility notes, and posted price before visiting." },
+      { q: "Are all disposable vapes the same format?", a: "No. Review the current listing and product package for device and charging details." },
     ],
   },
   CONCENTRATES: {
@@ -196,10 +196,10 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     name: "Concentrates", slug: "concentrates", color: "#f59e0b", icon: "C",
     seoTitle: "Cannabis Concentrates Brampton - Shatter, Wax, Hash & Live Resin",
     seoIntro: "Cannabis concentrate listings at The Planet 60, Brampton. Check the current page for shatter, wax, hash, live resin, diamonds, and related formats.",
-    seoDescription: "The Planet 60 keeps a concentrates category for Brampton shoppers checking hash, kief, shatter, wax, live resin, THC diamonds, and related formats. Product mix and potency details can rotate, so check the current page before visiting 1098 Peter Robertson Blvd #10.",
+    seoDescription: "The Planet 60 keeps a concentrates category for Brampton shoppers checking hash, kief, shatter, wax, live resin, THC diamonds, and related formats. Product mix and package details can rotate, so check the current page before visiting 1098 Peter Robertson Blvd #10.",
     faqs: [
       { q: "What types of concentrates do you carry?", a: "The concentrates page may list shatter, wax, budder, live resin, rosin, hash, kief, THC diamonds, and related formats." },
-      { q: "How do I consume concentrates?", a: "Concentrates can be dabbed with a rig, vaped with a concentrate pen, or added to flower in a joint or bowl for extra potency." },
+      { q: "What should I compare on concentrate listings?", a: "Compare the listed format, package size, and posted price, then review the product package before purchase." },
     ],
   },
   PREROLLS: {
@@ -209,7 +209,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     seoDescription: "The Planet 60 keeps a pre-roll category for Brampton shoppers checking singles, multi-packs, infused pre-rolls, and related formats before visiting 1098 Peter Robertson Blvd #10. Product mix and pricing can change.",
     faqs: [
       { q: "What pre-rolls do you carry?", a: "The pre-roll page may list singles, 3-packs, multi-packs, and infused pre-rolls. Check the current page for listed products." },
-      { q: "Do pre-roll listings change?", a: "Yes. Strain names, pack sizes, potency details, and prices can rotate." },
+      { q: "Do pre-roll listings change?", a: "Yes. Product names, pack sizes, and posted prices can rotate." },
     ],
   },
   "ADD ONS": {
@@ -226,11 +226,11 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     banner: "/banners/09_Magic_Stuff.webp",
     name: "Magic Stuff", slug: "magic", color: "#64748b", icon: "*",
     seoTitle: "Magic Stuff - Specialty Items",
-    seoIntro: "Browse current menu for available specialty products. Availability may vary by store.",
-    seoDescription: "Current specialty items are listed when they are carried on the menu. Product availability may vary by store and by day. Check the live menu for current selection.",
+    seoIntro: "Browse the current specialty-products category and compare the listing details shown for this location.",
+    seoDescription: "Current specialty items are shown in their store category with product, package, and price details where provided. Check the current menu before visiting for one item.",
     faqs: [
-      { q: "What specialty items are available?", a: "Selection varies by store and by day. Check the current menu for available specialty products." },
-      { q: "Does availability vary by location?", a: "Yes. Specialty item availability may vary by store, so please check the current menu for this location." },
+      { q: "Where can I check specialty items?", a: "Use the current specialty-products category for The Planet 60 before visiting for one item." },
+      { q: "Can specialty listings change?", a: "Yes. Check the current menu for this location before visiting." },
     ],
   },
   CIGARETTES: {
@@ -296,5 +296,4 @@ export function formatPrice(p: PricePoint | null): string {
   if (p.sale !== null) return `$${p.sale}`;
   return `$${p.regular}`;
 }
-
 

@@ -78,7 +78,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>
             Copyright {new Date().getFullYear()} The Planet 60. Must be 19+ to
-            enter. Please consume responsibly.
+            enter. Adults 19+ only.
           </p>
         </div>
       </div>
