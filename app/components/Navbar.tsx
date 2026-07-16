@@ -40,10 +40,12 @@ export default function Navbar() {
         <Link
           href="/"
           className={styles.logo}
+          aria-label="The Planet 60"
           style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}
         >
           <span style={{ fontSize: "14px", fontWeight: 900, color: "#b6ff3a" }}>P60</span>
           <span
+            className={styles.brandText}
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 900,
