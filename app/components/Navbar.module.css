@@ -173,3 +173,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) { .scrollAdvance, .pill { transition: none; } }
+
+@media (max-width: 383px) {
+  .brandText { display: none; }
+}
