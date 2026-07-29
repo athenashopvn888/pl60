@@ -83,6 +83,54 @@
   gap: 10px;
 }
 
+.menuChoices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.menuChoice {
+  display: grid;
+  place-items: center;
+  min-height: 40px;
+  padding: 7px 13px;
+  border: 1px solid rgba(182, 255, 58, 0.7);
+  border-radius: 10px;
+  color: #efffcf;
+  background: rgba(182, 255, 58, 0.12);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.menuChoice:hover,
+.menuChoiceActive {
+  color: #0a0a0a;
+  background: #b6ff3a;
+}
+
+.deliveryMenuChoice {
+  border-color: rgba(34, 211, 238, 0.78);
+  color: #cffafe;
+  background: rgba(34, 211, 238, 0.15);
+}
+
+.deliveryMenuChoice:hover,
+.deliveryMenuChoiceActive {
+  color: #041114;
+  background: #22d3ee;
+}
+
+.menuChoice:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
 .gamesBtn {
   display: inline-flex;
   align-items: center;
@@ -173,6 +221,37 @@
 }
 
 @media (prefers-reduced-motion: reduce) { .scrollAdvance, .pill { transition: none; } }
+
+@media (max-width: 720px) {
+  .topBar {
+    gap: 8px;
+    height: 58px;
+    padding: 0 8px;
+  }
+
+  .brandText,
+  .gamesBtn,
+  .open {
+    display: none;
+  }
+
+  .topBarRight {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .menuChoices {
+    width: 100%;
+  }
+
+  .menuChoice {
+    min-width: 0;
+    min-height: 44px;
+    padding: 6px 5px;
+    font-size: 10px;
+    white-space: normal;
+  }
+}
 
 @media (max-width: 383px) {
   .brandText { display: none; }
