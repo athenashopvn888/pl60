@@ -28,6 +28,11 @@ const ALL_LINKS = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const isStoreMenuActive =
+    ["/exotic", "/premium", "/aaa", "/aa", "/budget"].includes(pathname) ||
+    pathname.startsWith("/item/") ||
+    pathname.startsWith("/items/");
+  const isDeliveryActive = pathname === "/delivery";
   const scrollBarRef = useRef<HTMLDivElement>(null);
   const [canAdvance, setCanAdvance] = useState(false);
   const updateScrollState = useCallback(() => { const scrollBar = scrollBarRef.current; if (!scrollBar) return; setCanAdvance(scrollBar.scrollWidth - scrollBar.clientWidth - scrollBar.scrollLeft > 2); }, []);
@@ -59,6 +64,22 @@ export default function Navbar() {
           </span>
         </Link>
         <div className={styles.topBarRight}>
+          <div className={styles.menuChoices} aria-label="Choose a menu">
+            <Link
+              href="/exotic"
+              className={`${styles.menuChoice} ${isStoreMenuActive ? styles.menuChoiceActive : ""}`}
+              aria-current={isStoreMenuActive ? "page" : undefined}
+            >
+              Store Menu
+            </Link>
+            <Link
+              href="/delivery"
+              className={`${styles.menuChoice} ${styles.deliveryMenuChoice} ${isDeliveryActive ? styles.deliveryMenuChoiceActive : ""}`}
+              aria-current={isDeliveryActive ? "page" : undefined}
+            >
+              Delivery Menu
+            </Link>
+          </div>
           <Link href="/games" className={styles.gamesBtn}>
             Play Games
           </Link>
