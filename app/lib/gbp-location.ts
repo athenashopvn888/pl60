@@ -9,8 +9,8 @@ export const gbpLocation = {
   address: "1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6",
   streetAddress: "1098 Peter Robertson Blvd #10",
   postalCode: "L6R 1G6",
-  phone: "(437) 230-6974",
-  phoneIntl: "+14372306974",
+  phone: "+1 (289) 206-0899",
+  phoneIntl: "+12892060899",
   neighborhood: "Brampton",
   nearbyAreas: ["Brampton", "Peter Robertson Blvd", "Springdale", "Torbram Road", "Bramalea", "Brampton Transit"],
   products: [
