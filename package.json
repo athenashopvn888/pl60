@@ -11,6 +11,7 @@
     "lint": "eslint",
     "verify:resources": "node scripts/verify-resources-route.mjs",
     "verify:delivery-images": "node scripts/verify-athena-delivery-images.mjs",
+    "verify:consent-webchat": "node scripts/verify-consent-webchat.mjs",
     "test:staff-photo": "node --experimental-strip-types --experimental-specifier-resolution=node --test tests/staff-photo.test.ts"
   },
   "dependencies": {
