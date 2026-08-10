@@ -652,7 +652,7 @@ const TICKER_SLIDES = [
   "Flower Tiers, Edibles, Vapes, Concentrates",
   "Open 24 Hours",
   "ALL SALES ARE FINAL",
-  "Play Games at theplanet60.com/games",
+  "DELIVERY MENU at theplanet60.com/delivery",
 ];
 
 function VerticalTicker() {

@@ -136,7 +136,7 @@ const TICKER_SLIDES = [
   "Open 24 Hours",
   "Pre-Rolls, Edibles, Vapes, Concentrates",
   "ALL SALES ARE FINAL",
-  "Play Games at theplanet60.com/games",
+  "DELIVERY MENU at theplanet60.com/delivery",
 ];
 
 function VerticalTicker() {
