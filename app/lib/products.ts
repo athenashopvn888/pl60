@@ -171,24 +171,24 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   },
   "VAPE PENS": {
     banner: "/banners/01_Vape_Pens.webp",
-    name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "V",
-    seoTitle: "Vape Pens Brampton - THC & Nicotine Cartridges",
-    seoIntro: "Shop THC and nicotine vape categories at The Planet 60, Brampton. Check the current pages for listed cartridges, disposables, batteries, and vape formats.",
-    seoDescription: "The Planet 60 carries vape categories for Brampton shoppers checking 510-thread THC cartridges, nicotine vape pods, disposables, and compatible accessories. Product mix can change, so check the current category page or ask staff at 1098 Peter Robertson Blvd #10.",
+    name: "Nic Vape", slug: "vapes", color: "#8b5cf6", icon: "V",
+    seoTitle: "Nic Vape Brampton | The Planet 60",
+    seoIntro: "Browse the current Nic Vape category at The Planet 60 in Brampton for listed product names, formats, package details, and prices.",
+    seoDescription: "Use the Nic Vape category to compare the nicotine vape products currently listed before visiting The Planet 60 at 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "What vape pens do you sell?", a: "The vape pages may list 510-thread THC cartridges, nicotine vape pods, disposable vapes, and compatible batteries." },
-      { q: "Do you sell vape batteries?", a: "Check the current vape or accessories category for listed batteries and compatible hardware." },
+      { q: "What is listed on the Nic Vape page?", a: "Use this page to compare the nicotine vape product names, package details, and prices currently listed." },
+      { q: "Where should shoppers check device details?", a: "Review each item listing and product package for the current format and device details." },
     ],
   },
   "VAPE DISPOSABLE": {
     banner: "/banners/02_Vape_Disposable.webp",
-    name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "NV",
-    seoTitle: "Disposable Vapes Brampton - Vape Disposables",
-    seoIntro: "Disposable vape listings at The Planet 60, Brampton. Check the current category page before visiting Peter Robertson Blvd.",
-    seoDescription: "The Planet 60 keeps a vape disposables category for Brampton shoppers checking listed disposable vape formats. Product mix and package details can change, so use the current category page before visiting 1098 Peter Robertson Blvd #10.",
+    name: "THC Vape", slug: "vape-disposables", color: "#a78bfa", icon: "NV",
+    seoTitle: "THC Vape Disposables Brampton | The Planet 60",
+    seoIntro: "Browse the current THC Vape category at The Planet 60 in Brampton for listed product names, formats, package details, and prices.",
+    seoDescription: "Use the THC Vape category to compare the cannabis vape products currently listed before visiting The Planet 60 at 1098 Peter Robertson Blvd #10.",
     faqs: [
-      { q: "What should I check on a disposable vape listing?", a: "Check the listed format, package details, compatibility notes, and posted price before visiting." },
-      { q: "Are all disposable vapes the same format?", a: "No. Review the current listing and product package for device and charging details." },
+      { q: "What is listed on the THC Vape page?", a: "Use this page to compare the THC vape product names, package details, and prices currently listed." },
+      { q: "Where should shoppers check product details?", a: "Review each item listing and product package for the current format and device details." },
     ],
   },
   CONCENTRATES: {
@@ -296,4 +296,3 @@ export function formatPrice(p: PricePoint | null): string {
   if (p.sale !== null) return `$${p.sale}`;
   return `$${p.regular}`;
 }
-

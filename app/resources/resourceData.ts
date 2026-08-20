@@ -126,7 +126,7 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
       },
     ],
     quickLinks: [
-      { label: "THC Vape", href: "/items/vapes" },
+      { label: "THC Vape", href: "/items/vape-disposables" },
       { label: "Concentrates", href: "/items/concentrates" },
       { label: "Edibles", href: "/items/edibles" },
     ],
@@ -275,8 +275,8 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     ],
     quickLinks: [
       { label: "Budget", href: "/budget" },
-      { label: "THC Vape", href: "/items/vapes" },
-      { label: "Nic Vape", href: "/items/vape-disposables" },
+      { label: "THC Vape", href: "/items/vape-disposables" },
+      { label: "Nic Vape", href: "/items/vapes" },
     ],
   },
   {
