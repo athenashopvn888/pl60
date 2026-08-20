@@ -53,8 +53,8 @@ export default function Footer() {
               <Link href="/budget">Budget Flower</Link>
               <Link href="/items/edibles">Edibles</Link>
               <Link href="/items/cigarettes">Cigarettes</Link>
-              <Link href="/items/vapes">THC Vape</Link>
-              <Link href="/items/vape-disposables">Nic Vape</Link>
+              <Link href="/items/vapes">Nic Vape</Link>
+              <Link href="/items/vape-disposables">THC Vape</Link>
               <Link href="/items/magic">Magic Stuff</Link>
               <Link href="/resources">Resources</Link>
               <Link href="/resources/peter-robertson-visit-guide">Peter Robertson Visit Guide</Link>
