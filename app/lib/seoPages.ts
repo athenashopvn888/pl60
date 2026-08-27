@@ -11,6 +11,7 @@ const NATIVE_HERO_PRODUCTS = [
 export interface SeoPageData {
   slug: string;
   title: string;
+  absoluteTitle?: boolean;
   metaDescription: string;
   h1: string;
   icon: string;
@@ -18,8 +19,17 @@ export interface SeoPageData {
   heroPreview?: {
     eyebrow: string;
     intro: string;
-    products: typeof NATIVE_HERO_PRODUCTS;
-    disclosure: typeof NATIVE_HERO_DISCLOSURE;
+    products: readonly { name: string; image: string }[];
+    disclosure: string;
+    theme?: "nicotine";
+    menuHref?: string;
+    primaryCta?: string;
+    secondaryCta?: string;
+    secondaryHref?: string;
+    identity?: string;
+    featuredHeading?: string;
+    featuredIntro?: string;
+    warning?: string;
   };
   banner?: string;
   sections: { heading: string; body: string }[];
@@ -256,6 +266,48 @@ export const SEO_PAGES: SeoPageData[] = [
         q: "Where are the Resource pages?",
         a: "Use /resources for The Planet 60 guides covering visits, flower tiers, 24-hour shopping, vapes, cigarettes, and specialty categories.",
       },
+    ],
+  },
+  {
+    slug: "nicotine-vapes-brampton",
+    title: "Nicotine Vapes in Brampton | The Planet 60",
+    absoluteTitle: true,
+    metaDescription: "Adults 19+: review six live-checked nicotine vape product pages from The Planet 60 in Brampton, then check /items/vapes for the current selection. Nicotine is addictive.",
+    h1: "Nicotine Vapes at The Planet 60 in Brampton",
+    icon: "19+",
+    heroTagline: "Adults 19+ · Nicotine is addictive.",
+    heroPreview: {
+      eyebrow: "THE PLANET 60 • BRAMPTON • ADULTS 19+",
+      intro: "Searching for nicotine vapes near me in Brampton? This The Planet 60 guide features six live-checked nicotine vape product pages and directs adults to /items/vapes for the current selection. Product details can change, so open the individual item page before choosing. Nicotine is addictive.",
+      products: [
+        { name: "Flavour Beast E-Liquid Salt", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1093-Flavour-Beast-e-liquid-salt.webp" },
+        { name: "Geek Promax 5% — 30K Puffs", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GEEK-PROMAX.jpg" },
+        { name: "Geek Universe — 25K Puffs", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/geek_universe_pulse_x_25k.webp" },
+        { name: "Level X Boost G2 Device Kit", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1085-Level-X-Boost-G2-device-kit.webp" },
+        { name: "NEXA PIX — 30K Puffs — Many Flavors", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/nexa_showcase_600x600.webp" },
+        { name: "OVNS 10000 5% — 10K Puffs", image: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1081OVNS10000.jpg" },
+      ],
+      disclosure: "The featured cards are live-checked starting points, not a guarantee of current stock, price or availability. Use /items/vapes for the current The Planet 60 listing.",
+      theme: "nicotine",
+      menuHref: "/items/vapes",
+      primaryCta: "Browse Nicotine Vapes",
+      secondaryCta: "Compare the Six Featured Items",
+      secondaryHref: "#featured-vapes",
+      identity: "The Planet 60 | Brampton | Adults 19+ | Nicotine is addictive.",
+      featuredHeading: "Six Live-Checked Vape Pens Pages in One Shortlist",
+      featuredIntro: "The featured set combines Flavour Beast, Geek, Level X, NEXA and OVNS product pages from The Planet 60’s VAPE PENS category. Use each card for its exact supported display details, then rely on /items/vapes for the current nicotine selection.",
+      warning: "Adults 19+. Nicotine is addictive.",
+    },
+    sections: [
+      { heading: "An E-Liquid Listing and a Device Kit Need Exact Labels", body: "The featured set includes a Flavour Beast e-liquid salt listing and a Level X Boost G2 device kit. Keep those descriptions attached to their respective products, and do not relabel another featured item unless its current product page supports that format." },
+      { heading: "Puff Counts Identify Listings, Not Results", body: "Several featured product names include puff counts. Adults can use those numbers to distinguish listings, but this page does not present them as guarantees of lifespan, performance or superiority. Check the individual product page for its supported details." },
+      { heading: "Keep Nicotine and Cannabis Vape Routes Separate", body: "This The Planet 60 nicotine vape guide uses products from the VAPE PENS category under /items/vapes. The separate /items/vape-disposables route is for THC or cannabis vape products and is excluded from this nicotine page." },
+      { heading: "Check the Current Brampton Nicotine Category", body: "Browse /items/vapes before choosing. This guide does not claim current prices, stock or guaranteed availability, and product details should be checked on the current category and item pages." },
+    ],
+    faqs: [
+      { q: "Where should I check The Planet 60’s current nicotine selection?", a: "Use /items/vapes. The six featured cards are live-checked starting points, while the current category listing should control selection information." },
+      { q: "Does every featured item use the same format?", a: "No. The supplied evidence identifies an e-liquid salt listing and a separate device kit. Read each remaining product page for its exact supported format and details." },
+      { q: "Does this page include cannabis vapes?", a: "No. It covers nicotine products from the VAPE PENS category for adults 19+. THC and cannabis vape products under /items/vape-disposables are excluded." },
     ],
   },
 ];
