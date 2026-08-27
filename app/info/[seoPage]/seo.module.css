@@ -105,6 +105,19 @@
 .productHeroPrimary:hover,
 .productHeroSecondary:hover { transform: translateY(-2px); }
 .productHeroSecondary:hover { border-color: #e7b85b; }
+.nicotineHero {
+  background: radial-gradient(circle at 78% 32%, rgba(69, 211, 161, .24), transparent 32%), linear-gradient(145deg, #07100d 0%, #0e1c18 62%, #050907 100%);
+}
+.nicotineHero .productHeroKicker { color: #77e6bd; }
+.nicotineHero .productHeroPrimary { background: #77e6bd; box-shadow: 0 12px 34px rgba(69, 211, 161, .26); }
+.nicotineHero .productHeroSecondary:hover { border-color: #77e6bd; }
+.identityStrip {
+  margin-top: 24px !important;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  color: #d8d5dc !important;
+  font-size: .82rem !important;
+}
 .productPreviewStage {
   min-height: 520px;
   display: grid;
@@ -175,6 +188,24 @@
 /* Content */
 .content { padding: 40px 24px 60px; }
 .container { max-width: 960px; margin: 0 auto; }
+.featuredIntro {
+  margin: 0 0 36px;
+  padding: 28px 32px;
+  border: 1px solid rgba(69, 211, 161, .28);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(69, 211, 161, .09), rgba(69, 211, 161, .02));
+}
+.featuredIntro h2 { margin: 0 0 12px; font-size: 24px; color: var(--text-primary); }
+.featuredIntro p { margin: 0; color: var(--text-secondary); line-height: 1.8; }
+.nicotineWarning {
+  margin: 10px 0 36px;
+  padding: 18px 22px;
+  border: 1px solid rgba(69, 211, 161, .34);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-weight: 800;
+  text-align: center;
+}
 
 .section {
   margin-bottom: 36px;
