@@ -12,6 +12,7 @@ export type ResourceArticle = {
   path: string;
   slug: string[];
   title: string;
+  seoTitle?: string;
   metaDescription: string;
   eyebrow: string;
   summary: string;
@@ -57,6 +58,62 @@ export const RESOURCE_HUB: ResourceArticle = {
 };
 
 export const RESOURCE_PAGES: ResourceArticle[] = [
+  {
+    path: "/resources/cannabis-dispensary-vs-weed-dispensary",
+    slug: ["cannabis-dispensary-vs-weed-dispensary"],
+    title: "Cannabis Dispensary vs. Weed Dispensary — What Are You Really Searching For?",
+    seoTitle: "Cannabis vs Weed Dispensary | The Planet 60 Brampton",
+    metaDescription:
+      "Cannabis dispensary, weed dispensary or dispensary near me? Learn how the terms relate and find The Planet 60 in Brampton.",
+    eyebrow: "Dispensary search terminology",
+    summary:
+      "Someone searching for a nearby dispensary can describe the same local need in several different ways. One Brampton customer may search “cannabis dispensary near me.” Another may search “weed dispensary near me.” Someone else may use the shorter “dispensary near me.”",
+    sections: [
+      {
+        heading: "Cannabis vs. Weed",
+        body:
+          "Cannabis is the broader formal term. Weed is common everyday language. Adding the word dispensary makes the business-search intent especially clear. This creates a related group of local searches: dispensary near me, cannabis dispensary near me, weed dispensary near me, cannabis store near me, cannabis near me and weed near me.",
+      },
+      {
+        heading: "Clear Business and Location Information",
+        body:
+          "The objective is not to repeat every phrase everywhere. The objective is to clearly establish what the business is and where customers can find accurate local information.",
+      },
+      {
+        heading: "The Planet 60 in Brampton",
+        body:
+          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton. Its existing Brampton dispensary page remains the primary page for actual local visit intent.",
+      },
+      {
+        heading: "Which Search Phrase Is Correct?",
+        body:
+          "There is no requirement for customers to use one exact phrase. Cannabis dispensary is formal and clear. Weed dispensary is conversational and clear. Dispensary near me is shorter and strongly local. A useful website should connect all three forms naturally to the real business.",
+      },
+      {
+        heading: "Is “dispensary near me” broader than “weed dispensary near me”?",
+        body:
+          "Yes. The shorter query removes the weed modifier, while still expressing local dispensary intent.",
+      },
+      {
+        heading: "Are weed and cannabis different keywords?",
+        body:
+          "Yes. They are different search terms, even though their intent can overlap significantly in cannabis-related searches.",
+      },
+      {
+        heading: "Should every variation have its own landing page?",
+        body:
+          "No. Closely overlapping local-intent keywords should generally be handled by a strong authoritative local page plus supporting useful content rather than multiple thin duplicate pages.",
+      },
+      {
+        heading: "Where is The Planet 60?",
+        body:
+          "The Planet 60 is located at 1098 Peter Robertson Blvd #10 in Brampton, Ontario.",
+      },
+    ],
+    quickLinks: [
+      { label: "Cannabis Dispensary Near Me in Brampton", href: "/info/dispensary-near-me-brampton" },
+    ],
+  },
   {
     path: "/resources/peter-robertson-visit-guide",
     slug: ["peter-robertson-visit-guide"],
