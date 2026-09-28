@@ -27,7 +27,9 @@ export async function generateMetadata({
   const itemData = getItemData(item.category, item.name);
 
   return {
-    title: `${item.name} | ${item.category} | The Planet 60 Brampton`,
+    title: {
+      absolute: `${item.name} | ${item.category} | The Planet 60 Brampton`,
+    },
     description: itemData.metaDescription,
     alternates: {
       canonical: `https://www.theplanet60.com/item/${slug}`,

@@ -31,6 +31,9 @@ export async function generateMetadata({
   return {
     title: seo?.seoTitle || `${tierInfo.config.name} Cannabis Flower — ${flowers.length} Strains`,
     description: seo?.seoIntro || `Shop ${flowers.length} ${tierInfo.config.name.toLowerCase()} cannabis strains at The Planet 60.`,
+    alternates: {
+      canonical: `https://www.theplanet60.com/${tierSlug}`,
+    },
     openGraph: {
       title: `${tierInfo.config.name} Flower | The Planet 60`,
       description: `Browse the current ${tierInfo.config.name.toLowerCase()} flower menu at The Planet 60. Review listing details and posted prices before visiting.`,

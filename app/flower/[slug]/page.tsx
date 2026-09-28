@@ -28,8 +28,13 @@ export async function generateMetadata({
   const strainData = getStrainData(flower.name, flower.type, flower.tier, flower.thc);
 
   return {
-    title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | The Planet 60 Brampton`,
+    title: {
+      absolute: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | The Planet 60 Brampton`,
+    },
     description: strainData.metaDescription,
+    alternates: {
+      canonical: `https://www.theplanet60.com/flower/${slug}`,
+    },
     openGraph: {
       title: `${flower.name} | The Planet 60`,
       description: strainData.metaDescription,

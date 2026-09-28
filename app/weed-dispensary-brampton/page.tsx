@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: gbpLocation.seoTitle,
   description: gbpLocation.metaDescription,
   alternates: {
-    canonical: `https://${gbpLocation.domain}/${gbpLocation.slug}/`,
+    canonical: `https://www.theplanet60.com/${gbpLocation.slug}`,
   },
   robots: {
     index: true,
