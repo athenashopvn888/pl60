@@ -64,14 +64,17 @@ function TypeTag({ type }: { type: string }) {
 }
 
 function VibeCard({ type }: { type: string }) {
-  const typeLabel = type ? type.charAt(0).toUpperCase() + type.slice(1).toLowerCase() : "Flower";
+  const vibes = getFlowerEffects(type);
   return (
     <div className={styles.vibeSection}>
-      <div className={styles.vibeHead}>PRODUCT TYPE</div>
+      <div className={styles.vibeHead}>EFFECTS</div>
       <div className={styles.vibePills}>
-        <span className={styles.vibePill}>
-          <span className={styles.vibeLabel}>{typeLabel}</span>
-        </span>
+        {vibes.map(([emoji, label]) => (
+          <span key={label} className={styles.vibePill}>
+            <span className={styles.vibeEmoji}>{emoji}</span>
+            <span className={styles.vibeLabel}>{label}</span>
+          </span>
+        ))}
       </div>
     </div>
   );
