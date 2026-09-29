@@ -1,4 +1,8 @@
 "use client";
+import { HOME_TITLE } from "./lib/homeDelivery";
+import CohortDeliveryActions from "./components/CohortDeliveryActions";
+import HomeDeliverySection from "./components/HomeDeliverySection";
+import HomepageTopNotices from "./components/HomepageTopNotices";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -219,9 +223,11 @@ export default function HomePage() {
 
   return (
     <main className={styles.main}>
+      <Navbar />
+      <HomepageTopNotices />
       <FleetAnnouncementBanner />
       {/* ── NAVBAR ── */}
-      <Navbar />
+
       <HiringCallout />
 
       {/* ── WELCOME BANNER ── */}
@@ -245,7 +251,8 @@ export default function HomePage() {
           {/* Brand branding */}
           <div className={styles.brandBlock}>
             <span className={styles.brandIcon}>🪐</span>
-            <h1 className={styles.brandTitle}>THE PLANET 60</h1>
+            <h1 className={styles.brandTitle}>{HOME_TITLE}</h1>
+            <CohortDeliveryActions variant="hero" />
             <p className={styles.brandSub}>Premium Cannabis Dispensary</p>
             <div className={styles.brandBadge}>
               <span className={styles.pulseDot}></span> Now Open 24/7 • Brampton
@@ -274,6 +281,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HomeDeliverySection />
 
       {/* ── EXPLORE CATEGORIES ── */}
       <section className={styles.categoriesSection} id="menu">

@@ -1,3 +1,4 @@
+import { HOME_TITLE } from "./lib/homeDelivery";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -6,7 +7,7 @@ import AgeGate from "./components/AgeGate";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.theplanet60.com"),
   title: {
-    default: "Planet 60 Cannabis | 24-Hour Brampton Dispensary",
+    default: HOME_TITLE,
     template: "%s | The Planet 60",
   },
   description:
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: "https://www.theplanet60.com",
     siteName: "The Planet 60",
-    title: "The Planet 60 - Brampton Cannabis Dispensary",
+    title: HOME_TITLE,
     description:
       "Flower tiers, edibles, vapes, concentrates, cigarettes, accessories, and Magic Stuff at 1098 Peter Robertson Blvd #10. Open 24 Hours.",
     images: [
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Planet 60 - Brampton Cannabis Dispensary",
+    title: HOME_TITLE,
     description: "Open 24 Hours at 1098 Peter Robertson Blvd #10, Brampton.",
     images: ["https://www.theplanet60.com/wp-content/uploads/2026/04/46Oi5.jpg"],
   },
