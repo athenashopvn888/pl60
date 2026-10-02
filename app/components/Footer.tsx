@@ -57,6 +57,7 @@ export default function Footer() {
               <Link href="/items/vape-disposables">THC Vape</Link>
               <Link href="/items/magic">Magic Stuff</Link>
               <Link href="/resources">Resources</Link>
+              <Link href="/guides">Guides</Link>
               <Link href="/resources/peter-robertson-visit-guide">Peter Robertson Visit Guide</Link>
               <Link href="/resources/planet60-flower-tier-guide">Flower Tier Guide</Link>
               <Link href="/resources/magic-stuff-menu-guide">Magic Stuff Guide</Link>

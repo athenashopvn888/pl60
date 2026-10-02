@@ -36,6 +36,9 @@ export default function ResourceView({ article }: ResourceViewProps) {
             ))}
           </section>
           <section className={styles.grid} aria-label="The Planet 60 resource guides">
+            <Link href="/guides" className={styles.card}>
+              <b>00</b><span>Name guides</span><h2>Name Guides</h2><p>Browse all live strain, Native Cigarettes, Nicotine Vape, and THC Vape name guides.</p>
+            </Link>
             {RESOURCE_PAGES.map((page, index) => (
               <Link key={page.path} href={page.path} className={styles.card}>
                 <b>{String(index + 1).padStart(2, "0")}</b>
