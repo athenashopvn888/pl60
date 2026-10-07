@@ -9,6 +9,8 @@ import { getItemPriceDisplay } from "../../lib/itemPricing";
 import Magnifier from "../../components/Magnifier";
 import styles from "../../flower/[slug]/flower.module.css";
 
+export const revalidate = 300;
+
 /* -- Pre-generate all item pages -- */
 export function generateStaticParams() {
   return allItems.map((i) => ({ slug: i.slug }));

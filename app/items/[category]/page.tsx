@@ -15,6 +15,8 @@ import styles from "./items.module.css";
 import { getCategoryGuideGroups } from "../../lib/guideRegistry";
 import guideStyles from "../../guides/[slug]/guide.module.css";
 
+export const revalidate = 300;
+
 /* ── Generate all category pages ── */
 export function generateStaticParams() {
   return Object.values(CATEGORY_CONFIG).map((c) => ({ category: c.slug }));

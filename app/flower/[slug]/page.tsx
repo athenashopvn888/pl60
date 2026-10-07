@@ -9,6 +9,8 @@ import RelatedScroll from "./RelatedScroll";
 import Magnifier from "../../components/Magnifier";
 import styles from "./flower.module.css";
 
+export const revalidate = 300;
+
 /* -- Pre-generate all flower pages -- */
 export function generateStaticParams() {
   return allFlowers.map((f) => ({ slug: f.slug }));
