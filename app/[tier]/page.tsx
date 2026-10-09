@@ -70,6 +70,23 @@ export default async function TierPage({
   return (
     <main className={styles.main}>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": `https://www.theplanet60.com/${tierInfo.config.slug}#collection`,
+            url: `https://www.theplanet60.com/${tierInfo.config.slug}`,
+            name: `${tierInfo.config.name} flower | The Planet 60`,
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: flowers.length,
+              itemListElement: flowers.map((f, i) => ({ "@type": "ListItem", position: i + 1, name: f.name, url: `https://www.theplanet60.com/flower/${f.slug}` })),
+            },
+          }),
+        }}
+      />
 
       {/* ── Banner Image (standalone, no overlay text) ── */}
       <section className={styles.bannerSection}>
