@@ -62,6 +62,8 @@ export default function Footer() {
               <Link href="/resources/planet60-flower-tier-guide">Flower Tier Guide</Link>
               <Link href="/resources/magic-stuff-menu-guide">Magic Stuff Guide</Link>
               <Link href="/faq">FAQ</Link>
+              <Link href="/hours">Store Hours</Link>
+              <Link href="/visit">Visit &amp; Directions</Link>
               <Link href="/delivery">DELIVERY MENU</Link>
               <Link href="/info/brampton-weed-dispensary">Brampton Dispensary</Link>
               <Link href="/info/cheap-weed-brampton">Cheap Weed Brampton</Link>
