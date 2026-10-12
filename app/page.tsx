@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import FleetAnnouncementBanner from "./components/FleetAnnouncementBanner";
+import HomeTitleBlock from "./components/HomeTitleBlock";
 import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
@@ -225,6 +226,7 @@ export default function HomePage() {
   return (
     <main className={styles.main}>
       <Navbar />
+      <HomeTitleBlock />
       <FleetAnnouncementBanner />
       <HomepageTopNotices />
       {/* ── NAVBAR ── */}
@@ -252,7 +254,7 @@ export default function HomePage() {
           {/* Brand branding */}
           <div className={styles.brandBlock}>
             <span className={styles.brandIcon}>🪐</span>
-            <h1 className={styles.brandTitle}>{HOME_TITLE}</h1>
+            <p className={styles.brandTitle}>{HOME_TITLE}</p>
             <CohortDeliveryActions variant="hero" />
             <p className={styles.brandSub}>Premium Cannabis Dispensary</p>
             <div className={styles.brandBadge}>
