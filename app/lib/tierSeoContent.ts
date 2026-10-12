@@ -15,8 +15,8 @@ export const TIER_SEO: Record<string, TierSeoData> = {
         body: "Exotic is one flower path on The Planet 60 menu. Use the current product name, item notes, size, and posted price before choosing.",
       },
       {
-        heading: "Check Current Bundle Notes",
-        body: "The site may show size and bundle notes for this tier. Confirm current pricing on the menu or with staff before purchase.",
+        heading: "Check Current Free-Gram Deals",
+        body: "This tier gets our free-gram deal: Buy 2g Get 1g FREE (Pay $40 = 3g) or Buy 3g Get 3g FREE (Pay $60 = 6g). Every strain card lists its own price. Check the menu or ask staff if you have questions.",
       },
       {
         heading: "Visit The Planet 60 In Brampton",
