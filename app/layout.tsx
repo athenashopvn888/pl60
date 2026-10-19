@@ -1,3 +1,4 @@
+import FullNameNap from "./components/FullNameNap";
 import PinnedNavClearance from "./components/PinnedNavClearance";
 import { HOME_DOC_TITLE } from "./lib/homeDelivery";
 import type { Metadata } from "next";
@@ -76,7 +77,10 @@ const jsonLd = {
   "@type": "Store",
   additionalType: "https://schema.org/Store",
   "@id": "https://www.theplanet60.com",
-  name: "The Planet 60",
+  name: "The Planet 60 Dispensary Weed Delivery",
+  alternateName: "The Planet 60",
+  hasMap: "https://www.google.com/maps/place/?q=place_id:ChIJF1t-nAstK4gRTGPK1xrokgQ",
+  sameAs: ["https://www.google.com/maps/place/?q=place_id:ChIJF1t-nAstK4gRTGPK1xrokgQ"],
   description: "Cannabis dispensary at 1098 Peter Robertson Blvd #10 in Brampton, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 24 Hours.",
   url: "https://www.theplanet60.com",
   telephone: "+12892060899",
@@ -144,6 +148,7 @@ export default function RootLayout({
           NEW DELIVERY MENU IS HERE — CLICK TO EXPLORE
         </Link>
         {children}
+        <FullNameNap />
         <PinnedNavClearance />
       </body>
     </html>
