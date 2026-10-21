@@ -1,3 +1,4 @@
+import { SHOW_CIGARETTES, cigaretteSafeContent, isCigarettePath } from "../lib/siteConfig";
 export type ResourceSection = {
   heading: string;
   body: string;
@@ -57,7 +58,7 @@ export const RESOURCE_HUB: ResourceArticle = {
   ],
 };
 
-export const RESOURCE_PAGES: ResourceArticle[] = [
+const RESOURCE_PAGES_RAW: ResourceArticle[] = [
   {
     path: "/resources/cannabis-dispensary-vs-weed-dispensary",
     slug: ["cannabis-dispensary-vs-weed-dispensary"],
@@ -374,6 +375,12 @@ export const RESOURCE_PAGES: ResourceArticle[] = [
     ],
   },
 ];
+
+export const RESOURCE_PAGES = SHOW_CIGARETTES
+  ? RESOURCE_PAGES_RAW
+  : RESOURCE_PAGES_RAW
+      .filter((page) => !isCigarettePath(page.path))
+      .map((page) => cigaretteSafeContent(page));
 
 export const ALL_RESOURCE_PAGES: ResourceArticle[] = [RESOURCE_HUB, ...RESOURCE_PAGES];
 export const RESOURCE_PATHS = ALL_RESOURCE_PAGES.map((page) => page.path);

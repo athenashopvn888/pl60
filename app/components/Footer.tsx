@@ -1,3 +1,4 @@
+import { SHOW_CIGARETTES, cigaretteSafeContent } from "../lib/siteConfig";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -9,9 +10,7 @@ export default function Footer() {
           <div className={styles.col}>
             <div className={styles.brand}>THE PLANET 60</div>
             <p className={styles.desc}>
-              Your local cannabis dispensary at 1098 Peter Robertson Blvd #10,
-              Brampton. Visit The Planet 60 for premium flower, edibles, vapes,
-              cigarettes, accessories, and more. Open 24 Hours.
+              {cigaretteSafeContent("Your local cannabis dispensary at 1098 Peter Robertson Blvd #10, Brampton. Visit The Planet 60 for premium flower, edibles, vapes, cigarettes, accessories, and more. Open 24 Hours.")}
             </p>
             <div className={styles.buttons}>
               <Link href="/#menu" className={styles.btnPrimary}>
@@ -52,7 +51,7 @@ export default function Footer() {
               <Link href="/aa">AA Flower</Link>
               <Link href="/budget">Budget Flower</Link>
               <Link href="/items/edibles">Edibles</Link>
-              <Link href="/items/cigarettes">Cigarettes</Link>
+              {SHOW_CIGARETTES ? (<Link href="/items/cigarettes">Cigarettes</Link>) : null}
               <Link href="/items/vapes">Nic Vape</Link>
               <Link href="/items/vape-disposables">THC Vape</Link>
               <Link href="/items/magic">Magic Stuff</Link>
@@ -67,7 +66,7 @@ export default function Footer() {
               <Link href="/delivery">DELIVERY MENU</Link>
               <Link href="/info/brampton-weed-dispensary">Brampton Dispensary</Link>
               <Link href="/info/cheap-weed-brampton">Cheap Weed Brampton</Link>
-              <Link href="/info/native-cigarettes-brampton">Native Cigarettes</Link>
+              {SHOW_CIGARETTES ? (<Link href="/info/native-cigarettes-brampton">Native Cigarettes</Link>) : null}
               <Link href="/info/nicotine-vapes-brampton">Nicotine Vapes Brampton</Link>
               <Link href="/info/weed-store-near-brampton">Weed Store Near Brampton</Link>
               <Link href="/weed-dispensary-brampton/">
