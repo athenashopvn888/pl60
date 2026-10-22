@@ -156,3 +156,4 @@ export const CODED_PAGES: Record<string, ResolvedPage> = {
     metaDescription: "Visit The Planet 60 at 1098 Peter Robertson Blvd #10, Brampton, ON L6R 1G6. Open 24 Hours a day, 7 days a week. Walk-ins welcome.",
   },
 };
+
