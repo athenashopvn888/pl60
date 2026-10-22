@@ -2,7 +2,7 @@ import { FULL_NAME_NAP } from "../lib/fullNameNap";
 import { HOME_TITLE } from "../lib/homeDelivery";
 
 // Homepage title block: keeps the store H1 directly under the nav and above the 4 core banners.
-export default function HomeTitleBlock() {
+export default function HomeTitleBlock({ title = HOME_TITLE }: { title?: string } = {}) {
   return (
     <header
       data-home-title-block=""

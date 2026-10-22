@@ -3,9 +3,23 @@
 import { SHOW_CIGARETTES } from "../lib/siteConfig";
 
 import CigaretteSeasonalNotice from "./CigaretteSeasonalNotice";
+import KitFleetAnnouncementBanner from "./fleet/FleetAnnouncementBanner";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import type { ResolvedBanner } from "../lib/fleet/types";
+
+const SheetBannerContext = createContext<ResolvedBanner[] | undefined>(undefined);
+
+export function FleetSheetBannerProvider({
+  banners,
+  children,
+}: {
+  banners?: ResolvedBanner[];
+  children: React.ReactNode;
+}) {
+  return <SheetBannerContext.Provider value={banners}>{children}</SheetBannerContext.Provider>;
+}
 
 const STORE_NAME = "The Planet 60";
 const STORE_AREA = "Peter Robertson Boulevard, Brampton";
@@ -36,6 +50,12 @@ const captionStyle = { margin: 0, padding: "14px 18px", background: "#111827", c
 const captionLinkStyle = { color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" } as const;
 
 export default function FleetAnnouncementBanner() {
+  const sheetBanners = useContext(SheetBannerContext);
+  if (sheetBanners && sheetBanners.length > 0) return <KitFleetAnnouncementBanner banners={sheetBanners} />;
+  return <CodedFleetAnnouncementBanner />;
+}
+
+function CodedFleetAnnouncementBanner() {
   const [showHalloweenNotice, setShowHalloweenNotice] = useState(false);
   useEffect(() => {
     const updateVisibility = () => setShowHalloweenNotice(isHalloweenNoticeActive(new Date()));
