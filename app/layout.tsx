@@ -1,12 +1,19 @@
-import { cigaretteSafeContent } from "./lib/siteConfig";
+import { cigaretteSafeContent, SHOW_CIGARETTES } from "./lib/siteConfig";
+import CigaretteStateProvider, { CIG_WORDING_FALLBACK } from "./components/CigaretteStateProvider";
+import { FleetSheetBannerProvider } from "./components/FleetAnnouncementBanner";
+import FleetContentProvider from "./components/fleet/FleetContentProvider";
 import FullNameNap from "./components/FullNameNap";
 import PinnedNavClearance from "./components/PinnedNavClearance";
 import { HOME_DOC_TITLE } from "./lib/homeDelivery";
+import { CODED_BANNERS } from "./lib/fleet/config";
+import { getFleetContent } from "./lib/fleetContent";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
-export const metadata: Metadata = cigaretteSafeContent({
+export const revalidate = 60;
+
+const ROOT_METADATA: Metadata = cigaretteSafeContent({
   metadataBase: new URL("https://www.theplanet60.com"),
   title: {
     default: HOME_DOC_TITLE,
@@ -72,6 +79,19 @@ export const metadata: Metadata = cigaretteSafeContent({
   },
 });
 
+export async function generateMetadata(): Promise<Metadata> {
+  const fleet = await getFleetContent();
+  if (!fleet.active) return ROOT_METADATA;
+  const description = fleet.pages.Home?.metaDescription || "";
+  if (!description || description === ROOT_METADATA.description) return ROOT_METADATA;
+  return {
+    ...ROOT_METADATA,
+    description,
+    openGraph: { ...ROOT_METADATA.openGraph, description },
+    twitter: { ...ROOT_METADATA.twitter, description },
+  };
+}
+
 /* ── JSON-LD Structured Data ── */
 const jsonLd = {
   "@context": "https://schema.org",
@@ -114,14 +134,19 @@ const jsonLd = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const fleet = await getFleetContent();
+  const sheetBanners = fleet.active && fleet.banners.some((banner, index) => banner !== CODED_BANNERS[index])
+    ? fleet.banners
+    : undefined;
   return (
     <html lang="en">
       <head>
+        <meta name="fleet-content-version" content={fleet.version} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -148,9 +173,15 @@ export default function RootLayout({
         <Link className="deliveryAnnouncement" href="/delivery">
           NEW DELIVERY MENU IS HERE — CLICK TO EXPLORE
         </Link>
-        {children}
-        <FullNameNap />
-        <PinnedNavClearance />
+        <FleetContentProvider value={{ active: fleet.active, version: fleet.version, nap: fleet.nap }}>
+          <CigaretteStateProvider value={{ web: SHOW_CIGARETTES, tv: SHOW_CIGARETTES, wording: CIG_WORDING_FALLBACK }}>
+            <FleetSheetBannerProvider banners={sheetBanners}>
+              {children}
+              <FullNameNap />
+              <PinnedNavClearance />
+            </FleetSheetBannerProvider>
+          </CigaretteStateProvider>
+        </FleetContentProvider>
       </body>
     </html>
   );
