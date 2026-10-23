@@ -6,6 +6,7 @@ import { beforeEach, test } from "node:test";
 const require = createRequire(import.meta.url);
 const {
   DEFAULT_APPS_SCRIPT_URL,
+  getCigaretteDataset,
   getTvData,
   postprocessFlowers,
   postprocessItems,
@@ -278,6 +279,37 @@ test("HTTP 200 HTML, 429, and throws serve last-good with reason and cooldown", 
     await getTvData({ type: "flowers", staticFlowers, staticItems, fetchImpl: failure.fetchImpl, now });
     assert.equal(failure.calls.length, 2);
   }
+});
+
+test("cigarette dataset keeps the feed cig block and refreshes on its own clock", async () => {
+  const cig = { on: true, tvOn: true, webOn: false, master: true };
+  const flowers = list(staticFlowers.length, (index) => flower(`F${index}`));
+  const items = list(staticItems.length, (index) => item(index === 0 ? "BB FULL CARTON" : `I${index}`, "$25"));
+  items[0].category = "CIGARETTES";
+  const live = mockFetch({ flowers, items, stockDate: "2026-10-23T03:40:59.000Z", cig });
+  const dataset = await getCigaretteDataset({
+    staticFlowers,
+    staticItems,
+    fetchImpl: live.fetchImpl,
+    now: 5_000,
+  });
+  assert.equal(dataset.source, "live");
+  assert.equal(dataset.cig.tvOn, true);
+  assert.equal(dataset.cig.webOn, false);
+  assert.equal(live.calls.length, 1);
+  assert.equal(live.calls[0].opts.cache, undefined);
+  assert.equal(live.calls[0].opts.next.revalidate, 60);
+
+  const cached = mockFetch(null, { throwError: new Error("should be cached") });
+  const again = await getCigaretteDataset({
+    staticFlowers,
+    staticItems,
+    fetchImpl: cached.fetchImpl,
+    now: 10_000,
+  });
+  assert.equal(cached.calls.length, 0);
+  assert.equal(again.cig.tvOn, true);
+  assert.equal(again.cig.webOn, false);
 });
 
 test("prebuild uses the shared post-processor", () => {

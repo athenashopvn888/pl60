@@ -1,5 +1,6 @@
 import { cigaretteSafeContent, SHOW_CIGARETTES } from "./lib/siteConfig";
-import CigaretteStateProvider, { CIG_WORDING_FALLBACK } from "./components/CigaretteStateProvider";
+import CigaretteStateProvider from "./components/CigaretteStateProvider";
+import { getCigaretteSnapshot, toPublicCigaretteState } from "./lib/cigaretteFeed";
 import { FleetSheetBannerProvider } from "./components/FleetAnnouncementBanner";
 import FleetContentProvider from "./components/fleet/FleetContentProvider";
 import FullNameNap from "./components/FullNameNap";
@@ -139,7 +140,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const fleet = await getFleetContent();
+  const [fleet, cigaretteSnapshot] = await Promise.all([getFleetContent(), getCigaretteSnapshot()]);
+  const cigarettes = toPublicCigaretteState(cigaretteSnapshot);
   const sheetBanners = fleet.active && fleet.banners.some((banner, index) => banner !== CODED_BANNERS[index])
     ? fleet.banners
     : undefined;
@@ -174,7 +176,7 @@ export default async function RootLayout({
           NEW DELIVERY MENU IS HERE — CLICK TO EXPLORE
         </Link>
         <FleetContentProvider value={{ active: fleet.active, version: fleet.version, nap: fleet.nap }}>
-          <CigaretteStateProvider value={{ web: SHOW_CIGARETTES, tv: SHOW_CIGARETTES, wording: CIG_WORDING_FALLBACK }}>
+          <CigaretteStateProvider value={{ web: SHOW_CIGARETTES, tv: cigarettes.tv, wording: cigarettes.wording }}>
             <FleetSheetBannerProvider banners={sheetBanners}>
               {children}
               <FullNameNap />
