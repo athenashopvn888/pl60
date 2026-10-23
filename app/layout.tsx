@@ -176,7 +176,7 @@ export default async function RootLayout({
           NEW DELIVERY MENU IS HERE — CLICK TO EXPLORE
         </Link>
         <FleetContentProvider value={{ active: fleet.active, version: fleet.version, nap: fleet.nap }}>
-          <CigaretteStateProvider value={{ web: SHOW_CIGARETTES, tv: cigarettes.tv, wording: cigarettes.wording }}>
+          <CigaretteStateProvider value={{ ...cigarettes, web: SHOW_CIGARETTES ? cigarettes.web : false }}>
             <FleetSheetBannerProvider banners={sheetBanners}>
               {children}
               <FullNameNap />
