@@ -3,12 +3,13 @@ import {
   cigarettePublicHeaders,
   decideCigaretteGuide,
   decideCigaretteSurface,
+  publicWebsiteCigaretteFlag,
   reconcileSurfaceItems,
   type CigaretteSurfaceDecision,
   type CigaretteWording,
 } from "./cigDecision";
 import { allFlowers, allItems, type ItemProduct } from "./products";
-import { cigaretteEnvHardOff } from "./siteConfig";
+import { cigaretteEnvHardOff, SHOW_CIGARETTES } from "./siteConfig";
 import { getCigaretteDataset } from "./tvStock";
 
 export type CigaretteSnapshot = {
@@ -27,9 +28,11 @@ export type PublicCigaretteState = {
 };
 
 function snapshotFrom(cig: unknown, items: ItemProduct[], live: boolean, errored: boolean): CigaretteSnapshot {
-  const web = decideCigaretteSurface({ cig, items, surface: "web", errored });
+  const webDecision = decideCigaretteSurface({ cig, items, surface: "web", errored });
   const tv = decideCigaretteSurface({ cig, items, surface: "tv", errored });
   const guides = decideCigaretteGuide({ cig, items, errored });
+  // SHOW_CIGARETTES ? feed.web : false, and false on a feed error or a missing block.
+  const web = { ...webDecision, show: publicWebsiteCigaretteFlag(webDecision, SHOW_CIGARETTES) };
   return { web, tv, guides, wording: web.wording, live, items };
 }
 
@@ -43,7 +46,8 @@ export async function readCigaretteFeed(): Promise<CigaretteSnapshot> {
     const live = dataset?.source === "live";
     const items = Array.isArray(dataset?.items) ? dataset.items as ItemProduct[] : allItems;
     const cig = dataset?.cig ?? null;
-    // Last-good cig is kept on the dataset. A miss with no saved cig fails open.
+    // Last-good cig inside the cache window still follows its saved tvOn.
+    // A miss with no saved cig is an error. TV hides, and the website flag stays off.
     return snapshotFrom(cig, items.length ? items : allItems, live, !live && !cig);
   } catch {
     return snapshotFrom(null, allItems, false, true);
@@ -53,11 +57,20 @@ export async function readCigaretteFeed(): Promise<CigaretteSnapshot> {
 export const getCigaretteSnapshot = cache(readCigaretteFeed);
 
 export function toPublicCigaretteState(snap: CigaretteSnapshot): PublicCigaretteState {
-  return { web: snap.web.show, tv: snap.tv.show, wording: snap.wording };
+  return {
+    web: publicWebsiteCigaretteFlag(snap.web, SHOW_CIGARETTES),
+    tv: snap.tv.show,
+    wording: snap.wording,
+  };
 }
 
 export function snapshotHeaders(snap: CigaretteSnapshot): Record<string, string> {
-  return cigarettePublicHeaders({ web: snap.web.show, tv: snap.tv.show, wording: snap.wording });
+  const state = toPublicCigaretteState(snap);
+  return cigarettePublicHeaders({
+    web: SHOW_CIGARETTES ? state.web : false,
+    tv: state.tv,
+    wording: state.wording,
+  });
 }
 
 export { reconcileSurfaceItems };
