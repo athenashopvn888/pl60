@@ -4,6 +4,7 @@ import { getCigaretteSnapshot, toPublicCigaretteState } from "./lib/cigaretteFee
 import { FleetSheetBannerProvider } from "./components/FleetAnnouncementBanner";
 import FleetContentProvider from "./components/fleet/FleetContentProvider";
 import FullNameNap from "./components/FullNameNap";
+import MobileBottomBar from "./components/MobileBottomBar";
 import PinnedNavClearance from "./components/PinnedNavClearance";
 import { HOME_DOC_TITLE } from "./lib/homeDelivery";
 import { CODED_BANNERS } from "./lib/fleet/config";
@@ -181,6 +182,7 @@ export default async function RootLayout({
               {children}
               <FullNameNap />
               <PinnedNavClearance />
+              <MobileBottomBar />
             </FleetSheetBannerProvider>
           </CigaretteStateProvider>
         </FleetContentProvider>
