@@ -1,4 +1,5 @@
 import { SHOW_CIGARETTES, cigaretteSafeContent, isCigarettePath } from "../lib/siteConfig";
+import { LIVE_RESIN_ARTICLE } from "./liveResinArticle";
 export type ResourceSection = {
   heading: string;
   body: string;
@@ -8,6 +9,11 @@ export type ResourceLink = {
   label: string;
   href: string;
 };
+
+export type ResourceBlock =
+  | { type: "h2" | "h3" | "p"; text: string }
+  | { type: "list" | "ol"; items: string[] }
+  | { type: "table"; headers: string[]; rows: string[][] };
 
 export type ResourceArticle = {
   path: string;
@@ -19,6 +25,10 @@ export type ResourceArticle = {
   summary: string;
   sections: ResourceSection[];
   quickLinks: ResourceLink[];
+  blocks?: ResourceBlock[];
+  lastChecked?: string;
+  datePublished?: string;
+  dateModified?: string;
 };
 
 export const RESOURCE_BANNER = "/banners/welcome_banner.webp";
@@ -374,6 +384,7 @@ const RESOURCE_PAGES_RAW: ResourceArticle[] = [
       { label: "Contact", href: "/contact" },
     ],
   },
+  LIVE_RESIN_ARTICLE,
 ];
 
 export const RESOURCE_PAGES = SHOW_CIGARETTES
