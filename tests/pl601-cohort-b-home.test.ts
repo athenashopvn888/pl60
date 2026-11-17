@@ -3,7 +3,7 @@ import fs from "node:fs";
 import test from "node:test";
 import { HOME_DELIVERY_CARDS, HOME_DELIVERY_FAQS, HOME_DELIVERY_HREF, HOME_MENU_HREF, HOME_TITLE } from "../app/lib/homeDelivery.ts";
 
-const home = fs.readFileSync("app/page.tsx", "utf8");
+const home = fs.readFileSync("app/HomePage.tsx", "utf8");
 const navbar = fs.readFileSync("app/components/Navbar.tsx", "utf8");
 const navbarCss = fs.readFileSync("app/components/Navbar.module.css", "utf8");
 
