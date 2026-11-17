@@ -26,5 +26,7 @@ export const HOME_DELIVERY_FAQS = [
   { q: "Is the delivery information limited to Brampton?", a: "This homepage describes the Brampton delivery context only. The current delivery page confirms whether a specific address can be served." },
 ] as const;
 
-// Document <title> only (exact Google name | area). H1 keeps HOME_TITLE.
+// Root layout default <title>. Routes that omit a title keep this string. H1 keeps HOME_TITLE.
 export const HOME_DOC_TITLE = "The Planet 60 Dispensary Weed Delivery | Cannabis in Brampton";
+// Homepage document <title> only. Not the root default.
+export const HOME_PAGE_TITLE = "The Planet 60 Dispensary near me | Weed Delivery | Cannabis in Brampton";
